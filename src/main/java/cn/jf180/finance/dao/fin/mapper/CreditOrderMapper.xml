@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jf180.finance.dao.fin.dao.CreditOrderMapper" >
+  <resultMap id="BaseResultMap" type="cn.jf180.finance.dao.fin.model.CreditOrder" >
+    <id column="order_id" property="orderId" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="tmall_user_nick" property="tmallUserNick" jdbcType="VARCHAR" />
+    <result column="tmall_mix_user_id" property="tmallMixUserId" jdbcType="VARCHAR" />
+    <result column="fin_id" property="finId" jdbcType="INTEGER" />
+    <result column="fin_credit_id" property="finCreditId" jdbcType="VARCHAR" />
+    <result column="fin_apply_pay_id" property="finApplyPayId" jdbcType="VARCHAR" />
+    <result column="installment_rule_id" property="installmentRuleId" jdbcType="VARCHAR" />
+    <result column="fin_credit_amount" property="finCreditAmount" jdbcType="VARCHAR" />
+    <result column="ali_pay_amount" property="aliPayAmount" jdbcType="VARCHAR" />
+    <result column="tmall_order_id" property="tmallOrderId" jdbcType="VARCHAR" />
+    <result column="tmall_order_amount" property="tmallOrderAmount" jdbcType="VARCHAR" />
+    <result column="order_money" property="orderMoney" jdbcType="VARCHAR" />
+    <result column="tmall_order_status" property="tmallOrderStatus" jdbcType="INTEGER" />
+    <result column="seller_nick" property="sellerNick" jdbcType="VARCHAR" />
+    <result column="tmall_item_id" property="tmallItemId" jdbcType="VARCHAR" />
+    <result column="tmall_sku_id" property="tmallSkuId" jdbcType="VARCHAR" />
+    <result column="package_contract" property="packageContract" jdbcType="INTEGER" />
+    <result column="monthly_fee" property="monthlyFee" jdbcType="INTEGER" />
+    <result column="contract_period" property="contractPeriod" jdbcType="INTEGER" />
+    <result column="package_name" property="packageName" jdbcType="VARCHAR" />
+    <result column="package_details" property="packageDetails" jdbcType="VARCHAR" />
+    <result column="pck_to_mobile" property="pckToMobile" jdbcType="VARCHAR" />
+    <result column="pck_to_name" property="pckToName" jdbcType="VARCHAR" />
+    <result column="pck_to_idcard_num" property="pckToIdcardNum" jdbcType="VARCHAR" />
+    <result column="receiver_name" property="receiverName" jdbcType="VARCHAR" />
+    <result column="receiver_mobile" property="receiverMobile" jdbcType="VARCHAR" />
+    <result column="receiver_address" property="receiverAddress" jdbcType="VARCHAR" />
+    <result column="trade_lng" property="tradeLng" jdbcType="VARCHAR" />
+    <result column="trade_lat" property="tradeLat" jdbcType="VARCHAR" />
+    <result column="trade_province" property="tradeProvince" jdbcType="VARCHAR" />
+    <result column="trade_city" property="tradeCity" jdbcType="VARCHAR" />
+    <result column="trade_area" property="tradeArea" jdbcType="VARCHAR" />
+    <result column="trade_ip" property="tradeIp" jdbcType="VARCHAR" />
+    <result column="processing_result_status" property="processingResultStatus" jdbcType="INTEGER" />
+    <result column="processing_result_desc" property="processingResultDesc" jdbcType="VARCHAR" />
+    <result column="order_source" property="orderSource" jdbcType="INTEGER" />
+    <result column="order_from" property="orderFrom" jdbcType="VARCHAR" />
+    <result column="tmall_order_time" property="tmallOrderTime" jdbcType="TIMESTAMP" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    order_id, phone, tmall_user_nick, tmall_mix_user_id, fin_id, fin_credit_id, fin_apply_pay_id, 
+    installment_rule_id, fin_credit_amount, ali_pay_amount, tmall_order_id, tmall_order_amount, 
+    order_money, tmall_order_status, seller_nick, tmall_item_id, tmall_sku_id, package_contract, 
+    monthly_fee, contract_period, package_name, package_details, pck_to_mobile, pck_to_name, 
+    pck_to_idcard_num, receiver_name, receiver_mobile, receiver_address, trade_lng, trade_lat, 
+    trade_province, trade_city, trade_area, trade_ip, processing_result_status, processing_result_desc, 
+    order_source, order_from, tmall_order_time, modify_time, create_time
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="cn.jf180.finance.dao.fin.model.CreditOrderExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from credit_order
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from credit_order
+    where order_id = #{orderId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from credit_order
+    where order_id = #{orderId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="cn.jf180.finance.dao.fin.model.CreditOrderExample" >
+    delete from credit_order
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="cn.jf180.finance.dao.fin.model.CreditOrder" >
+    insert into credit_order (order_id, phone, tmall_user_nick, 
+      tmall_mix_user_id, fin_id, fin_credit_id, 
+      fin_apply_pay_id, installment_rule_id, fin_credit_amount, 
+      ali_pay_amount, tmall_order_id, tmall_order_amount, 
+      order_money, tmall_order_status, seller_nick, 
+      tmall_item_id, tmall_sku_id, package_contract, 
+      monthly_fee, contract_period, package_name, 
+      package_details, pck_to_mobile, pck_to_name, 
+      pck_to_idcard_num, receiver_name, receiver_mobile, 
+      receiver_address, trade_lng, trade_lat, 
+      trade_province, trade_city, trade_area, 
+      trade_ip, processing_result_status, processing_result_desc, 
+      order_source, order_from, tmall_order_time, 
+      modify_time, create_time)
+    values (#{orderId,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{tmallUserNick,jdbcType=VARCHAR}, 
+      #{tmallMixUserId,jdbcType=VARCHAR}, #{finId,jdbcType=INTEGER}, #{finCreditId,jdbcType=VARCHAR}, 
+      #{finApplyPayId,jdbcType=VARCHAR}, #{installmentRuleId,jdbcType=VARCHAR}, #{finCreditAmount,jdbcType=VARCHAR}, 
+      #{aliPayAmount,jdbcType=VARCHAR}, #{tmallOrderId,jdbcType=VARCHAR}, #{tmallOrderAmount,jdbcType=VARCHAR}, 
+      #{orderMoney,jdbcType=VARCHAR}, #{tmallOrderStatus,jdbcType=INTEGER}, #{sellerNick,jdbcType=VARCHAR}, 
+      #{tmallItemId,jdbcType=VARCHAR}, #{tmallSkuId,jdbcType=VARCHAR}, #{packageContract,jdbcType=INTEGER}, 
+      #{monthlyFee,jdbcType=INTEGER}, #{contractPeriod,jdbcType=INTEGER}, #{packageName,jdbcType=VARCHAR}, 
+      #{packageDetails,jdbcType=VARCHAR}, #{pckToMobile,jdbcType=VARCHAR}, #{pckToName,jdbcType=VARCHAR}, 
+      #{pckToIdcardNum,jdbcType=VARCHAR}, #{receiverName,jdbcType=VARCHAR}, #{receiverMobile,jdbcType=VARCHAR}, 
+      #{receiverAddress,jdbcType=VARCHAR}, #{tradeLng,jdbcType=VARCHAR}, #{tradeLat,jdbcType=VARCHAR}, 
+      #{tradeProvince,jdbcType=VARCHAR}, #{tradeCity,jdbcType=VARCHAR}, #{tradeArea,jdbcType=VARCHAR}, 
+      #{tradeIp,jdbcType=VARCHAR}, #{processingResultStatus,jdbcType=INTEGER}, #{processingResultDesc,jdbcType=VARCHAR}, 
+      #{orderSource,jdbcType=INTEGER}, #{orderFrom,jdbcType=VARCHAR}, #{tmallOrderTime,jdbcType=TIMESTAMP}, 
+      #{modifyTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.jf180.finance.dao.fin.model.CreditOrder" >
+    insert into credit_order
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="orderId != null" >
+        order_id,
+      </if>
+      <if test="phone != null" >
+        phone,
+      </if>
+      <if test="tmallUserNick != null" >
+        tmall_user_nick,
+      </if>
+      <if test="tmallMixUserId != null" >
+        tmall_mix_user_id,
+      </if>
+      <if test="finId != null" >
+        fin_id,
+      </if>
+      <if test="finCreditId != null" >
+        fin_credit_id,
+      </if>
+      <if test="finApplyPayId != null" >
+        fin_apply_pay_id,
+      </if>
+      <if test="installmentRuleId != null" >
+        installment_rule_id,
+      </if>
+      <if test="finCreditAmount != null" >
+        fin_credit_amount,
+      </if>
+      <if test="aliPayAmount != null" >
+        ali_pay_amount,
+      </if>
+      <if test="tmallOrderId != null" >
+        tmall_order_id,
+      </if>
+      <if test="tmallOrderAmount != null" >
+        tmall_order_amount,
+      </if>
+      <if test="orderMoney != null" >
+        order_money,
+      </if>
+      <if test="tmallOrderStatus != null" >
+        tmall_order_status,
+      </if>
+      <if test="sellerNick != null" >
+        seller_nick,
+      </if>
+      <if test="tmallItemId != null" >
+        tmall_item_id,
+      </if>
+      <if test="tmallSkuId != null" >
+        tmall_sku_id,
+      </if>
+      <if test="packageContract != null" >
+        package_contract,
+      </if>
+      <if test="monthlyFee != null" >
+        monthly_fee,
+      </if>
+      <if test="contractPeriod != null" >
+        contract_period,
+      </if>
+      <if test="packageName != null" >
+        package_name,
+      </if>
+      <if test="packageDetails != null" >
+        package_details,
+      </if>
+      <if test="pckToMobile != null" >
+        pck_to_mobile,
+      </if>
+      <if test="pckToName != null" >
+        pck_to_name,
+      </if>
+      <if test="pckToIdcardNum != null" >
+        pck_to_idcard_num,
+      </if>
+      <if test="receiverName != null" >
+        receiver_name,
+      </if>
+      <if test="receiverMobile != null" >
+        receiver_mobile,
+      </if>
+      <if test="receiverAddress != null" >
+        receiver_address,
+      </if>
+      <if test="tradeLng != null" >
+        trade_lng,
+      </if>
+      <if test="tradeLat != null" >
+        trade_lat,
+      </if>
+      <if test="tradeProvince != null" >
+        trade_province,
+      </if>
+      <if test="tradeCity != null" >
+        trade_city,
+      </if>
+      <if test="tradeArea != null" >
+        trade_area,
+      </if>
+      <if test="tradeIp != null" >
+        trade_ip,
+      </if>
+      <if test="processingResultStatus != null" >
+        processing_result_status,
+      </if>
+      <if test="processingResultDesc != null" >
+        processing_result_desc,
+      </if>
+      <if test="orderSource != null" >
+        order_source,
+      </if>
+      <if test="orderFrom != null" >
+        order_from,
+      </if>
+      <if test="tmallOrderTime != null" >
+        tmall_order_time,
+      </if>
+      <if test="modifyTime != null" >
+        modify_time,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="orderId != null" >
+        #{orderId,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallUserNick != null" >
+        #{tmallUserNick,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallMixUserId != null" >
+        #{tmallMixUserId,jdbcType=VARCHAR},
+      </if>
+      <if test="finId != null" >
+        #{finId,jdbcType=INTEGER},
+      </if>
+      <if test="finCreditId != null" >
+        #{finCreditId,jdbcType=VARCHAR},
+      </if>
+      <if test="finApplyPayId != null" >
+        #{finApplyPayId,jdbcType=VARCHAR},
+      </if>
+      <if test="installmentRuleId != null" >
+        #{installmentRuleId,jdbcType=VARCHAR},
+      </if>
+      <if test="finCreditAmount != null" >
+        #{finCreditAmount,jdbcType=VARCHAR},
+      </if>
+      <if test="aliPayAmount != null" >
+        #{aliPayAmount,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallOrderId != null" >
+        #{tmallOrderId,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallOrderAmount != null" >
+        #{tmallOrderAmount,jdbcType=VARCHAR},
+      </if>
+      <if test="orderMoney != null" >
+        #{orderMoney,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallOrderStatus != null" >
+        #{tmallOrderStatus,jdbcType=INTEGER},
+      </if>
+      <if test="sellerNick != null" >
+        #{sellerNick,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallItemId != null" >
+        #{tmallItemId,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallSkuId != null" >
+        #{tmallSkuId,jdbcType=VARCHAR},
+      </if>
+      <if test="packageContract != null" >
+        #{packageContract,jdbcType=INTEGER},
+      </if>
+      <if test="monthlyFee != null" >
+        #{monthlyFee,jdbcType=INTEGER},
+      </if>
+      <if test="contractPeriod != null" >
+        #{contractPeriod,jdbcType=INTEGER},
+      </if>
+      <if test="packageName != null" >
+        #{packageName,jdbcType=VARCHAR},
+      </if>
+      <if test="packageDetails != null" >
+        #{packageDetails,jdbcType=VARCHAR},
+      </if>
+      <if test="pckToMobile != null" >
+        #{pckToMobile,jdbcType=VARCHAR},
+      </if>
+      <if test="pckToName != null" >
+        #{pckToName,jdbcType=VARCHAR},
+      </if>
+      <if test="pckToIdcardNum != null" >
+        #{pckToIdcardNum,jdbcType=VARCHAR},
+      </if>
+      <if test="receiverName != null" >
+        #{receiverName,jdbcType=VARCHAR},
+      </if>
+      <if test="receiverMobile != null" >
+        #{receiverMobile,jdbcType=VARCHAR},
+      </if>
+      <if test="receiverAddress != null" >
+        #{receiverAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeLng != null" >
+        #{tradeLng,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeLat != null" >
+        #{tradeLat,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeProvince != null" >
+        #{tradeProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeCity != null" >
+        #{tradeCity,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeArea != null" >
+        #{tradeArea,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeIp != null" >
+        #{tradeIp,jdbcType=VARCHAR},
+      </if>
+      <if test="processingResultStatus != null" >
+        #{processingResultStatus,jdbcType=INTEGER},
+      </if>
+      <if test="processingResultDesc != null" >
+        #{processingResultDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="orderSource != null" >
+        #{orderSource,jdbcType=INTEGER},
+      </if>
+      <if test="orderFrom != null" >
+        #{orderFrom,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallOrderTime != null" >
+        #{tmallOrderTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="cn.jf180.finance.dao.fin.model.CreditOrderExample" resultType="java.lang.Integer" >
+    select count(*) from credit_order
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update credit_order
+    <set >
+      <if test="record.orderId != null" >
+        order_id = #{record.orderId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.phone != null" >
+        phone = #{record.phone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tmallUserNick != null" >
+        tmall_user_nick = #{record.tmallUserNick,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tmallMixUserId != null" >
+        tmall_mix_user_id = #{record.tmallMixUserId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.finId != null" >
+        fin_id = #{record.finId,jdbcType=INTEGER},
+      </if>
+      <if test="record.finCreditId != null" >
+        fin_credit_id = #{record.finCreditId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.finApplyPayId != null" >
+        fin_apply_pay_id = #{record.finApplyPayId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.installmentRuleId != null" >
+        installment_rule_id = #{record.installmentRuleId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.finCreditAmount != null" >
+        fin_credit_amount = #{record.finCreditAmount,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aliPayAmount != null" >
+        ali_pay_amount = #{record.aliPayAmount,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tmallOrderId != null" >
+        tmall_order_id = #{record.tmallOrderId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tmallOrderAmount != null" >
+        tmall_order_amount = #{record.tmallOrderAmount,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orderMoney != null" >
+        order_money = #{record.orderMoney,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tmallOrderStatus != null" >
+        tmall_order_status = #{record.tmallOrderStatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.sellerNick != null" >
+        seller_nick = #{record.sellerNick,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tmallItemId != null" >
+        tmall_item_id = #{record.tmallItemId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tmallSkuId != null" >
+        tmall_sku_id = #{record.tmallSkuId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.packageContract != null" >
+        package_contract = #{record.packageContract,jdbcType=INTEGER},
+      </if>
+      <if test="record.monthlyFee != null" >
+        monthly_fee = #{record.monthlyFee,jdbcType=INTEGER},
+      </if>
+      <if test="record.contractPeriod != null" >
+        contract_period = #{record.contractPeriod,jdbcType=INTEGER},
+      </if>
+      <if test="record.packageName != null" >
+        package_name = #{record.packageName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.packageDetails != null" >
+        package_details = #{record.packageDetails,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pckToMobile != null" >
+        pck_to_mobile = #{record.pckToMobile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pckToName != null" >
+        pck_to_name = #{record.pckToName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pckToIdcardNum != null" >
+        pck_to_idcard_num = #{record.pckToIdcardNum,jdbcType=VARCHAR},
+      </if>
+      <if test="record.receiverName != null" >
+        receiver_name = #{record.receiverName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.receiverMobile != null" >
+        receiver_mobile = #{record.receiverMobile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.receiverAddress != null" >
+        receiver_address = #{record.receiverAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tradeLng != null" >
+        trade_lng = #{record.tradeLng,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tradeLat != null" >
+        trade_lat = #{record.tradeLat,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tradeProvince != null" >
+        trade_province = #{record.tradeProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tradeCity != null" >
+        trade_city = #{record.tradeCity,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tradeArea != null" >
+        trade_area = #{record.tradeArea,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tradeIp != null" >
+        trade_ip = #{record.tradeIp,jdbcType=VARCHAR},
+      </if>
+      <if test="record.processingResultStatus != null" >
+        processing_result_status = #{record.processingResultStatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.processingResultDesc != null" >
+        processing_result_desc = #{record.processingResultDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orderSource != null" >
+        order_source = #{record.orderSource,jdbcType=INTEGER},
+      </if>
+      <if test="record.orderFrom != null" >
+        order_from = #{record.orderFrom,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tmallOrderTime != null" >
+        tmall_order_time = #{record.tmallOrderTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.modifyTime != null" >
+        modify_time = #{record.modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createTime != null" >
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update credit_order
+    set order_id = #{record.orderId,jdbcType=VARCHAR},
+      phone = #{record.phone,jdbcType=VARCHAR},
+      tmall_user_nick = #{record.tmallUserNick,jdbcType=VARCHAR},
+      tmall_mix_user_id = #{record.tmallMixUserId,jdbcType=VARCHAR},
+      fin_id = #{record.finId,jdbcType=INTEGER},
+      fin_credit_id = #{record.finCreditId,jdbcType=VARCHAR},
+      fin_apply_pay_id = #{record.finApplyPayId,jdbcType=VARCHAR},
+      installment_rule_id = #{record.installmentRuleId,jdbcType=VARCHAR},
+      fin_credit_amount = #{record.finCreditAmount,jdbcType=VARCHAR},
+      ali_pay_amount = #{record.aliPayAmount,jdbcType=VARCHAR},
+      tmall_order_id = #{record.tmallOrderId,jdbcType=VARCHAR},
+      tmall_order_amount = #{record.tmallOrderAmount,jdbcType=VARCHAR},
+      order_money = #{record.orderMoney,jdbcType=VARCHAR},
+      tmall_order_status = #{record.tmallOrderStatus,jdbcType=INTEGER},
+      seller_nick = #{record.sellerNick,jdbcType=VARCHAR},
+      tmall_item_id = #{record.tmallItemId,jdbcType=VARCHAR},
+      tmall_sku_id = #{record.tmallSkuId,jdbcType=VARCHAR},
+      package_contract = #{record.packageContract,jdbcType=INTEGER},
+      monthly_fee = #{record.monthlyFee,jdbcType=INTEGER},
+      contract_period = #{record.contractPeriod,jdbcType=INTEGER},
+      package_name = #{record.packageName,jdbcType=VARCHAR},
+      package_details = #{record.packageDetails,jdbcType=VARCHAR},
+      pck_to_mobile = #{record.pckToMobile,jdbcType=VARCHAR},
+      pck_to_name = #{record.pckToName,jdbcType=VARCHAR},
+      pck_to_idcard_num = #{record.pckToIdcardNum,jdbcType=VARCHAR},
+      receiver_name = #{record.receiverName,jdbcType=VARCHAR},
+      receiver_mobile = #{record.receiverMobile,jdbcType=VARCHAR},
+      receiver_address = #{record.receiverAddress,jdbcType=VARCHAR},
+      trade_lng = #{record.tradeLng,jdbcType=VARCHAR},
+      trade_lat = #{record.tradeLat,jdbcType=VARCHAR},
+      trade_province = #{record.tradeProvince,jdbcType=VARCHAR},
+      trade_city = #{record.tradeCity,jdbcType=VARCHAR},
+      trade_area = #{record.tradeArea,jdbcType=VARCHAR},
+      trade_ip = #{record.tradeIp,jdbcType=VARCHAR},
+      processing_result_status = #{record.processingResultStatus,jdbcType=INTEGER},
+      processing_result_desc = #{record.processingResultDesc,jdbcType=VARCHAR},
+      order_source = #{record.orderSource,jdbcType=INTEGER},
+      order_from = #{record.orderFrom,jdbcType=VARCHAR},
+      tmall_order_time = #{record.tmallOrderTime,jdbcType=TIMESTAMP},
+      modify_time = #{record.modifyTime,jdbcType=TIMESTAMP},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.jf180.finance.dao.fin.model.CreditOrder" >
+    update credit_order
+    <set >
+      <if test="phone != null" >
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallUserNick != null" >
+        tmall_user_nick = #{tmallUserNick,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallMixUserId != null" >
+        tmall_mix_user_id = #{tmallMixUserId,jdbcType=VARCHAR},
+      </if>
+      <if test="finId != null" >
+        fin_id = #{finId,jdbcType=INTEGER},
+      </if>
+      <if test="finCreditId != null" >
+        fin_credit_id = #{finCreditId,jdbcType=VARCHAR},
+      </if>
+      <if test="finApplyPayId != null" >
+        fin_apply_pay_id = #{finApplyPayId,jdbcType=VARCHAR},
+      </if>
+      <if test="installmentRuleId != null" >
+        installment_rule_id = #{installmentRuleId,jdbcType=VARCHAR},
+      </if>
+      <if test="finCreditAmount != null" >
+        fin_credit_amount = #{finCreditAmount,jdbcType=VARCHAR},
+      </if>
+      <if test="aliPayAmount != null" >
+        ali_pay_amount = #{aliPayAmount,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallOrderId != null" >
+        tmall_order_id = #{tmallOrderId,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallOrderAmount != null" >
+        tmall_order_amount = #{tmallOrderAmount,jdbcType=VARCHAR},
+      </if>
+      <if test="orderMoney != null" >
+        order_money = #{orderMoney,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallOrderStatus != null" >
+        tmall_order_status = #{tmallOrderStatus,jdbcType=INTEGER},
+      </if>
+      <if test="sellerNick != null" >
+        seller_nick = #{sellerNick,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallItemId != null" >
+        tmall_item_id = #{tmallItemId,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallSkuId != null" >
+        tmall_sku_id = #{tmallSkuId,jdbcType=VARCHAR},
+      </if>
+      <if test="packageContract != null" >
+        package_contract = #{packageContract,jdbcType=INTEGER},
+      </if>
+      <if test="monthlyFee != null" >
+        monthly_fee = #{monthlyFee,jdbcType=INTEGER},
+      </if>
+      <if test="contractPeriod != null" >
+        contract_period = #{contractPeriod,jdbcType=INTEGER},
+      </if>
+      <if test="packageName != null" >
+        package_name = #{packageName,jdbcType=VARCHAR},
+      </if>
+      <if test="packageDetails != null" >
+        package_details = #{packageDetails,jdbcType=VARCHAR},
+      </if>
+      <if test="pckToMobile != null" >
+        pck_to_mobile = #{pckToMobile,jdbcType=VARCHAR},
+      </if>
+      <if test="pckToName != null" >
+        pck_to_name = #{pckToName,jdbcType=VARCHAR},
+      </if>
+      <if test="pckToIdcardNum != null" >
+        pck_to_idcard_num = #{pckToIdcardNum,jdbcType=VARCHAR},
+      </if>
+      <if test="receiverName != null" >
+        receiver_name = #{receiverName,jdbcType=VARCHAR},
+      </if>
+      <if test="receiverMobile != null" >
+        receiver_mobile = #{receiverMobile,jdbcType=VARCHAR},
+      </if>
+      <if test="receiverAddress != null" >
+        receiver_address = #{receiverAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeLng != null" >
+        trade_lng = #{tradeLng,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeLat != null" >
+        trade_lat = #{tradeLat,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeProvince != null" >
+        trade_province = #{tradeProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeCity != null" >
+        trade_city = #{tradeCity,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeArea != null" >
+        trade_area = #{tradeArea,jdbcType=VARCHAR},
+      </if>
+      <if test="tradeIp != null" >
+        trade_ip = #{tradeIp,jdbcType=VARCHAR},
+      </if>
+      <if test="processingResultStatus != null" >
+        processing_result_status = #{processingResultStatus,jdbcType=INTEGER},
+      </if>
+      <if test="processingResultDesc != null" >
+        processing_result_desc = #{processingResultDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="orderSource != null" >
+        order_source = #{orderSource,jdbcType=INTEGER},
+      </if>
+      <if test="orderFrom != null" >
+        order_from = #{orderFrom,jdbcType=VARCHAR},
+      </if>
+      <if test="tmallOrderTime != null" >
+        tmall_order_time = #{tmallOrderTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null" >
+        modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where order_id = #{orderId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.jf180.finance.dao.fin.model.CreditOrder" >
+    update credit_order
+    set phone = #{phone,jdbcType=VARCHAR},
+      tmall_user_nick = #{tmallUserNick,jdbcType=VARCHAR},
+      tmall_mix_user_id = #{tmallMixUserId,jdbcType=VARCHAR},
+      fin_id = #{finId,jdbcType=INTEGER},
+      fin_credit_id = #{finCreditId,jdbcType=VARCHAR},
+      fin_apply_pay_id = #{finApplyPayId,jdbcType=VARCHAR},
+      installment_rule_id = #{installmentRuleId,jdbcType=VARCHAR},
+      fin_credit_amount = #{finCreditAmount,jdbcType=VARCHAR},
+      ali_pay_amount = #{aliPayAmount,jdbcType=VARCHAR},
+      tmall_order_id = #{tmallOrderId,jdbcType=VARCHAR},
+      tmall_order_amount = #{tmallOrderAmount,jdbcType=VARCHAR},
+      order_money = #{orderMoney,jdbcType=VARCHAR},
+      tmall_order_status = #{tmallOrderStatus,jdbcType=INTEGER},
+      seller_nick = #{sellerNick,jdbcType=VARCHAR},
+      tmall_item_id = #{tmallItemId,jdbcType=VARCHAR},
+      tmall_sku_id = #{tmallSkuId,jdbcType=VARCHAR},
+      package_contract = #{packageContract,jdbcType=INTEGER},
+      monthly_fee = #{monthlyFee,jdbcType=INTEGER},
+      contract_period = #{contractPeriod,jdbcType=INTEGER},
+      package_name = #{packageName,jdbcType=VARCHAR},
+      package_details = #{packageDetails,jdbcType=VARCHAR},
+      pck_to_mobile = #{pckToMobile,jdbcType=VARCHAR},
+      pck_to_name = #{pckToName,jdbcType=VARCHAR},
+      pck_to_idcard_num = #{pckToIdcardNum,jdbcType=VARCHAR},
+      receiver_name = #{receiverName,jdbcType=VARCHAR},
+      receiver_mobile = #{receiverMobile,jdbcType=VARCHAR},
+      receiver_address = #{receiverAddress,jdbcType=VARCHAR},
+      trade_lng = #{tradeLng,jdbcType=VARCHAR},
+      trade_lat = #{tradeLat,jdbcType=VARCHAR},
+      trade_province = #{tradeProvince,jdbcType=VARCHAR},
+      trade_city = #{tradeCity,jdbcType=VARCHAR},
+      trade_area = #{tradeArea,jdbcType=VARCHAR},
+      trade_ip = #{tradeIp,jdbcType=VARCHAR},
+      processing_result_status = #{processingResultStatus,jdbcType=INTEGER},
+      processing_result_desc = #{processingResultDesc,jdbcType=VARCHAR},
+      order_source = #{orderSource,jdbcType=INTEGER},
+      order_from = #{orderFrom,jdbcType=VARCHAR},
+      tmall_order_time = #{tmallOrderTime,jdbcType=TIMESTAMP},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where order_id = #{orderId,jdbcType=VARCHAR}
+  </update>
+</mapper>
