@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface BankCardMapper {
-    int countByExample(BankCardExample example);
+    long countByExample(BankCardExample example);
 
     int deleteByExample(BankCardExample example);
 

@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 public class CreateJava {
 	public static void main(String[] arg) {
 		try {
-			FileInputStream in = new FileInputStream("g:/test.docx");//载入文档
+			FileInputStream in = new FileInputStream("g:/test2.docx");//载入文档
 			XWPFDocument document = new XWPFDocument(in);
 			List<XWPFTable> tables = document.getTables();
 			for (XWPFComment xwpfComment : document.getComments()) {
@@ -185,7 +185,7 @@ class JavaClass {
 				data +
 				"}";
 		System.out.println(javaStr);
-		String path = "C:\\Users\\Administrator\\Desktop\\java\\";
+		String path = "C:\\Users\\Administrator\\Desktop\\java2\\";
 		BufferedWriter writer = new BufferedWriter(new FileWriter(path + name + ".java"));
 		writer.write(javaStr);
 		writer.flush();
@@ -251,9 +251,9 @@ class JavaClass {
 						"\t@Override\n" +
 						"\tpublic " + resp + " " + coreName + "(" + name + " req) {\n" +
 						"\t\t" + resp + " respObj = new " + resp + "();\n" +
-						"\t\ttry {\n" +dataStr+"\n"+
+						"\t\ttry {\n" +dataStr+
 						"\t\t\t"+bizStr+
-						"\t\t\tString urlParams = paramsWithSign(BqxdMethodEnum.SMS_VERIFY.method);\n" +
+						"String urlParams = paramsWithSign(BqxdMethodEnum.SMS_VERIFY.method);\n" +
 						"\t\t\tString url = reqUrl + \"/apis/jifen/verifyMessage?\" + urlParams;\n" +
 						"\t\t\tlog.debug(\"----->BqxdApi**url:{}\", url);\n" +
 						"\t\t\t//\n" +
@@ -273,7 +273,7 @@ class JavaClass {
 						"\n";
 		System.out.println(bizStr+"================================================");
 		System.out.println(serviceStr);
-		String path = "C:\\Users\\Administrator\\Desktop\\service\\";
+		String path = "C:\\Users\\Administrator\\Desktop\\service2\\";
 		BufferedWriter writer = new BufferedWriter(new FileWriter(path + "Api" + coreName + "Service" + ".java"));
 		writer.write(serviceStr);
 		writer.flush();

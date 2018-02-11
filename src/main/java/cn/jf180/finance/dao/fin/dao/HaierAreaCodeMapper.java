@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface HaierAreaCodeMapper {
-    int countByExample(HaierAreaCodeExample example);
+    long countByExample(HaierAreaCodeExample example);
 
     int deleteByExample(HaierAreaCodeExample example);
 

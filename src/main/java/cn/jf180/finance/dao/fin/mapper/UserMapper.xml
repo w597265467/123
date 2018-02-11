@@ -1,63 +1,64 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cn.jf180.finance.dao.fin.dao.UserMapper" >
-  <resultMap id="BaseResultMap" type="cn.jf180.finance.dao.fin.model.User" >
-    <id column="id" property="id" jdbcType="BIGINT" />
-    <result column="phone" property="phone" jdbcType="VARCHAR" />
-    <result column="name" property="name" jdbcType="VARCHAR" />
-    <result column="idcard_no" property="idcardNo" jdbcType="VARCHAR" />
-    <result column="idcard_start_date" property="idcardStartDate" jdbcType="VARCHAR" />
-    <result column="idcard_end_date" property="idcardEndDate" jdbcType="VARCHAR" />
-    <result column="idcard_issue" property="idcardIssue" jdbcType="VARCHAR" />
-    <result column="idcard_address" property="idcardAddress" jdbcType="VARCHAR" />
-    <result column="face_idcard_img" property="faceIdcardImg" jdbcType="VARCHAR" />
-    <result column="back_idcard_img" property="backIdcardImg" jdbcType="VARCHAR" />
-    <result column="face_recognition_img" property="faceRecognitionImg" jdbcType="VARCHAR" />
-    <result column="face_recognition_sco" property="faceRecognitionSco" jdbcType="VARCHAR" />
-    <result column="face_recognition_organization" property="faceRecognitionOrganization" jdbcType="VARCHAR" />
-    <result column="apply_lng" property="applyLng" jdbcType="VARCHAR" />
-    <result column="apply_lat" property="applyLat" jdbcType="VARCHAR" />
-    <result column="apply_province" property="applyProvince" jdbcType="VARCHAR" />
-    <result column="apply_city" property="applyCity" jdbcType="VARCHAR" />
-    <result column="apply_area" property="applyArea" jdbcType="VARCHAR" />
-    <result column="apply_ip" property="applyIp" jdbcType="VARCHAR" />
-    <result column="status" property="status" jdbcType="INTEGER" />
-    <result column="op_verify_status" property="opVerifyStatus" jdbcType="INTEGER" />
-    <result column="op_sum_sco" property="opSumSco" jdbcType="INTEGER" />
-    <result column="op_credit_notes_sco" property="opCreditNotesSco" jdbcType="INTEGER" />
-    <result column="op_identity_sco" property="opIdentitySco" jdbcType="INTEGER" />
-    <result column="op_consume_sco" property="opConsumeSco" jdbcType="INTEGER" />
-    <result column="op_action_pre_sco" property="opActionPreSco" jdbcType="INTEGER" />
-    <result column="tmall_user_name" property="tmallUserName" jdbcType="VARCHAR" />
-    <result column="tmall_mix_userid" property="tmallMixUserid" jdbcType="VARCHAR" />
-    <result column="tmall_verify_status" property="tmallVerifyStatus" jdbcType="INTEGER" />
-    <result column="fin_id" property="finId" jdbcType="INTEGER" />
-    <result column="fin_name" property="finName" jdbcType="VARCHAR" />
-    <result column="fin_credit_id" property="finCreditId" jdbcType="VARCHAR" />
-    <result column="fin_credit_status" property="finCreditStatus" jdbcType="INTEGER" />
-    <result column="fin_credit_time" property="finCreditTime" jdbcType="TIMESTAMP" />
-    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
-    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jf180.finance.dao.fin.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="cn.jf180.finance.dao.fin.model.User">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="customer_id" jdbcType="VARCHAR" property="customerId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="idcard_no" jdbcType="VARCHAR" property="idcardNo" />
+    <result column="idcard_start_date" jdbcType="VARCHAR" property="idcardStartDate" />
+    <result column="idcard_end_date" jdbcType="VARCHAR" property="idcardEndDate" />
+    <result column="idcard_issue" jdbcType="VARCHAR" property="idcardIssue" />
+    <result column="idcard_address" jdbcType="VARCHAR" property="idcardAddress" />
+    <result column="face_idcard_img" jdbcType="VARCHAR" property="faceIdcardImg" />
+    <result column="back_idcard_img" jdbcType="VARCHAR" property="backIdcardImg" />
+    <result column="face_recognition_img" jdbcType="VARCHAR" property="faceRecognitionImg" />
+    <result column="face_recognition_sco" jdbcType="VARCHAR" property="faceRecognitionSco" />
+    <result column="face_recognition_organization" jdbcType="VARCHAR" property="faceRecognitionOrganization" />
+    <result column="apply_lng" jdbcType="VARCHAR" property="applyLng" />
+    <result column="apply_lat" jdbcType="VARCHAR" property="applyLat" />
+    <result column="apply_province" jdbcType="VARCHAR" property="applyProvince" />
+    <result column="apply_city" jdbcType="VARCHAR" property="applyCity" />
+    <result column="apply_area" jdbcType="VARCHAR" property="applyArea" />
+    <result column="apply_ip" jdbcType="VARCHAR" property="applyIp" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="op_verify_status" jdbcType="INTEGER" property="opVerifyStatus" />
+    <result column="op_sum_sco" jdbcType="INTEGER" property="opSumSco" />
+    <result column="op_credit_notes_sco" jdbcType="INTEGER" property="opCreditNotesSco" />
+    <result column="op_identity_sco" jdbcType="INTEGER" property="opIdentitySco" />
+    <result column="op_consume_sco" jdbcType="INTEGER" property="opConsumeSco" />
+    <result column="op_action_pre_sco" jdbcType="INTEGER" property="opActionPreSco" />
+    <result column="tmall_user_name" jdbcType="VARCHAR" property="tmallUserName" />
+    <result column="tmall_mix_userid" jdbcType="VARCHAR" property="tmallMixUserid" />
+    <result column="tmall_verify_status" jdbcType="INTEGER" property="tmallVerifyStatus" />
+    <result column="fin_id" jdbcType="INTEGER" property="finId" />
+    <result column="fin_name" jdbcType="VARCHAR" property="finName" />
+    <result column="fin_credit_id" jdbcType="VARCHAR" property="finCreditId" />
+    <result column="fin_credit_status" jdbcType="INTEGER" property="finCreditStatus" />
+    <result column="fin_credit_time" jdbcType="TIMESTAMP" property="finCreditTime" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
   </resultMap>
-  <sql id="Example_Where_Clause" >
-    <where >
-      <foreach collection="oredCriteria" item="criteria" separator="or" >
-        <if test="criteria.valid" >
-          <trim prefix="(" suffix=")" prefixOverrides="and" >
-            <foreach collection="criteria.criteria" item="criterion" >
-              <choose >
-                <when test="criterion.noValue" >
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
                   and ${criterion.condition}
                 </when>
-                <when test="criterion.singleValue" >
+                <when test="criterion.singleValue">
                   and ${criterion.condition} #{criterion.value}
                 </when>
-                <when test="criterion.betweenValue" >
+                <when test="criterion.betweenValue">
                   and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
                 </when>
-                <when test="criterion.listValue" >
+                <when test="criterion.listValue">
                   and ${criterion.condition}
-                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
                     #{listItem}
                   </foreach>
                 </when>
@@ -68,25 +69,25 @@
       </foreach>
     </where>
   </sql>
-  <sql id="Update_By_Example_Where_Clause" >
-    <where >
-      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
-        <if test="criteria.valid" >
-          <trim prefix="(" suffix=")" prefixOverrides="and" >
-            <foreach collection="criteria.criteria" item="criterion" >
-              <choose >
-                <when test="criterion.noValue" >
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
                   and ${criterion.condition}
                 </when>
-                <when test="criterion.singleValue" >
+                <when test="criterion.singleValue">
                   and ${criterion.condition} #{criterion.value}
                 </when>
-                <when test="criterion.betweenValue" >
+                <when test="criterion.betweenValue">
                   and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
                 </when>
-                <when test="criterion.listValue" >
+                <when test="criterion.listValue">
                   and ${criterion.condition}
-                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
                     #{listItem}
                   </foreach>
                 </when>
@@ -97,421 +98,432 @@
       </foreach>
     </where>
   </sql>
-  <sql id="Base_Column_List" >
-    id, phone, name, idcard_no, idcard_start_date, idcard_end_date, idcard_issue, idcard_address, 
-    face_idcard_img, back_idcard_img, face_recognition_img, face_recognition_sco, face_recognition_organization, 
-    apply_lng, apply_lat, apply_province, apply_city, apply_area, apply_ip, status, op_verify_status, 
-    op_sum_sco, op_credit_notes_sco, op_identity_sco, op_consume_sco, op_action_pre_sco, 
-    tmall_user_name, tmall_mix_userid, tmall_verify_status, fin_id, fin_name, fin_credit_id, 
-    fin_credit_status, fin_credit_time, modify_time, create_time
+  <sql id="Base_Column_List">
+    id, phone, customer_id, name, idcard_no, idcard_start_date, idcard_end_date, idcard_issue, 
+    idcard_address, face_idcard_img, back_idcard_img, face_recognition_img, face_recognition_sco, 
+    face_recognition_organization, apply_lng, apply_lat, apply_province, apply_city, 
+    apply_area, apply_ip, status, op_verify_status, op_sum_sco, op_credit_notes_sco, 
+    op_identity_sco, op_consume_sco, op_action_pre_sco, tmall_user_name, tmall_mix_userid, 
+    tmall_verify_status, fin_id, fin_name, fin_credit_id, fin_credit_status, fin_credit_time, 
+    modify_time, create_time
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="cn.jf180.finance.dao.fin.model.UserExample" >
+  <select id="selectByExample" parameterType="cn.jf180.finance.dao.fin.model.UserExample" resultMap="BaseResultMap">
     select
-    <if test="distinct" >
+    <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
     from user
-    <if test="_parameter != null" >
+    <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
-    <if test="orderByClause != null" >
+    <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from user
     where id = #{id,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from user
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="cn.jf180.finance.dao.fin.model.UserExample" >
+  <delete id="deleteByExample" parameterType="cn.jf180.finance.dao.fin.model.UserExample">
     delete from user
-    <if test="_parameter != null" >
+    <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="cn.jf180.finance.dao.fin.model.User" >
-    insert into user (id, phone, name, 
-      idcard_no, idcard_start_date, idcard_end_date, 
-      idcard_issue, idcard_address, face_idcard_img, 
-      back_idcard_img, face_recognition_img, face_recognition_sco, 
-      face_recognition_organization, apply_lng, 
-      apply_lat, apply_province, apply_city, 
-      apply_area, apply_ip, status, 
-      op_verify_status, op_sum_sco, op_credit_notes_sco, 
-      op_identity_sco, op_consume_sco, op_action_pre_sco, 
-      tmall_user_name, tmall_mix_userid, tmall_verify_status, 
-      fin_id, fin_name, fin_credit_id, 
-      fin_credit_status, fin_credit_time, modify_time, 
-      create_time)
-    values (#{id,jdbcType=BIGINT}, #{phone,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
-      #{idcardNo,jdbcType=VARCHAR}, #{idcardStartDate,jdbcType=VARCHAR}, #{idcardEndDate,jdbcType=VARCHAR}, 
-      #{idcardIssue,jdbcType=VARCHAR}, #{idcardAddress,jdbcType=VARCHAR}, #{faceIdcardImg,jdbcType=VARCHAR}, 
-      #{backIdcardImg,jdbcType=VARCHAR}, #{faceRecognitionImg,jdbcType=VARCHAR}, #{faceRecognitionSco,jdbcType=VARCHAR}, 
-      #{faceRecognitionOrganization,jdbcType=VARCHAR}, #{applyLng,jdbcType=VARCHAR}, 
-      #{applyLat,jdbcType=VARCHAR}, #{applyProvince,jdbcType=VARCHAR}, #{applyCity,jdbcType=VARCHAR}, 
-      #{applyArea,jdbcType=VARCHAR}, #{applyIp,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, 
-      #{opVerifyStatus,jdbcType=INTEGER}, #{opSumSco,jdbcType=INTEGER}, #{opCreditNotesSco,jdbcType=INTEGER}, 
-      #{opIdentitySco,jdbcType=INTEGER}, #{opConsumeSco,jdbcType=INTEGER}, #{opActionPreSco,jdbcType=INTEGER}, 
-      #{tmallUserName,jdbcType=VARCHAR}, #{tmallMixUserid,jdbcType=VARCHAR}, #{tmallVerifyStatus,jdbcType=INTEGER}, 
-      #{finId,jdbcType=INTEGER}, #{finName,jdbcType=VARCHAR}, #{finCreditId,jdbcType=VARCHAR}, 
-      #{finCreditStatus,jdbcType=INTEGER}, #{finCreditTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP}, 
-      #{createTime,jdbcType=TIMESTAMP})
+  <insert id="insert" parameterType="cn.jf180.finance.dao.fin.model.User">
+    insert into user (id, phone, customer_id, 
+      name, idcard_no, idcard_start_date, 
+      idcard_end_date, idcard_issue, idcard_address, 
+      face_idcard_img, back_idcard_img, face_recognition_img, 
+      face_recognition_sco, face_recognition_organization, 
+      apply_lng, apply_lat, apply_province, 
+      apply_city, apply_area, apply_ip, 
+      status, op_verify_status, op_sum_sco, 
+      op_credit_notes_sco, op_identity_sco, op_consume_sco, 
+      op_action_pre_sco, tmall_user_name, tmall_mix_userid, 
+      tmall_verify_status, fin_id, fin_name, 
+      fin_credit_id, fin_credit_status, fin_credit_time, 
+      modify_time, create_time)
+    values (#{id,jdbcType=BIGINT}, #{phone,jdbcType=VARCHAR}, #{customerId,jdbcType=VARCHAR}, 
+      #{name,jdbcType=VARCHAR}, #{idcardNo,jdbcType=VARCHAR}, #{idcardStartDate,jdbcType=VARCHAR}, 
+      #{idcardEndDate,jdbcType=VARCHAR}, #{idcardIssue,jdbcType=VARCHAR}, #{idcardAddress,jdbcType=VARCHAR}, 
+      #{faceIdcardImg,jdbcType=VARCHAR}, #{backIdcardImg,jdbcType=VARCHAR}, #{faceRecognitionImg,jdbcType=VARCHAR}, 
+      #{faceRecognitionSco,jdbcType=VARCHAR}, #{faceRecognitionOrganization,jdbcType=VARCHAR}, 
+      #{applyLng,jdbcType=VARCHAR}, #{applyLat,jdbcType=VARCHAR}, #{applyProvince,jdbcType=VARCHAR}, 
+      #{applyCity,jdbcType=VARCHAR}, #{applyArea,jdbcType=VARCHAR}, #{applyIp,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{opVerifyStatus,jdbcType=INTEGER}, #{opSumSco,jdbcType=INTEGER}, 
+      #{opCreditNotesSco,jdbcType=INTEGER}, #{opIdentitySco,jdbcType=INTEGER}, #{opConsumeSco,jdbcType=INTEGER}, 
+      #{opActionPreSco,jdbcType=INTEGER}, #{tmallUserName,jdbcType=VARCHAR}, #{tmallMixUserid,jdbcType=VARCHAR}, 
+      #{tmallVerifyStatus,jdbcType=INTEGER}, #{finId,jdbcType=INTEGER}, #{finName,jdbcType=VARCHAR}, 
+      #{finCreditId,jdbcType=VARCHAR}, #{finCreditStatus,jdbcType=INTEGER}, #{finCreditTime,jdbcType=TIMESTAMP}, 
+      #{modifyTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="cn.jf180.finance.dao.fin.model.User" >
+  <insert id="insertSelective" parameterType="cn.jf180.finance.dao.fin.model.User">
     insert into user
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
         id,
       </if>
-      <if test="phone != null" >
+      <if test="phone != null">
         phone,
       </if>
-      <if test="name != null" >
+      <if test="customerId != null">
+        customer_id,
+      </if>
+      <if test="name != null">
         name,
       </if>
-      <if test="idcardNo != null" >
+      <if test="idcardNo != null">
         idcard_no,
       </if>
-      <if test="idcardStartDate != null" >
+      <if test="idcardStartDate != null">
         idcard_start_date,
       </if>
-      <if test="idcardEndDate != null" >
+      <if test="idcardEndDate != null">
         idcard_end_date,
       </if>
-      <if test="idcardIssue != null" >
+      <if test="idcardIssue != null">
         idcard_issue,
       </if>
-      <if test="idcardAddress != null" >
+      <if test="idcardAddress != null">
         idcard_address,
       </if>
-      <if test="faceIdcardImg != null" >
+      <if test="faceIdcardImg != null">
         face_idcard_img,
       </if>
-      <if test="backIdcardImg != null" >
+      <if test="backIdcardImg != null">
         back_idcard_img,
       </if>
-      <if test="faceRecognitionImg != null" >
+      <if test="faceRecognitionImg != null">
         face_recognition_img,
       </if>
-      <if test="faceRecognitionSco != null" >
+      <if test="faceRecognitionSco != null">
         face_recognition_sco,
       </if>
-      <if test="faceRecognitionOrganization != null" >
+      <if test="faceRecognitionOrganization != null">
         face_recognition_organization,
       </if>
-      <if test="applyLng != null" >
+      <if test="applyLng != null">
         apply_lng,
       </if>
-      <if test="applyLat != null" >
+      <if test="applyLat != null">
         apply_lat,
       </if>
-      <if test="applyProvince != null" >
+      <if test="applyProvince != null">
         apply_province,
       </if>
-      <if test="applyCity != null" >
+      <if test="applyCity != null">
         apply_city,
       </if>
-      <if test="applyArea != null" >
+      <if test="applyArea != null">
         apply_area,
       </if>
-      <if test="applyIp != null" >
+      <if test="applyIp != null">
         apply_ip,
       </if>
-      <if test="status != null" >
+      <if test="status != null">
         status,
       </if>
-      <if test="opVerifyStatus != null" >
+      <if test="opVerifyStatus != null">
         op_verify_status,
       </if>
-      <if test="opSumSco != null" >
+      <if test="opSumSco != null">
         op_sum_sco,
       </if>
-      <if test="opCreditNotesSco != null" >
+      <if test="opCreditNotesSco != null">
         op_credit_notes_sco,
       </if>
-      <if test="opIdentitySco != null" >
+      <if test="opIdentitySco != null">
         op_identity_sco,
       </if>
-      <if test="opConsumeSco != null" >
+      <if test="opConsumeSco != null">
         op_consume_sco,
       </if>
-      <if test="opActionPreSco != null" >
+      <if test="opActionPreSco != null">
         op_action_pre_sco,
       </if>
-      <if test="tmallUserName != null" >
+      <if test="tmallUserName != null">
         tmall_user_name,
       </if>
-      <if test="tmallMixUserid != null" >
+      <if test="tmallMixUserid != null">
         tmall_mix_userid,
       </if>
-      <if test="tmallVerifyStatus != null" >
+      <if test="tmallVerifyStatus != null">
         tmall_verify_status,
       </if>
-      <if test="finId != null" >
+      <if test="finId != null">
         fin_id,
       </if>
-      <if test="finName != null" >
+      <if test="finName != null">
         fin_name,
       </if>
-      <if test="finCreditId != null" >
+      <if test="finCreditId != null">
         fin_credit_id,
       </if>
-      <if test="finCreditStatus != null" >
+      <if test="finCreditStatus != null">
         fin_credit_status,
       </if>
-      <if test="finCreditTime != null" >
+      <if test="finCreditTime != null">
         fin_credit_time,
       </if>
-      <if test="modifyTime != null" >
+      <if test="modifyTime != null">
         modify_time,
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         create_time,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
         #{id,jdbcType=BIGINT},
       </if>
-      <if test="phone != null" >
+      <if test="phone != null">
         #{phone,jdbcType=VARCHAR},
       </if>
-      <if test="name != null" >
+      <if test="customerId != null">
+        #{customerId,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
         #{name,jdbcType=VARCHAR},
       </if>
-      <if test="idcardNo != null" >
+      <if test="idcardNo != null">
         #{idcardNo,jdbcType=VARCHAR},
       </if>
-      <if test="idcardStartDate != null" >
+      <if test="idcardStartDate != null">
         #{idcardStartDate,jdbcType=VARCHAR},
       </if>
-      <if test="idcardEndDate != null" >
+      <if test="idcardEndDate != null">
         #{idcardEndDate,jdbcType=VARCHAR},
       </if>
-      <if test="idcardIssue != null" >
+      <if test="idcardIssue != null">
         #{idcardIssue,jdbcType=VARCHAR},
       </if>
-      <if test="idcardAddress != null" >
+      <if test="idcardAddress != null">
         #{idcardAddress,jdbcType=VARCHAR},
       </if>
-      <if test="faceIdcardImg != null" >
+      <if test="faceIdcardImg != null">
         #{faceIdcardImg,jdbcType=VARCHAR},
       </if>
-      <if test="backIdcardImg != null" >
+      <if test="backIdcardImg != null">
         #{backIdcardImg,jdbcType=VARCHAR},
       </if>
-      <if test="faceRecognitionImg != null" >
+      <if test="faceRecognitionImg != null">
         #{faceRecognitionImg,jdbcType=VARCHAR},
       </if>
-      <if test="faceRecognitionSco != null" >
+      <if test="faceRecognitionSco != null">
         #{faceRecognitionSco,jdbcType=VARCHAR},
       </if>
-      <if test="faceRecognitionOrganization != null" >
+      <if test="faceRecognitionOrganization != null">
         #{faceRecognitionOrganization,jdbcType=VARCHAR},
       </if>
-      <if test="applyLng != null" >
+      <if test="applyLng != null">
         #{applyLng,jdbcType=VARCHAR},
       </if>
-      <if test="applyLat != null" >
+      <if test="applyLat != null">
         #{applyLat,jdbcType=VARCHAR},
       </if>
-      <if test="applyProvince != null" >
+      <if test="applyProvince != null">
         #{applyProvince,jdbcType=VARCHAR},
       </if>
-      <if test="applyCity != null" >
+      <if test="applyCity != null">
         #{applyCity,jdbcType=VARCHAR},
       </if>
-      <if test="applyArea != null" >
+      <if test="applyArea != null">
         #{applyArea,jdbcType=VARCHAR},
       </if>
-      <if test="applyIp != null" >
+      <if test="applyIp != null">
         #{applyIp,jdbcType=VARCHAR},
       </if>
-      <if test="status != null" >
+      <if test="status != null">
         #{status,jdbcType=INTEGER},
       </if>
-      <if test="opVerifyStatus != null" >
+      <if test="opVerifyStatus != null">
         #{opVerifyStatus,jdbcType=INTEGER},
       </if>
-      <if test="opSumSco != null" >
+      <if test="opSumSco != null">
         #{opSumSco,jdbcType=INTEGER},
       </if>
-      <if test="opCreditNotesSco != null" >
+      <if test="opCreditNotesSco != null">
         #{opCreditNotesSco,jdbcType=INTEGER},
       </if>
-      <if test="opIdentitySco != null" >
+      <if test="opIdentitySco != null">
         #{opIdentitySco,jdbcType=INTEGER},
       </if>
-      <if test="opConsumeSco != null" >
+      <if test="opConsumeSco != null">
         #{opConsumeSco,jdbcType=INTEGER},
       </if>
-      <if test="opActionPreSco != null" >
+      <if test="opActionPreSco != null">
         #{opActionPreSco,jdbcType=INTEGER},
       </if>
-      <if test="tmallUserName != null" >
+      <if test="tmallUserName != null">
         #{tmallUserName,jdbcType=VARCHAR},
       </if>
-      <if test="tmallMixUserid != null" >
+      <if test="tmallMixUserid != null">
         #{tmallMixUserid,jdbcType=VARCHAR},
       </if>
-      <if test="tmallVerifyStatus != null" >
+      <if test="tmallVerifyStatus != null">
         #{tmallVerifyStatus,jdbcType=INTEGER},
       </if>
-      <if test="finId != null" >
+      <if test="finId != null">
         #{finId,jdbcType=INTEGER},
       </if>
-      <if test="finName != null" >
+      <if test="finName != null">
         #{finName,jdbcType=VARCHAR},
       </if>
-      <if test="finCreditId != null" >
+      <if test="finCreditId != null">
         #{finCreditId,jdbcType=VARCHAR},
       </if>
-      <if test="finCreditStatus != null" >
+      <if test="finCreditStatus != null">
         #{finCreditStatus,jdbcType=INTEGER},
       </if>
-      <if test="finCreditTime != null" >
+      <if test="finCreditTime != null">
         #{finCreditTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifyTime != null" >
+      <if test="modifyTime != null">
         #{modifyTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         #{createTime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="cn.jf180.finance.dao.fin.model.UserExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="cn.jf180.finance.dao.fin.model.UserExample" resultType="java.lang.Long">
     select count(*) from user
-    <if test="_parameter != null" >
+    <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
-  <update id="updateByExampleSelective" parameterType="map" >
+  <update id="updateByExampleSelective" parameterType="map">
     update user
-    <set >
-      <if test="record.id != null" >
+    <set>
+      <if test="record.id != null">
         id = #{record.id,jdbcType=BIGINT},
       </if>
-      <if test="record.phone != null" >
+      <if test="record.phone != null">
         phone = #{record.phone,jdbcType=VARCHAR},
       </if>
-      <if test="record.name != null" >
+      <if test="record.customerId != null">
+        customer_id = #{record.customerId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.name != null">
         name = #{record.name,jdbcType=VARCHAR},
       </if>
-      <if test="record.idcardNo != null" >
+      <if test="record.idcardNo != null">
         idcard_no = #{record.idcardNo,jdbcType=VARCHAR},
       </if>
-      <if test="record.idcardStartDate != null" >
+      <if test="record.idcardStartDate != null">
         idcard_start_date = #{record.idcardStartDate,jdbcType=VARCHAR},
       </if>
-      <if test="record.idcardEndDate != null" >
+      <if test="record.idcardEndDate != null">
         idcard_end_date = #{record.idcardEndDate,jdbcType=VARCHAR},
       </if>
-      <if test="record.idcardIssue != null" >
+      <if test="record.idcardIssue != null">
         idcard_issue = #{record.idcardIssue,jdbcType=VARCHAR},
       </if>
-      <if test="record.idcardAddress != null" >
+      <if test="record.idcardAddress != null">
         idcard_address = #{record.idcardAddress,jdbcType=VARCHAR},
       </if>
-      <if test="record.faceIdcardImg != null" >
+      <if test="record.faceIdcardImg != null">
         face_idcard_img = #{record.faceIdcardImg,jdbcType=VARCHAR},
       </if>
-      <if test="record.backIdcardImg != null" >
+      <if test="record.backIdcardImg != null">
         back_idcard_img = #{record.backIdcardImg,jdbcType=VARCHAR},
       </if>
-      <if test="record.faceRecognitionImg != null" >
+      <if test="record.faceRecognitionImg != null">
         face_recognition_img = #{record.faceRecognitionImg,jdbcType=VARCHAR},
       </if>
-      <if test="record.faceRecognitionSco != null" >
+      <if test="record.faceRecognitionSco != null">
         face_recognition_sco = #{record.faceRecognitionSco,jdbcType=VARCHAR},
       </if>
-      <if test="record.faceRecognitionOrganization != null" >
+      <if test="record.faceRecognitionOrganization != null">
         face_recognition_organization = #{record.faceRecognitionOrganization,jdbcType=VARCHAR},
       </if>
-      <if test="record.applyLng != null" >
+      <if test="record.applyLng != null">
         apply_lng = #{record.applyLng,jdbcType=VARCHAR},
       </if>
-      <if test="record.applyLat != null" >
+      <if test="record.applyLat != null">
         apply_lat = #{record.applyLat,jdbcType=VARCHAR},
       </if>
-      <if test="record.applyProvince != null" >
+      <if test="record.applyProvince != null">
         apply_province = #{record.applyProvince,jdbcType=VARCHAR},
       </if>
-      <if test="record.applyCity != null" >
+      <if test="record.applyCity != null">
         apply_city = #{record.applyCity,jdbcType=VARCHAR},
       </if>
-      <if test="record.applyArea != null" >
+      <if test="record.applyArea != null">
         apply_area = #{record.applyArea,jdbcType=VARCHAR},
       </if>
-      <if test="record.applyIp != null" >
+      <if test="record.applyIp != null">
         apply_ip = #{record.applyIp,jdbcType=VARCHAR},
       </if>
-      <if test="record.status != null" >
+      <if test="record.status != null">
         status = #{record.status,jdbcType=INTEGER},
       </if>
-      <if test="record.opVerifyStatus != null" >
+      <if test="record.opVerifyStatus != null">
         op_verify_status = #{record.opVerifyStatus,jdbcType=INTEGER},
       </if>
-      <if test="record.opSumSco != null" >
+      <if test="record.opSumSco != null">
         op_sum_sco = #{record.opSumSco,jdbcType=INTEGER},
       </if>
-      <if test="record.opCreditNotesSco != null" >
+      <if test="record.opCreditNotesSco != null">
         op_credit_notes_sco = #{record.opCreditNotesSco,jdbcType=INTEGER},
       </if>
-      <if test="record.opIdentitySco != null" >
+      <if test="record.opIdentitySco != null">
         op_identity_sco = #{record.opIdentitySco,jdbcType=INTEGER},
       </if>
-      <if test="record.opConsumeSco != null" >
+      <if test="record.opConsumeSco != null">
         op_consume_sco = #{record.opConsumeSco,jdbcType=INTEGER},
       </if>
-      <if test="record.opActionPreSco != null" >
+      <if test="record.opActionPreSco != null">
         op_action_pre_sco = #{record.opActionPreSco,jdbcType=INTEGER},
       </if>
-      <if test="record.tmallUserName != null" >
+      <if test="record.tmallUserName != null">
         tmall_user_name = #{record.tmallUserName,jdbcType=VARCHAR},
       </if>
-      <if test="record.tmallMixUserid != null" >
+      <if test="record.tmallMixUserid != null">
         tmall_mix_userid = #{record.tmallMixUserid,jdbcType=VARCHAR},
       </if>
-      <if test="record.tmallVerifyStatus != null" >
+      <if test="record.tmallVerifyStatus != null">
         tmall_verify_status = #{record.tmallVerifyStatus,jdbcType=INTEGER},
       </if>
-      <if test="record.finId != null" >
+      <if test="record.finId != null">
         fin_id = #{record.finId,jdbcType=INTEGER},
       </if>
-      <if test="record.finName != null" >
+      <if test="record.finName != null">
         fin_name = #{record.finName,jdbcType=VARCHAR},
       </if>
-      <if test="record.finCreditId != null" >
+      <if test="record.finCreditId != null">
         fin_credit_id = #{record.finCreditId,jdbcType=VARCHAR},
       </if>
-      <if test="record.finCreditStatus != null" >
+      <if test="record.finCreditStatus != null">
         fin_credit_status = #{record.finCreditStatus,jdbcType=INTEGER},
       </if>
-      <if test="record.finCreditTime != null" >
+      <if test="record.finCreditTime != null">
         fin_credit_time = #{record.finCreditTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="record.modifyTime != null" >
+      <if test="record.modifyTime != null">
         modify_time = #{record.modifyTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="record.createTime != null" >
+      <if test="record.createTime != null">
         create_time = #{record.createTime,jdbcType=TIMESTAMP},
       </if>
     </set>
-    <if test="_parameter != null" >
+    <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByExample" parameterType="map" >
+  <update id="updateByExample" parameterType="map">
     update user
     set id = #{record.id,jdbcType=BIGINT},
       phone = #{record.phone,jdbcType=VARCHAR},
+      customer_id = #{record.customerId,jdbcType=VARCHAR},
       name = #{record.name,jdbcType=VARCHAR},
       idcard_no = #{record.idcardNo,jdbcType=VARCHAR},
       idcard_start_date = #{record.idcardStartDate,jdbcType=VARCHAR},
@@ -546,124 +558,128 @@
       fin_credit_time = #{record.finCreditTime,jdbcType=TIMESTAMP},
       modify_time = #{record.modifyTime,jdbcType=TIMESTAMP},
       create_time = #{record.createTime,jdbcType=TIMESTAMP}
-    <if test="_parameter != null" >
+    <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="cn.jf180.finance.dao.fin.model.User" >
+  <update id="updateByPrimaryKeySelective" parameterType="cn.jf180.finance.dao.fin.model.User">
     update user
-    <set >
-      <if test="phone != null" >
+    <set>
+      <if test="phone != null">
         phone = #{phone,jdbcType=VARCHAR},
       </if>
-      <if test="name != null" >
+      <if test="customerId != null">
+        customer_id = #{customerId,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
       </if>
-      <if test="idcardNo != null" >
+      <if test="idcardNo != null">
         idcard_no = #{idcardNo,jdbcType=VARCHAR},
       </if>
-      <if test="idcardStartDate != null" >
+      <if test="idcardStartDate != null">
         idcard_start_date = #{idcardStartDate,jdbcType=VARCHAR},
       </if>
-      <if test="idcardEndDate != null" >
+      <if test="idcardEndDate != null">
         idcard_end_date = #{idcardEndDate,jdbcType=VARCHAR},
       </if>
-      <if test="idcardIssue != null" >
+      <if test="idcardIssue != null">
         idcard_issue = #{idcardIssue,jdbcType=VARCHAR},
       </if>
-      <if test="idcardAddress != null" >
+      <if test="idcardAddress != null">
         idcard_address = #{idcardAddress,jdbcType=VARCHAR},
       </if>
-      <if test="faceIdcardImg != null" >
+      <if test="faceIdcardImg != null">
         face_idcard_img = #{faceIdcardImg,jdbcType=VARCHAR},
       </if>
-      <if test="backIdcardImg != null" >
+      <if test="backIdcardImg != null">
         back_idcard_img = #{backIdcardImg,jdbcType=VARCHAR},
       </if>
-      <if test="faceRecognitionImg != null" >
+      <if test="faceRecognitionImg != null">
         face_recognition_img = #{faceRecognitionImg,jdbcType=VARCHAR},
       </if>
-      <if test="faceRecognitionSco != null" >
+      <if test="faceRecognitionSco != null">
         face_recognition_sco = #{faceRecognitionSco,jdbcType=VARCHAR},
       </if>
-      <if test="faceRecognitionOrganization != null" >
+      <if test="faceRecognitionOrganization != null">
         face_recognition_organization = #{faceRecognitionOrganization,jdbcType=VARCHAR},
       </if>
-      <if test="applyLng != null" >
+      <if test="applyLng != null">
         apply_lng = #{applyLng,jdbcType=VARCHAR},
       </if>
-      <if test="applyLat != null" >
+      <if test="applyLat != null">
         apply_lat = #{applyLat,jdbcType=VARCHAR},
       </if>
-      <if test="applyProvince != null" >
+      <if test="applyProvince != null">
         apply_province = #{applyProvince,jdbcType=VARCHAR},
       </if>
-      <if test="applyCity != null" >
+      <if test="applyCity != null">
         apply_city = #{applyCity,jdbcType=VARCHAR},
       </if>
-      <if test="applyArea != null" >
+      <if test="applyArea != null">
         apply_area = #{applyArea,jdbcType=VARCHAR},
       </if>
-      <if test="applyIp != null" >
+      <if test="applyIp != null">
         apply_ip = #{applyIp,jdbcType=VARCHAR},
       </if>
-      <if test="status != null" >
+      <if test="status != null">
         status = #{status,jdbcType=INTEGER},
       </if>
-      <if test="opVerifyStatus != null" >
+      <if test="opVerifyStatus != null">
         op_verify_status = #{opVerifyStatus,jdbcType=INTEGER},
       </if>
-      <if test="opSumSco != null" >
+      <if test="opSumSco != null">
         op_sum_sco = #{opSumSco,jdbcType=INTEGER},
       </if>
-      <if test="opCreditNotesSco != null" >
+      <if test="opCreditNotesSco != null">
         op_credit_notes_sco = #{opCreditNotesSco,jdbcType=INTEGER},
       </if>
-      <if test="opIdentitySco != null" >
+      <if test="opIdentitySco != null">
         op_identity_sco = #{opIdentitySco,jdbcType=INTEGER},
       </if>
-      <if test="opConsumeSco != null" >
+      <if test="opConsumeSco != null">
         op_consume_sco = #{opConsumeSco,jdbcType=INTEGER},
       </if>
-      <if test="opActionPreSco != null" >
+      <if test="opActionPreSco != null">
         op_action_pre_sco = #{opActionPreSco,jdbcType=INTEGER},
       </if>
-      <if test="tmallUserName != null" >
+      <if test="tmallUserName != null">
         tmall_user_name = #{tmallUserName,jdbcType=VARCHAR},
       </if>
-      <if test="tmallMixUserid != null" >
+      <if test="tmallMixUserid != null">
         tmall_mix_userid = #{tmallMixUserid,jdbcType=VARCHAR},
       </if>
-      <if test="tmallVerifyStatus != null" >
+      <if test="tmallVerifyStatus != null">
         tmall_verify_status = #{tmallVerifyStatus,jdbcType=INTEGER},
       </if>
-      <if test="finId != null" >
+      <if test="finId != null">
         fin_id = #{finId,jdbcType=INTEGER},
       </if>
-      <if test="finName != null" >
+      <if test="finName != null">
         fin_name = #{finName,jdbcType=VARCHAR},
       </if>
-      <if test="finCreditId != null" >
+      <if test="finCreditId != null">
         fin_credit_id = #{finCreditId,jdbcType=VARCHAR},
       </if>
-      <if test="finCreditStatus != null" >
+      <if test="finCreditStatus != null">
         fin_credit_status = #{finCreditStatus,jdbcType=INTEGER},
       </if>
-      <if test="finCreditTime != null" >
+      <if test="finCreditTime != null">
         fin_credit_time = #{finCreditTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="modifyTime != null" >
+      <if test="modifyTime != null">
         modify_time = #{modifyTime,jdbcType=TIMESTAMP},
       </if>
-      <if test="createTime != null" >
+      <if test="createTime != null">
         create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="cn.jf180.finance.dao.fin.model.User" >
+  <update id="updateByPrimaryKey" parameterType="cn.jf180.finance.dao.fin.model.User">
     update user
     set phone = #{phone,jdbcType=VARCHAR},
+      customer_id = #{customerId,jdbcType=VARCHAR},
       name = #{name,jdbcType=VARCHAR},
       idcard_no = #{idcardNo,jdbcType=VARCHAR},
       idcard_start_date = #{idcardStartDate,jdbcType=VARCHAR},

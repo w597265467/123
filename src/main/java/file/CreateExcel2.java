@@ -30,7 +30,7 @@ public class CreateExcel2 {
 	public List<OrderMassage> getOrder() throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://192.168.2.7:3306/finance?characterEncoding=utf-8",
+				"jdbc:mysql://192.168.2.2:3306/finance?characterEncoding=utf-8",
 				"jft",
 				"3edcvBHU8");
 		String sql = "SELECT\n" +

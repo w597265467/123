@@ -57,7 +57,7 @@
         <!-- 对应的dao接口 -->
         <javaClientGenerator type="XMLMAPPER" targetPackage="${daoMapperPackage}" targetProject="${targetProject}" >
             <property name="enableSubPackages" value="true"/>
-            <property name="countByExample" value="long"/>
+            <!--<property name="countByExample" value="long"/>-->
         </javaClientGenerator>
         <!-- 表名对应生成的实体 -->
         <table tableName="%"/>

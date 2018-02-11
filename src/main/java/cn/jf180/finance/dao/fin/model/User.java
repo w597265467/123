@@ -7,6 +7,8 @@ public class User {
 
     private String phone;
 
+    private String customerId;
+
     private String name;
 
     private String idcardNo;
@@ -89,6 +91,14 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 
     public String getName() {

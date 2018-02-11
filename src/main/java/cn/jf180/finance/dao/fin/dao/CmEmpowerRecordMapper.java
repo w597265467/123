@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface CmEmpowerRecordMapper {
-    int countByExample(CmEmpowerRecordExample example);
+    long countByExample(CmEmpowerRecordExample example);
 
     int deleteByExample(CmEmpowerRecordExample example);
 

@@ -79,6 +79,10 @@ public class CreditOrder {
 
     private String orderFrom;
 
+    private String expressCode;
+
+    private String expressName;
+
     private Date tmallOrderTime;
 
     private Date modifyTime;
@@ -387,6 +391,22 @@ public class CreditOrder {
 
     public void setOrderFrom(String orderFrom) {
         this.orderFrom = orderFrom;
+    }
+
+    public String getExpressCode() {
+        return expressCode;
+    }
+
+    public void setExpressCode(String expressCode) {
+        this.expressCode = expressCode;
+    }
+
+    public String getExpressName() {
+        return expressName;
+    }
+
+    public void setExpressName(String expressName) {
+        this.expressName = expressName;
     }
 
     public Date getTmallOrderTime() {

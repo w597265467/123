@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserAccountTranMapper {
-    int countByExample(UserAccountTranExample example);
+    long countByExample(UserAccountTranExample example);
 
     int deleteByExample(UserAccountTranExample example);
 
