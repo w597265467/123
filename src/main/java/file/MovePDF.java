@@ -12,7 +12,7 @@ public class MovePDF {
 //        moveFile("D:\\");
 //        moveFile("F:\\");
 //        moveFile("G:\\");
-        moveFile("E:\\pdf\\学习资料");
+        moveFile("E:\\weixin\\WeChat Files\\");
     }
     public static void moveFile(String path) throws IOException {
         File file = new File(path);
@@ -33,7 +33,7 @@ public class MovePDF {
                             FileUtils.moveFile(file,destFile);
                         }
                     } catch (IOException e) {
-                        FileUtils.deleteQuietly(file);
+//                        FileUtils.deleteQuietly(file);
                     }
 
                 }
