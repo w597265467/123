@@ -11,5 +11,4 @@ public class MoveDIR {
 		String destDir = "F:\\GTA5_2";
 		FileUtils.moveDirectory(new File(srcDir),new File(destDir));
 	}
-
 }
