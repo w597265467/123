@@ -23,8 +23,8 @@ public class ReceiveMailTest {
         String protocol = "imap";
         String host = "imap.exmail.qq.com";
         int port = 993;
-        String username = "wangluyao@jf180.cn";
-        String password = "Jfen180";
+        String username = "*****@****.cn";
+        String password = "****";
         Properties prop = System.getProperties();
         prop.put("mail.smtp.host", "smtp.exmail.qq.com");
         prop.put("mail.smtp.auth", "true");

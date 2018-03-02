@@ -24,9 +24,9 @@ public class CreateCSV {
         String desc = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://192.168.2.7:3306/finance?characterEncoding=utf-8",
-                    "jft",
-                    "3edcvBHU8");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://***.***.***.***:3306/finance?characterEncoding=utf-8",
+                    "***",
+                    "********");
             String sql = "SELECT\n" +
                     "\ttmall_order_id,\n" +
                     "\torder_id,\n" +

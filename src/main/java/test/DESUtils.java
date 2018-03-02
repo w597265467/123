@@ -75,7 +75,7 @@ public class DESUtils {
 
 	public static void main(String[] args) throws Exception {
 		DESUtils des = new DESUtils();
-		String pwd = "dlp17ghs"; //加密密码
+		String pwd = "********"; //加密密码
 
 		init(pwd,"DES/CBC/PKCS5Padding");
 		String encrypt = encrypt("{orderId:6229912018011116140267576168}");
