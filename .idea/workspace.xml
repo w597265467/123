@@ -2,72 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6039cba7-a4b8-4819-bc7f-3f3fd8621dc4" name="Default" comment="嘿嘿嘿">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/BankCardMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/CmEmpowerRecordMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/CreditOrderGoodsMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/CreditOrderMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/HaierAreaCodeMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/SellerInfoMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/UserAccountMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/UserAccountTranMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/UserCreditApplyPayMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/UserFamilyMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/dao/UserMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/BankCardMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/CmEmpowerRecordMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/CreditOrderGoodsMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/CreditOrderMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/HaierAreaCodeMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/SellerInfoMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/UserAccountMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/UserAccountTranMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/UserCreditApplyPayMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/UserFamilyMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/mapper/UserMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/BankCard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/BankCardExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/CmEmpowerRecord.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/CmEmpowerRecordExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/CreditOrder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/CreditOrderExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/CreditOrderGoods.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/CreditOrderGoodsExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/HaierAreaCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/HaierAreaCodeExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/SellerInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/SellerInfoExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/UserAccount.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/UserAccountExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/UserAccountTran.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/UserAccountTranExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/UserCreditApplyPay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/UserCreditApplyPayExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/UserExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/UserFamily.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/dao/fin/model/UserFamilyExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/TestStringStartWith.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/IMsgThreeElements.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/IMsgThreeElementsPortImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/IMsgThreeElements_IMsgThreeElementsPort_Client.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/IMsgThreeElements_Service.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/ObjectFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/ValidatePhoneNoAndCustNameSame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/ValidatePhoneNoAndCustNameSameResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/ValidatePhoneNoAndIdCardSame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/ValidatePhoneNoAndIdCardSameResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/ValidatePhoneNoIdCardCustNameSame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/ValidatePhoneNoIdCardCustNameSameResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/wsdl/package-info.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/DESUtils.class" afterPath="$PROJECT_DIR$/target/classes/test/DESUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/TestContains.class" afterPath="$PROJECT_DIR$/target/classes/test/TestContains.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/file/CreateCSV.java" afterPath="$PROJECT_DIR$/src/main/java/file/CreateCSV.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/file/CreateExcel2.java" afterPath="$PROJECT_DIR$/src/main/java/file/CreateExcel2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mail/ReceiveMailTest.java" afterPath="$PROJECT_DIR$/src/main/java/mail/ReceiveMailTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/DESUtils.java" afterPath="$PROJECT_DIR$/src/main/java/test/DESUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/TestContains.java" afterPath="$PROJECT_DIR$/src/main/java/test/TestContains.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/TestUnreadableCode.java" afterPath="$PROJECT_DIR$/src/main/java/test/TestUnreadableCode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis_generator.properties" afterPath="$PROJECT_DIR$/src/main/resources/mybatis_generator.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -140,11 +74,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadExcelGetFirstRowsCell.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReadExcelGetFirstRowsCell.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/file/ReadExcelGetFirstRowsCell.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-644">
               <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mybatis_generator.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis_generator.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -192,16 +136,6 @@
               <folding>
                 <marker date="1519962417388" expanded="true" signature="1293:2029" ph="SELECT\n\ttm... credit_order" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestRex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/TestRex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -309,10 +243,10 @@
         <option value="$PROJECT_DIR$/src/main/java/test/TestContains.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/TestUnreadableCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/mail/ReceiveMailTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis_generator.properties" />
         <option value="$PROJECT_DIR$/src/main/java/test/DESUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/file/CreateCSV.java" />
         <option value="$PROJECT_DIR$/src/main/java/file/CreateExcel2.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis_generator.properties" />
       </list>
     </option>
   </component>
@@ -699,6 +633,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="file" type="462c0819:PsiDirectoryNode" />
               <item name="CreateCSV" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="123" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+              <item name="ReadExcelGetFirstRowsCell" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="123" type="b2602c69:ProjectViewProjectNode" />
@@ -1125,7 +1068,7 @@
       <workItem from="1518320880385" duration="5420000" />
       <workItem from="1519268716538" duration="1286000" />
       <workItem from="1519354805373" duration="1639000" />
-      <workItem from="1519957044761" duration="3256000" />
+      <workItem from="1519957044761" duration="3381000" />
     </task>
     <task id="LOCAL-00001" summary="创建mock测试类测试mock">
       <created>1517802216985</created>
@@ -1175,7 +1118,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169408000" />
+    <option name="totallyTimeSpent" value="169533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1212,7 +1155,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66939443" sideWeight="0.48487142" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38956127" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38956127" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1510,14 +1453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis_generator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -1701,6 +1636,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-644">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis_generator.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding />
         </state>
       </provider>
