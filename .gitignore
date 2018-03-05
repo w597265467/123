@@ -1,2 +1,10 @@
 .idea
 *.class
+workspace.xml
+vcs.xml
+compiler.xml
+encodings.xml
+misc.xml
+modules.xml
+sqldialects.xml
+uiDesigner.xml
