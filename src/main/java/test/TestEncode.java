@@ -28,12 +28,13 @@ public class TestEncode {
 //                throw new RuntimeException("什么情况");
 //            }
 //        }
-        Properties properties = System.getProperties();
-        Set<Object> objects = properties.keySet();
-        for (Object object : objects) {
-            System.out.println("key:"+object.toString()+",\t\t\tvalue:"+properties.get(object));
-        }
-        System.out.println(getEncoding("啊"));
+//        Properties properties = System.getProperties();
+//        Set<Object> objects = properties.keySet();
+//        for (Object object : objects) {
+//            System.out.println("key:"+object.toString()+",\t\t\tvalue:"+properties.get(object));
+//        }
+//        System.out.println(getEncoding("啊"));
+        System.out.println("啊");
     }
 
 
