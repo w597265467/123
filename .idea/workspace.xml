@@ -1,86 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6039cba7-a4b8-4819-bc7f-3f3fd8621dc4" name="Default" comment="嘿嘿嘿">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/BankCardMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/CmEmpowerRecordMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/CreditOrderGoodsMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/CreditOrderMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/HaierAreaCodeMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/SellerInfoMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/UserAccountMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/UserAccountTranMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/UserCreditApplyPayMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/UserFamilyMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/dao/UserMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/BankCard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/BankCardExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/BankCardExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/BankCardExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/BankCardExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CmEmpowerRecord.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CmEmpowerRecordExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CmEmpowerRecordExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CmEmpowerRecordExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CmEmpowerRecordExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CreditOrder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CreditOrderExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CreditOrderExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CreditOrderExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CreditOrderExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CreditOrderGoods.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CreditOrderGoodsExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CreditOrderGoodsExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CreditOrderGoodsExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/CreditOrderGoodsExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/HaierAreaCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/HaierAreaCodeExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/HaierAreaCodeExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/HaierAreaCodeExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/HaierAreaCodeExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/SellerInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/SellerInfoExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/SellerInfoExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/SellerInfoExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/SellerInfoExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserAccount.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserAccountExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserAccountExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserAccountExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserAccountExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserAccountTran.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserAccountTranExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserAccountTranExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserAccountTranExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserAccountTranExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserCreditApplyPay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserCreditApplyPayExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserCreditApplyPayExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserCreditApplyPayExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserCreditApplyPayExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserFamily.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserFamilyExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserFamilyExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserFamilyExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/jf180/finance/dao/fin/model/UserFamilyExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/test/TestStringStartWith.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/IMsgThreeElements.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/IMsgThreeElementsPortImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/IMsgThreeElements_IMsgThreeElementsPort_Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/IMsgThreeElements_Service.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/ObjectFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/ValidatePhoneNoAndCustNameSame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/ValidatePhoneNoAndCustNameSameResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/ValidatePhoneNoAndIdCardSame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/ValidatePhoneNoAndIdCardSameResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/ValidatePhoneNoIdCardCustNameSame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/ValidatePhoneNoIdCardCustNameSameResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/wsdl/package-info.class" afterPath="" />
+    <list default="true" id="6039cba7-a4b8-4819-bc7f-3f3fd8621dc4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/file/CreatExcal.class" afterPath="$PROJECT_DIR$/target/classes/file/CreatExcal.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/file/CreateCSV.class" afterPath="$PROJECT_DIR$/target/classes/file/CreateCSV.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/file/CreateExcel2.class" afterPath="$PROJECT_DIR$/target/classes/file/CreateExcel2.class" />
@@ -99,11 +20,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/TestRex.class" afterPath="$PROJECT_DIR$/target/classes/test/TestRex.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/TestTime.class" afterPath="$PROJECT_DIR$/target/classes/test/TestTime.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test/TestUnreadableCode.class" afterPath="$PROJECT_DIR$/target/classes/test/TestUnreadableCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/123.iml" afterPath="$PROJECT_DIR$/123.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/TestEncode.java" afterPath="$PROJECT_DIR$/src/main/java/test/TestEncode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis_generator.properties" afterPath="$PROJECT_DIR$/target/classes/mybatis_generator.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -133,11 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -163,10 +80,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TranscodeUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TranscodeUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/video/transcode/TranscodeUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="759">
               <caret line="362" column="0" lean-forward="false" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -329,7 +246,6 @@
         <option value="$PROJECT_DIR$/src/main/java/file/CreateExcel2.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis_generator.properties" />
         <option value="$PROJECT_DIR$/src/main/java/file/CreateEnum.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/video/transcode/Content.java" />
         <option value="$PROJECT_DIR$/src/main/java/video/transcode/TranscodeUtrils.java" />
         <option value="$PROJECT_DIR$/src/main/java/video/transcode/Contants.java" />
@@ -339,6 +255,7 @@
         <option value="$PROJECT_DIR$/src/main/java/test/TestEncode.java" />
         <option value="$PROJECT_DIR$/src/main/java/video/transcode/TestUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/video/transcode/TranscodeUtils.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1067,7 +984,7 @@
       <workItem from="1519354805373" duration="1639000" />
       <workItem from="1519957044761" duration="5674000" />
       <workItem from="1520217715690" duration="4065000" />
-      <workItem from="1520221802516" duration="4569000" />
+      <workItem from="1520221802516" duration="4618000" />
     </task>
     <task id="LOCAL-00001" summary="创建mock测试类测试mock">
       <created>1517802216985</created>
@@ -1090,7 +1007,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519960573115</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="嘿嘿嘿">
+      <created>1520236281515</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1520236281515</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1117,7 +1041,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180460000" />
+    <option name="totallyTimeSpent" value="180509000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1143,7 +1067,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70424837" sideWeight="0.5151286" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9607201" sideWeight="0.48487142" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5515548" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5499182" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1521,14 +1445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/videa.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1607,7 +1523,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/video/transcode/TranscodeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
+        <state relative-caret-position="759">
           <caret line="362" column="0" lean-forward="false" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1616,6 +1532,14 @@
             <element signature="e#3067#3075#0" expanded="true" />
             <element signature="e#5974#5982#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
