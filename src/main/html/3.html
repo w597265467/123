@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/Administrator/Desktop/2.html -->
+<html lang="zh-CN" class="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="baidu-site-verification" content="6R6arSBL15">
+    <link type="text/css" media="all" href="./3_files/autoptimize_57bd8336a6e07f590969efed91ed75be.css"
+          rel="stylesheet">
+    <title>shell分析日志教程1：快速批量提取404错误页面URL_SEO教程_【方法SEO顾问】</title>
+    <meta name="description" content="2014年6月21日补充">
+    <meta name="keywords" content="404错误,cygwin,shell分析日志">
+    <link rel="shortcut icon" href="file:///C:/Users/Administrator/Desktop/2_files/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="file:///C:/Users/Administrator/Desktop/2_files/favicon.ico">
+    <link rel="pingback" href="https://seofangfa.com/xmlrpc.php">
+    <!--[if lt IE 9]>
+    <script src="https://seofangfa.com/wp-content/themes/seofangfa2.1/js/html5.js"></script>
+    <script src="https://seofangfa.com/wp-content/themes/seofangfa2.1/js/css3-mediaqueries.js"></script> <![endif]-->
+    <link rel="dns-prefetch" href="https://s.w.org/">
+    <script type="text/javascript" async="" src="./3_files/24c3082e.js.下载"></script>
+    <script type="text/javascript" async="" src="./3_files/24c3082e.js.下载"></script>
+    <script type="text/javascript" async="" src="./3_files/24c3082e.js.下载"></script>
+    <script type="text/javascript" async="" src="./3_files/24c3082e.js.下载"></script>
+    <script async="" src="./3_files/gtm.js.下载"></script>
+    <script type="text/javascript" async="" src="./3_files/analytics.js.下载"></script>
+    <script type="text/javascript" async="" src="3_files/24c3082e.js"></script>
+    <script type="text/javascript" async="" src="3_files/24c3082e.js"></script>
+    <script type="text/javascript" async="" src="3_files/24c3082e.js"></script>
+    <script async="" src="./3_files/gtm.js(1).下载"></script>
+    <script type="text/javascript" async="" src="./3_files/analytics.js(1).下载"></script>
+    <script type="text/javascript" async="" src="./3_files/24c3082e.js(2).下载"></script>
+    <script type="text/javascript" async="" src="./3_files/24c3082e.js(2).下载"></script>
+    <script async="" src="./3_files/gtm.js(2).下载"></script>
+    <script type="text/javascript" async="" src="./3_files/analytics.js(2).下载"></script>
+    <script type="text/javascript" async="" src="./3_files/24c3082e.js(3).下载"></script>
+    <script type="text/javascript" async="" src="./3_files/analytics.js(3).下载"></script>
+    <script async="" src="./3_files/gtm.js(3).下载"></script>
+    <script type="text/javascript" src="./3_files/jquery.min.js.下载"></script>
+    <script type="text/javascript" src="./3_files/slides.js.下载"></script>
+    <script type="text/javascript" src="./3_files/jquery.qrcode.min.js.下载"></script>
+    <script type="text/javascript" src="./3_files/wow.js.下载"></script>
+    <script type="text/javascript" src="./3_files/jquery-ias.js.下载"></script>
+    <script type="text/javascript" src="./3_files/jquery.lazyload.js.下载"></script>
+    <script type="text/javascript" src="./3_files/tipso.js.下载"></script>
+    <script type="text/javascript">var wpl_ajax_url = "https:\/\/seofangfa.com\/wp-admin\/admin-ajax.php";</script>
+    <script type="text/javascript" src="./3_files/script.js.下载"></script>
+    <script type="text/javascript" src="./3_files/flexisel.js.下载"></script>
+    <script type="text/javascript" src="./3_files/fancybox.js.下载"></script>
+    <script type="text/javascript" src="./3_files/comments-ajax-qt.js.下载"></script>
+    <link rel="canonical" href="https://seofangfa.com/shell/shell-extract-404-pages.html">
+    <style>#content, .top-nav, #top-menu, #mobile-nav, #main-search, #search-main, .breadcrumb, .footer-widget {
+        width: 1216px;
+    }
+
+    @media screen and (max-width: 1216px) {
+        #content, #colophon, .breadcrumb, .footer-widget {
+            width: 98%;
+        }
+
+        #top-menu {
+            width: 98%;
+        }
+
+        .top-nav {
+            width: 98%;
+        }
+
+        #main-search, #search-main, #mobile-nav {
+            width: 98%;
+        }
+
+        .breadcrumb {
+            width: 98%;
+        }
+    }</style><!-- Google Tag Manager -->
+    <noscript>&amp;amp;amp;lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8ZTGR"
+        height="0" width="0" style="display:none;visibility:hidden"&amp;amp;amp;gt;&amp;amp;amp;lt;/iframe&amp;amp;amp;gt;
+    </noscript>
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8ZTGR');</script> <!-- End Google Tag Manager -->
+    <style type="text/css">.fancybox-margin {
+        margin-right: 0px;
+    }</style>
+    <style type="text/css">.fancybox-margin {
+        margin-right: 0px;
+    }</style>
+    <style type="text/css">.fancybox-margin {
+        margin-right: 0px;
+    }</style>
+    <style type="text/css">.fancybox-margin {
+        margin-right: 0px;
+    }</style>
+</head>
+<body class="post-template-default single single-post postid-529 single-format-standard" style="">
+<div id="page" class="hfeed site"><!-- #masthead -->
+    <div id="search-main">
+        <div id="searchbar">
+            <form method="get" id="searchform" action="https://seofangfa.com/"><input type="text" value="" name="s"
+                                                                                      id="s" placeholder="输入搜索内容"
+                                                                                      required="">
+                <button type="submit" id="searchsubmit">搜索</button>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div><!-- .site-content --><!-- .site-footer -->
+    <script type="text/javascript" src="./3_files/jquery-ui.min.js.下载"></script>
+    <script type="text/javascript" src="./3_files/qaptcha.jquery.js.下载"></script>
+    <script type="text/javascript">var QaptchaJqueryPage = "https://seofangfa.com/wp-content/themes/seofangfa2.1/inc/function/qaptcha.jquery.php"</script>
+    <script type="text/javascript">$(document).ready(function () {
+        $('.qaptcha').QapTcha();
+    });</script>
+    <script type="text/javascript">var wpcf7 = {
+        "apiSettings": {
+            "root": "https:\/\/seofangfa.com\/wp-json\/contact-form-7\/v1",
+            "namespace": "contact-form-7\/v1"
+        },
+        "recaptcha": {"messages": {"empty": "\u8bf7\u9a8c\u8bc1\u60a8\u4e0d\u662f\u4e00\u4e2a\u673a\u5668\u4eba\u3002"}},
+        "cached": "1"
+    };</script>
+    <script type="text/javascript" src="./3_files/scripts.js.下载"></script>
+    <script type="text/javascript">var viewsCacheL10n = {
+        "admin_ajax_url": "https:\/\/seofangfa.com\/wp-admin\/admin-ajax.php",
+        "post_id": "529"
+    };</script>
+    <script type="text/javascript" src="./3_files/postviews-cache.js.下载"></script>
+    <script type="text/javascript" src="./3_files/superfish.js.下载"></script>
+    <script type="text/javascript" src="./3_files/gb2big5.js.下载"></script>
+    <script async="async" type="text/javascript" src="./3_files/form.js.下载"></script>
+    <script type="text/javascript">var ias = $.ias({
+        container: "#comments",
+        item: ".comment-list",
+        pagination: ".scroll-links",
+        next: ".scroll-links .nav-previous a",
+    });
+    ias.extension(new IASTriggerExtension({text: '<i class="fa fa-chevron-circle-down"></i>更多', offset: 0,}));
+    ias.extension(new IASSpinnerExtension());
+    ias.extension(new IASNoneLeftExtension({text: '已是最后',}));
+    ias.on('rendered', function (items) {
+        $("img").lazyload({effect: "fadeIn", failure_limit: 10});
+    });</script>
+    <script type="text/javascript" src="./3_files/canvas-nest.min.js.下载"></script>
+    100 queries in 1.165 seconds, using 10.99MB memory <!-- ajax post view -->
+    <script type="text/javascript">$.ajax({
+        url: "https://seofangfa.com/wp-admin/admin-ajax.php",
+        data: {
+            "postviews_id": "529",
+            "action": "postviews",
+            "_": new Date().getTime()
+        }
+    });</script>
+    <!-- Dynamic page generated in 1.449 seconds. -->
+    <!-- Cached page generated by WP-Super-Cache on 2018-03-12 19:33:20 -->
+
+    <!-- Compression = gzip --></div>
+<canvas id="c_n41" width="724" height="588"
+        style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+<canvas id="c_n36" width="724" height="588"
+        style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+<script type="text/javascript" id="">window._pt_lt = (new Date).getTime();
+window._pt_sp_2 = [];
+_pt_sp_2.push("setAccount,24c3082e");
+var _protocol = "https:" == document.location.protocol ? " https://" : " http://";
+(function () {
+    var a = document.createElement("script");
+    a.type = "text/javascript";
+    a.async = !0;
+    a.src = _protocol + "js.ptengine.cn/24c3082e.js";
+    var b = document.getElementsByTagName("script")[0];
+    b.parentNode.insertBefore(a, b)
+})();</script>
+<script type="text/javascript" id="" src="./3_files/z_stat.php"></script>
+<script src="./3_files/core.php" charset="utf-8" type="text/javascript"></script>
+<script type="text/javascript" id="">window._pt_lt = (new Date).getTime();
+window._pt_sp_2 = [];
+_pt_sp_2.push("setAccount,24c3082e");
+var _protocol = "https:" == document.location.protocol ? " https://" : " http://";
+(function () {
+    var a = document.createElement("script");
+    a.type = "text/javascript";
+    a.async = !0;
+    a.src = _protocol + "js.ptengine.cn/24c3082e.js";
+    var b = document.getElementsByTagName("script")[0];
+    b.parentNode.insertBefore(a, b)
+})();</script>
+<script type="text/javascript" id="" src="./3_files/z_stat(1).php"></script>
+<script src="./3_files/core(1).php" charset="utf-8" type="text/javascript"></script>
+<script type="text/javascript" id="">window._pt_lt = (new Date).getTime();
+window._pt_sp_2 = [];
+_pt_sp_2.push("setAccount,24c3082e");
+var _protocol = "https:" == document.location.protocol ? " https://" : " http://";
+(function () {
+    var a = document.createElement("script");
+    a.type = "text/javascript";
+    a.async = !0;
+    a.src = _protocol + "js.ptengine.cn/24c3082e.js";
+    var b = document.getElementsByTagName("script")[0];
+    b.parentNode.insertBefore(a, b)
+})();</script>
+<script type="text/javascript" id="" src="./3_files/z_stat(2).php"></script>
+<script src="./3_files/core.php" charset="utf-8" type="text/javascript"></script>
+<canvas id="c_n36" width="574" height="588"
+        style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+<canvas id="c_n29" width="574" height="588"
+        style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+<div id="overlay"></div>
+<div id="sidr-main" class="sidr left">
+    <div class="sidr-inner"><a href="https://seofangfa.com/shell/shell-extract-404-pages.html#sidr-close"
+                               class="sidr-class-toggle-sidr-close">×</a></div>
+    <div class="sidr-inner"><a href="https://seofangfa.com/shell/shell-extract-404-pages.html#sidr-main"
+                               id="sidr-id-navigation-toggle" class="sidr-class-bars"><i
+            class="sidr-class-fa sidr-class-fa-bars"></i></a>
+        <div class="sidr-class-menu-%sidr-class-e4%sidr-class-b8%sidr-class-bb%sidr-class-e5%sidr-class-af%sidr-class-bc%sidr-class-e8%sidr-class-88%sidr-class-aa-container">
+            <ul id="sidr-id-menu-%sidr-id-e4%sidr-id-b8%sidr-id-bb%sidr-id-e5%sidr-id-af%sidr-id-bc%sidr-id-e8%sidr-id-88%sidr-id-aa"
+                class="sidr-class-down-menu sidr-class-nav-menu">
+                <li id="sidr-id-menu-item-15449"
+                    class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-home sidr-class-menu-item-15449">
+                    <a href="http://seofangfa.com/"><i class="sidr-class-fa-home sidr-class-fa"></i><span
+                            class="sidr-class-font-text">首页</span></a></li>
+                <li id="sidr-id-menu-item-824"
+                    class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-menu-item-824">
+                    <a href="https://seofangfa.com/seo-adviser.html">SEO顾问服务</a></li>
+                <li id="sidr-id-menu-item-2889"
+                    class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-menu-item-has-children sidr-class-menu-item-2889">
+                    <a href="https://seofangfa.com/seo-service/" class="">SEO服务</a>
+                    <ul class="sidr-class-sub-menu">
+                        <li id="sidr-id-menu-item-2899"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-2899">
+                            <a href="http://seofangfa.com/seo-adviser.html">SEO顾问</a></li>
+                        <li id="sidr-id-menu-item-2897"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-2897">
+                            <a href="http://seofangfa.com/seo-service/seo-peixun.html">SEO培训</a></li>
+                        <li id="sidr-id-menu-item-2898"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-2898">
+                            <a href="http://seofangfa.com/seo-service/website-security.html">网站安全维护</a></li>
+                    </ul>
+                </li>
+                <li id="sidr-id-menu-item-849"
+                    class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-menu-item-849">
+                    <a href="https://seofangfa.com/mobile-seo/">移动端SEO</a></li>
+                <li id="sidr-id-menu-item-1876"
+                    class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-current-post-ancestor sidr-class-current-menu-parent sidr-class-current-post-parent sidr-class-menu-item-has-children sidr-class-menu-item-1876">
+                    <a href="https://seofangfa.com/seo-tutorial/" class="">SEO教程</a>
+                    <ul class="sidr-class-sub-menu">
+                        <li id="sidr-id-menu-item-1875"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-menu-item-1875">
+                            <a href="https://seofangfa.com/seo-video/">SEO视频教程</a></li>
+                        <li id="sidr-id-menu-item-1491"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-1491">
+                            <a href="http://seofangfa.com/good-seo-video.html">SEO视频教程下载</a></li>
+                    </ul>
+                </li>
+                <li id="sidr-id-menu-item-847"
+                    class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-menu-item-has-children sidr-class-menu-item-847">
+                    <a href="https://seofangfa.com/seo-basis/" class="">SEO基础入门</a>
+                    <ul class="sidr-class-sub-menu">
+                        <li id="sidr-id-menu-item-3353"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-3353">
+                            <a href="http://seofangfa.com/tag/%E8%AF%8D%E5%BA%93/">词库</a></li>
+                        <li id="sidr-id-menu-item-2699"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-2699">
+                            <a href="http://seofangfa.com/tag/%E5%86%85%E5%AE%B9%E5%BB%BA%E8%AE%BE/">内容建设</a></li>
+                        <li id="sidr-id-menu-item-2652"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-2652">
+                            <a href="http://seofangfa.com/tag/%E6%94%B6%E5%BD%95/">收录</a></li>
+                        <li id="sidr-id-menu-item-2658"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-2658">
+                            <a href="http://seofangfa.com/tag/%E6%8E%92%E5%90%8D/">排名</a></li>
+                        <li id="sidr-id-menu-item-2662"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-2662">
+                            <a href="http://seofangfa.com/tag/%E7%82%B9%E5%87%BB%E7%8E%87/">点击率</a></li>
+                        <li id="sidr-id-menu-item-2642"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-2642">
+                            <a href="http://seofangfa.com/tag/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/">友情链接</a></li>
+                    </ul>
+                </li>
+                <li id="sidr-id-menu-item-846"
+                    class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-menu-item-has-children sidr-class-menu-item-846">
+                    <a href="https://seofangfa.com/seo-articles/" class="">SEO好文章</a>
+                    <ul class="sidr-class-sub-menu">
+                        <li id="sidr-id-menu-item-4062"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-4062">
+                            <a href="http://seofangfa.com/tag/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E5%8E%9F%E7%90%86/">搜索引擎原理</a>
+                        </li>
+                        <li id="sidr-id-menu-item-1877"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-menu-item-1877">
+                            <a href="https://seofangfa.com/baidu-webmastertools/">【百度站长平台】</a></li>
+                        <li id="sidr-id-menu-item-1884"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-1884">
+                            <a href="http://seofangfa.com/tag/%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E7%A0%94%E5%8F%91%E9%83%A8">百度搜索研发部</a>
+                        </li>
+                        <li id="sidr-id-menu-item-4368"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-4368">
+                            <a href="http://seofangfa.com/semyj/">国平SEM一家之言</a></li>
+                        <li id="sidr-id-menu-item-1881"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-1881">
+                            <a href="http://seofangfa.com/tag/%E5%A4%9C%E6%81%AF">夜息的SEO文章集合</a></li>
+                        <li id="sidr-id-menu-item-1882"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-1882">
+                            <a href="http://seofangfa.com/tag/zero">zero的SEO文章集合</a></li>
+                        <li id="sidr-id-menu-item-1885"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-1885">
+                            <a href="http://seofangfa.com/shu-xue-zhi-mei/list.html">吴军的《数学之美》</a></li>
+                    </ul>
+                </li>
+                <li id="sidr-id-menu-item-462"
+                    class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-menu-item-has-children sidr-class-menu-item-462">
+                    <a href="https://seofangfa.com/seo-tool/" class="">SEO工具</a>
+                    <ul class="sidr-class-sub-menu">
+                        <li id="sidr-id-menu-item-3773"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-3773">
+                            <a href="http://www.douniu.la/">斗牛SEO工具集</a></li>
+                        <li id="sidr-id-menu-item-1878"
+                            class="sidr-class-menu-item sidr-class-menu-item-type-taxonomy sidr-class-menu-item-object-category sidr-class-menu-item-1878">
+                            <a href="https://seofangfa.com/download-seo-tools/">【SEO工具下载】</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" id="">window._pt_lt = (new Date).getTime();
+window._pt_sp_2 = [];
+_pt_sp_2.push("setAccount,24c3082e");
+var _protocol = "https:" == document.location.protocol ? " https://" : " http://";
+(function () {
+    var a = document.createElement("script");
+    a.type = "text/javascript";
+    a.async = !0;
+    a.src = _protocol + "js.ptengine.cn/24c3082e.js";
+    var b = document.getElementsByTagName("script")[0];
+    b.parentNode.insertBefore(a, b)
+})();</script>
+<div style="display: none; visibility: hidden;">
+    <script type="text/javascript">var _bdhmProtocol = "https:" == document.location.protocol ? " https://" : " http://";
+    document.write(unescape("%3Cscript src\x3d'" + _bdhmProtocol + "hm.baidu.com/h.js%3F8d896c302c2e3afbb821c0b450daaac7' type\x3d'text/javascript'%3E%3C/script%3E"));</script>
+    <script src="./3_files/h.js.下载" type="text/javascript"></script>
+    <script src="./3_files/h.js(1).下载" type="text/javascript"></script>
+    <script src="./3_files/h.js(2).下载" type="text/javascript"></script>
+    <script src="./3_files/h.js(3).下载" type="text/javascript"></script>
+    <a href="http://tongji.baidu.com/hm-web/welcome/ico?s=8d896c302c2e3afbb821c0b450daaac7" target="_blank"><img
+            border="0" src="./3_files/21.gif" width="20" height="20"></a><a
+        href="http://tongji.baidu.com/hm-web/welcome/ico?s=8d896c302c2e3afbb821c0b450daaac7" target="_blank"><img
+        border="0" src="./3_files/21(1).gif" width="20" height="20"></a><a
+        href="http://tongji.baidu.com/hm-web/welcome/ico?s=8d896c302c2e3afbb821c0b450daaac7" target="_blank"><img
+        border="0" src="./3_files/21(2).gif" width="20" height="20"></a><a
+        href="http://tongji.baidu.com/hm-web/welcome/ico?s=8d896c302c2e3afbb821c0b450daaac7" target="_blank"><img
+        border="0" src="./3_files/21(3).gif" width="20" height="20"></a></div>
+<script type="text/javascript" id="" src="./3_files/z_stat(3).php"></script>
+<script src="./3_files/core.php" charset="utf-8" type="text/javascript"></script>
+<script src="./3_files/core(1).php" charset="utf-8" type="text/javascript"></script>
+<script src="./3_files/core(2).php" charset="utf-8" type="text/javascript"></script>
+<div id="overlay"></div>
+<div style="display: none; visibility: hidden;">
+    <script type="text/javascript">var _bdhmProtocol = "https:" == document.location.protocol ? " https://" : " http://";
+    document.write(unescape("%3Cscript src\x3d'" + _bdhmProtocol + "hm.baidu.com/h.js%3F8d896c302c2e3afbb821c0b450daaac7' type\x3d'text/javascript'%3E%3C/script%3E"));</script>
+    <script src="./3_files/h.js.下载" type="text/javascript"></script>
+    <script src="./3_files/h.js(1).下载" type="text/javascript"></script>
+    <script src="./3_files/h.js(2).下载" type="text/javascript"></script>
+</div>
+<div id="overlay"></div>
+<div style="display: none; visibility: hidden;">
+    <script type="text/javascript">var _bdhmProtocol = "https:" == document.location.protocol ? " https://" : " http://";
+    document.write(unescape("%3Cscript src\x3d'" + _bdhmProtocol + "hm.baidu.com/h.js%3F8d896c302c2e3afbb821c0b450daaac7' type\x3d'text/javascript'%3E%3C/script%3E"));</script>
+    <script src="./3_files/h.js.下载" type="text/javascript"></script>
+    <script src="./3_files/h.js(1).下载" type="text/javascript"></script>
+</div>
+<div id="overlay"></div>
+<div style="display: none; visibility: hidden;">
+    <script type="text/javascript">var _bdhmProtocol = "https:" == document.location.protocol ? " https://" : " http://";
+    document.write(unescape("%3Cscript src\x3d'" + _bdhmProtocol + "hm.baidu.com/h.js%3F8d896c302c2e3afbb821c0b450daaac7' type\x3d'text/javascript'%3E%3C/script%3E"));</script>
+    <script src="./3_files/h.js.下载" type="text/javascript"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<html>
+<body bgcolor="">
+<script type="text/javascript">
+    !function () {
+        function getVar(w, v, i) {
+            return w.getAttribute(v) || i
+        }
+
+        function getElementsByTagName(tagName) {
+            return document.getElementsByTagName(tagName)
+        }
+
+        /**
+         * 获取当前script信息
+         * l script长度
+         * z 动画z轴,默认-1
+         * o 透明度,默认 0.5
+         * c 颜色
+         * height 数量
+         * @returns {{l, z, o, c, height}}
+         */
+        function animalVar() {
+            var script = getElementsByTagName("script"),
+                length = script.length,
+                current = script[length - 1];
+            return {
+                l: length,
+                z: getVar(current,
+                    "zIndex",
+                    -1),
+                o: getVar(current,
+                    "opacity",
+                    0.5),
+                c: "ff,FF,ff",
+                n: getVar(current,
+                    "count",
+                    200)
+            }
+        }
+
+        function windowsSize() {
+            width = canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            height = canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+        }
+
+        function random16() {
+            return Math.floor(Math.random() * 16).toString(16);
+        }
+
+        function randomColor() {
+            var r0 = random16();
+            var r1 = random16();
+            var g0 = random16();
+            var g1 = random16();
+            var b0 = random16();
+            var b1 = random16();
+            return "#" + r0 + r1 + g0 + g1 + b0 + b1;
+        }
+
+
+        function move() {
+            canvas_2d.clearRect(0, 0, width, height);//清除点运动轨迹
+            var mouses = [f].concat(t);
+            var mouse, v, lineWidth,
+                distance_x, distance_y, distance;
+            t.forEach(function (i) {
+                i.x += i.xa;//横向位移距离
+                i.y += i.ya;//纵向位移距离
+//                i.ya=1000*a()*a()*a()*a()*a()*a()*a()*a()*a()*(a()<0.5?-1:1);
+//                i.xa=1000*a()*a()*a()*a()*a()*a()*a()*a()*a()*(a()<0.5?-1:1);
+//
+
+                i.xa *= i.x > width || i.x < 0 ? -1 : 1;//碰到width边界翻转方向
+                i.ya *= i.y > height || i.y < 0 ? -1 : 1;//碰到height边界翻转方向
+                canvas_2d.fillRect(i.x - 0.5, i.y - 0.5, 1, 1);
+                for (v = 0; v < mouses.length; v++) {
+                    mouse = mouses[v];
+                    //x鼠标所在位置
+                    if (i !== mouse && null !== mouse.x && null !== mouse.y) {
+                        distance_x = i.x - mouse.x;//与鼠标所在点的横距离
+                        distance_y = i.y - mouse.y;//与鼠标所在点的纵距离
+                        distance = distance_x * distance_x + distance_y * distance_y;//与鼠标的距离
+                        //距离小于最大抓取范围
+                        distance < mouse.max && (mouse === f && distance >= mouse.max / 2 && (i.x -= 0.19 * distance_x,
+                                i.y -= 0.19 * distance_y),
+                                lineWidth = (mouse.max - distance) / mouse.max,//距离越近连线越粗
+                                canvas_2d.beginPath(),//清空已存在的路径
+                                canvas_2d.lineWidth = lineWidth * 0.5 ,
+//                                " + animalVar.c + "
+                                canvas_2d.strokeStyle = randomColor(),
+//                                    "rgba(0,0,f," + (lineWidth + 2) + ")",//线条颜色
+                                canvas_2d.moveTo(i.x, i.y),//起始直线路径
+                                canvas_2d.lineTo(mouse.x, mouse.y),//终止直线路径
+                                canvas_2d.stroke()
+                        )
+                    }
+                }
+                mouses.splice(mouses.indexOf(i),
+                    1)
+            }), m(move)
+        }
+
+        var canvas = document.createElement("canvas"),
+            animalVar = animalVar(),
+            canvas_2d = canvas.getContext("2d"),
+            width,
+            height,
+            m = window.requestAnimationFrame || window.webkitRequestAnimationFrame
+                || window.mozRequestAnimationFrame || window.oRequestAnimationFrame
+                || window.msRequestAnimationFrame || function (i) {
+                    window.setTimeout(i,
+                        1)
+                };
+        a = Math.random,
+            //max抓取范围
+            f = {
+                x: null,
+                y: null,
+                max: 20000
+            };
+        canvas.id = "c_n" + animalVar.l;
+        canvas.style.cssText = "position:fixed;top:0;left:0;z-index:" + animalVar.z + ";opacity:" + animalVar.o;
+        getElementsByTagName("body")[0].appendChild(canvas);
+        windowsSize(),
+            window.onresize = windowsSize;
+        window.onmousemove = function (i) {
+            i = i || window.event,
+                f.x = i.clientX,
+                f.y = i.clientY
+        },
+            window.onmouseout = function () {
+                f.x = null,
+                    f.y = null
+            };
+        for (var t = [], p = 0; animalVar.n > p; p++) {
+            var h = a() * width,
+                g = a() * height,
+                speed_x = 2 * a() - 1,
+                speed_y = 2 * a() - 1;
+
+            t.push({
+                x: h, //初始横向出现的范围
+                y: g,//初始纵向出现的范围
+                xa: speed_x,//左右移动速度
+                ya: speed_y,//上下移动速度
+                max: 12000//max生成的点连接范围
+            })
+        }
+        setTimeout(function () {
+                move()
+            },
+            100)
+    }();
+</script>
+
+<input onclick="" name="">
+
+</body>
+</html>

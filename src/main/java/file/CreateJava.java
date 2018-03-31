@@ -10,6 +10,7 @@ import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -18,7 +19,7 @@ import java.util.regex.Pattern;
 public class CreateJava {
 	public static void main(String[] arg) {
 		try {
-			FileInputStream in = new FileInputStream("g:/test2.docx");//载入文档
+			FileInputStream in = new FileInputStream("g:/test3.docx");//载入文档
 			XWPFDocument document = new XWPFDocument(in);
 			List<XWPFTable> tables = document.getTables();
 			for (XWPFComment xwpfComment : document.getComments()) {
@@ -38,6 +39,7 @@ public class CreateJava {
 						// 0     1     2     3          4
 						//字段 | 中文 | 类型 | 是否必填 | 说明 |
 						String text = cells.get(j).getText();
+						text = text.replace("loanAmtMap.loanAmt", "loanAmtString");
 						switch (j) {
 							case 0:
 								if (JavaClass.isContainChinese(text)) {
@@ -107,7 +109,7 @@ public class CreateJava {
 				System.out.println("\n==============================" +
 						javaClass.isOk() + "\n===================");
 
-				javaClass.wirteJavaVo();
+				javaClass.writeJavaVo();
 				javaClass.writeJavaService();
 			}
 		} catch (Exception e) {
@@ -135,7 +137,6 @@ class JavaClass {
 	String coreName = null;
 
 	public static boolean isContainChinese(String str) {
-
 		Pattern p = Pattern.compile("[\u4e00-\u9fa5]");
 		Matcher m = p.matcher(str);
 		if (m.find()) {
@@ -149,7 +150,7 @@ class JavaClass {
 	}
 
 
-	public void wirteJavaVo() throws IOException {
+	public void writeJavaVo() throws IOException {
 		/*
 		"\tpublic String mobile;\n" +
 				"\tpublic String name;\n" +
@@ -187,13 +188,68 @@ class JavaClass {
 		System.out.println(javaStr);
 		String path = "C:\\Users\\Administrator\\Desktop\\java2\\";
 		BufferedWriter writer = new BufferedWriter(new FileWriter(path + name + ".java"));
-		writer.write(javaStr);
-		writer.flush();
-		writer.close();
+		write(writer,javaStr);
+//		writer.write(javaStr);
+//		writer.flush();
+//		writer.close();
+	}
+
+	public void write(Writer w, String s) throws IOException {
+		w.write(s);
+		w.flush();
+		w.close();
 	}
 
 	public void writeJavaService() throws IOException {
-		if (name == null || name.endsWith("Resp")){
+		if (name == null || name.endsWith("Resp")) {
+			StringBuffer data = new StringBuffer();
+			data.append("json.getJSONObject(\"data\")");
+			/*
+			JSONObject json = JSONObject.parseObject(resp);
+			String code = json.getString("errorCode");
+			if (apiSuccessCode.equals(code)) {
+				JSONObject data = json.getJSONObject("data");
+				String realFlowId = data.getString("realFlowId");
+				String customerId = data.getString("customerId");
+				if (!StringUtils.isEmpty(realFlowId)&&!StringUtils.isEmpty(customerId)) {
+					respObj.customerId = customerId;
+					respObj.realFlowId = realFlowId;
+					respObj.respCode = FinRespCodeEnum.SUCCESS;
+					return respObj;
+				}
+			}
+			 */
+			StringBuffer d = new StringBuffer();
+
+			StringBuffer da = new StringBuffer();
+			da.append("if (");
+			da.append("!StringUtils.isAnyEmpty(");
+			for (int i = 0; i < fields.size(); i++) {
+				String s = fields.get(i);
+				data.append("String ").append(s).append(" = data.getString(\"").append(s).append("\");\n");
+
+				d.append("respObj.");
+				d.append(s);
+				d.append(" = ");
+				d.append(s);
+				d.append(";");
+				d.append("\n");
+				//if (!StringUtils.isEmpty(realFlowId)&&!StringUtils.isEmpty(customerId)) {
+				da.append(s).append(",");
+			}
+			da.append(")){return respOjb;}");
+
+			String path = "C:\\Users\\Administrator\\Desktop\\javatxt\\"+name+".txt";
+			BufferedWriter writer = new BufferedWriter(new FileWriter(path));
+			write(writer,new String(data));
+
+			String path2= "C:\\Users\\Administrator\\Desktop\\javatxt\\"+name+"2.txt";
+			BufferedWriter writer2 = new BufferedWriter(new FileWriter(path2));
+			write(writer2,new String(d));
+
+			String path3= "C:\\Users\\Administrator\\Desktop\\javatxt\\"+name+"3.txt";
+			BufferedWriter writer3 = new BufferedWriter(new FileWriter(path3));
+			write(writer3,new String(da));
 			return;
 		}
 		String resp = name.replace("Req", "Resp");
