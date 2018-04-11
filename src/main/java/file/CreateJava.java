@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 public class CreateJava {
 	public static void main(String[] arg) {
 		try {
-			FileInputStream in = new FileInputStream("g:/test3.docx");//载入文档
+			FileInputStream in = new FileInputStream("/Users/wangluyao/jf/test3.docx");//载入文档
 			XWPFDocument document = new XWPFDocument(in);
 			List<XWPFTable> tables = document.getTables();
 			for (XWPFComment xwpfComment : document.getComments()) {
@@ -186,7 +186,7 @@ class JavaClass {
 				data +
 				"}";
 		System.out.println(javaStr);
-		String path = "C:\\Users\\Administrator\\Desktop\\java2\\";
+		String path = "/wangluyao/java/";
 		BufferedWriter writer = new BufferedWriter(new FileWriter(path + name + ".java"));
 		write(writer,javaStr);
 //		writer.write(javaStr);
@@ -239,15 +239,15 @@ class JavaClass {
 			}
 			da.append(")){return respOjb;}");
 
-			String path = "C:\\Users\\Administrator\\Desktop\\javatxt\\"+name+".txt";
+			String path = "/wangluyao/java/"+name+"1.txt";
 			BufferedWriter writer = new BufferedWriter(new FileWriter(path));
 			write(writer,new String(data));
 
-			String path2= "C:\\Users\\Administrator\\Desktop\\javatxt\\"+name+"2.txt";
+			String path2= "/wangluyao/java/"+name+"2.txt";
 			BufferedWriter writer2 = new BufferedWriter(new FileWriter(path2));
 			write(writer2,new String(d));
 
-			String path3= "C:\\Users\\Administrator\\Desktop\\javatxt\\"+name+"3.txt";
+			String path3= "/wangluyao/java/"+name+"3.txt";
 			BufferedWriter writer3 = new BufferedWriter(new FileWriter(path3));
 			write(writer3,new String(da));
 			return;
@@ -329,7 +329,7 @@ class JavaClass {
 						"\n";
 		System.out.println(bizStr+"================================================");
 		System.out.println(serviceStr);
-		String path = "C:\\Users\\Administrator\\Desktop\\service2\\";
+		String path = "/wangluyao/java/";
 		BufferedWriter writer = new BufferedWriter(new FileWriter(path + "Api" + coreName + "Service" + ".java"));
 		writer.write(serviceStr);
 		writer.flush();

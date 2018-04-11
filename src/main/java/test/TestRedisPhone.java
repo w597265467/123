@@ -16,6 +16,10 @@ public class TestRedisPhone {
 		String a = "cfin_cmcredit_time_";
 		String b = "cfin_cm_credit_white_";
 		Jedis jedis = new Jedis("192.168.2.5", 6379);
+
+		String s1 = jedis.get("jft_trade_677ad877-0de4-4633-b86d-1c4eef0e2d84");
+		System.out.println(s1);
+
 		SimpleDateFormat spf = new SimpleDateFormat("yyyyMMddHHmmss");
 		String format = spf.format(new Date());
 //		String phone = "13450489996";
@@ -24,7 +28,12 @@ public class TestRedisPhone {
 				"13917560653";
 //		String[] split = phones.split("\n");
 //		for (String s : split) {
-		String s = "13636035190";
+		String s = "18229704864\n" +
+				"15111401445\n" +
+				"13917560653\n" +
+				"15973125292\n" +
+				"13917560653\n" +
+				"15388950103";
 			System.out.println("\""+s+"\",");
 			jedis.set(a + s, "\""+format+"\"");
 			jedis.set(b + s, "\""+format+"\"");
