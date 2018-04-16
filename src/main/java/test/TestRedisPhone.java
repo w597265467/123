@@ -17,8 +17,8 @@ public class TestRedisPhone {
 		String b = "cfin_cm_credit_white_";
 		Jedis jedis = new Jedis("192.168.2.5", 6379);
 
-		String s1 = jedis.get("jft_trade_677ad877-0de4-4633-b86d-1c4eef0e2d84");
-		System.out.println(s1);
+//		String s1 = jedis.get("jft_trade_677ad877-0de4-4633-b86d-1c4eef0e2d84");
+//		System.out.println(s1);
 
 		SimpleDateFormat spf = new SimpleDateFormat("yyyyMMddHHmmss");
 		String format = spf.format(new Date());
@@ -28,24 +28,25 @@ public class TestRedisPhone {
 				"13917560653";
 //		String[] split = phones.split("\n");
 //		for (String s : split) {
-		String s = "18229704864\n" +
-				"15111401445\n" +
-				"13917560653\n" +
-				"15973125292\n" +
-				"13917560653\n" +
-				"15388950103";
-			System.out.println("\""+s+"\",");
+//		String s = "13723899841";
+//			System.out.println("\""+s+"\",");
+//			jedis.set(a + s, "\""+format+"\"");
+//			jedis.set(b + s, "\""+format+"\"");
+//		}
+		TestRedisPhone phone = new TestRedisPhone();
+		List<String> phone1 = phone.findPhone("@王路遥 帮忙加一下3个测试号码：\n" +
+				"13875893681；\n" +
+				"13787139810；\n" +
+				"13875892981");
+		for (String s : phone1) {
+			System.out.println("======="+s);
 			jedis.set(a + s, "\""+format+"\"");
 			jedis.set(b + s, "\""+format+"\"");
-//		}
-//		TestRedisPhone phone = new TestRedisPhone();
-//		List<String> phone1 = phone.findPhone("@王路遥 帮我删一下测试环境的相关数据15116388715 \n" +
-//				"\n" +
-//				" 18229704864 \n" +
-//				"15111401445   13917560653");
-//		for (String s : phone1) {
-//			System.out.println(s);
-//		}
+			Set<String> keys = jedis.keys("*" + s);
+			for (String key : keys) {
+				System.out.println(key);
+			}
+		}
 	}
 	public boolean addPhone(String phone){
 		try {
@@ -78,7 +79,7 @@ public class TestRedisPhone {
 		List<String> list = new ArrayList();
 		while (m.find()){
 			for (int i = 0; i <= m.groupCount(); i++) {
-				System.out.println(m.group(i));
+//				System.out.println(m.group(i));
 				list.add(m.group(i));
 			}
 //			System.out.println(replace.substring(m.end()));

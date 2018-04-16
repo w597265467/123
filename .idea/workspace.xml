@@ -2,208 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67398fe5-e6ef-4467-a828-2b880191e30a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_4_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_scratchpad_3_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/charles.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/file/CreateJavaEm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1122.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1122.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/123.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1521518965844.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1521518965844.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1521519373573.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1521519373573.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1521519394165.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1521519394165.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1521519757148.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1521519757148.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1521519915761.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1521519915761.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-world.html" beforeDir="false" afterPath="$PROJECT_DIR$/hello-world.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/24c3082e.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/24c3082e.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/analytics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/analytics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/autoptimize_57bd8336a6e07f590969efed91ed75be.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/autoptimize_57bd8336a6e07f590969efed91ed75be.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/canvas-nest.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/canvas-nest.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/comments-ajax-qt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/comments-ajax-qt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/core.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/core.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/fancybox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/fancybox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/flexisel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/flexisel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/gb2big5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/gb2big5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/gtm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/gtm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/h.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/h.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/html.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/jquery-ias.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/jquery-ias.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/jquery.lazyload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/jquery.lazyload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/jquery.qrcode.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/jquery.qrcode.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/postviews-cache.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/postviews-cache.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/qaptcha.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/qaptcha.jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/slides.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/slides.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/superfish.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/superfish.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/tipso.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/tipso.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/wow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/wow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/4/5_files/z_stat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/4/5_files/z_stat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/html/test2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/html/test2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/controller/ShiroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/controller/ShiroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/MyExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/MyExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/MySessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/MySessionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/MyShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/MyShiroRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/RedisCacheManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/RedisCacheManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/RedisManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/RedisManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/RedisSessionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/RedisSessionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/SerializerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/SerializerUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/jf180/finance/shiro/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/CreatExcal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/CreatExcal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/CreatJavaCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/CreatJavaCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/CreateCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/CreateCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/CreateCSV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/CreateCSV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/CreateExcel2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/CreateExcel2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/CreateJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/CreateJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/MoveDIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/MoveDIR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/MoveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/MoveFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/MovePDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/MovePDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/ReadExcelGetFirstRowsCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/ReadExcelGetFirstRowsCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/TestIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/TestIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/TestVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/TestVideo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/entity/OrderMassage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/entity/OrderMassage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/log/Count.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/log/Count.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/log/CountLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/log/CountLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/log/LogTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/log/LogTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/file/log/NumberMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/file/log/NumberMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mail/ReceiveMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/ReceiveMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mail/ReceiveMailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/ReceiveMailTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mail/ReciveMailUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/ReciveMailUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mail/mail.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/mail.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/DESUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/DESUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/Html2ImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/Html2ImageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestCLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestColon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestColon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestContains.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestContains.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestCreateJavaFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestCreateJavaFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestEncode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestEncode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestFFmpeg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestFFmpeg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestGetAllTableName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestGetAllTableName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestHtml2Img.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestHtml2Img.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestHtmlTOImg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestHtmlTOImg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestJedisTTL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestJedisTTL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestLuanMa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestLuanMa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestPackage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestParseJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestParseJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestRandom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestReadLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestReadLine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/TestRedisPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestRedisPhone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestReflect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestReflect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestRex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestRex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestUnreadableCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestUnreadableCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TestWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TestWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/BankCardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/BankCardMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/CmEmpowerRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/CmEmpowerRecordMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/CreditOrderGoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/CreditOrderGoodsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/CreditOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/CreditOrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/HaierAreaCodeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/HaierAreaCodeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/SellerInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/SellerInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/UserAccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/UserAccountMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/UserAccountTranMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/UserAccountTranMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/UserCreditApplyPayMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/UserCreditApplyPayMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/UserFamilyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/UserFamilyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/BankCardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/BankCardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/CmEmpowerRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/CmEmpowerRecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/CreditOrderGoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/CreditOrderGoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/CreditOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/CreditOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/HaierAreaCodeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/HaierAreaCodeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/SellerInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/SellerInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/UserAccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/UserAccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/UserAccountTranMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/UserAccountTranMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/UserCreditApplyPayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/UserCreditApplyPayMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/UserFamilyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/UserFamilyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/BankCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/BankCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/BankCardExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/BankCardExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/CmEmpowerRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/CmEmpowerRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/CmEmpowerRecordExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/CmEmpowerRecordExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/CreditOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/CreditOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/CreditOrderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/CreditOrderExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/CreditOrderGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/CreditOrderGoods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/CreditOrderGoodsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/CreditOrderGoodsExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/HaierAreaCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/HaierAreaCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/HaierAreaCodeExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/HaierAreaCodeExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/SellerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/SellerInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/SellerInfoExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/SellerInfoExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/UserAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/UserAccountExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/UserAccountExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/UserAccountTran.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/UserAccountTran.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/UserAccountTranExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/UserAccountTranExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/UserCreditApplyPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/UserCreditApplyPay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/UserCreditApplyPayExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/UserCreditApplyPayExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/UserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/UserExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/UserFamily.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/UserFamily.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generator/model/UserFamilyExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generator/model/UserFamilyExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/mock/MockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/mock/MockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/video/transcode/Contants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/video/transcode/Contants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/video/transcode/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/video/transcode/TestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/video/transcode/TranscodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/video/transcode/TranscodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/perl.pl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/perl.pl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis_generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis_generator.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/file/CreateJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/file/CreateJava.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/file/JavaClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/file/JavaClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mail/ReceiveMailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mail/ReceiveMailTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mail/ReciveMailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mail/ReciveMailUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/BankCardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/BankCardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/CmEmpowerRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/CmEmpowerRecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/CreditOrderGoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/CreditOrderGoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/CreditOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/CreditOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/HaierAreaCodeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/HaierAreaCodeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/SellerInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/SellerInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/UserAccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/UserAccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/UserAccountTranMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/UserAccountTranMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/UserCreditApplyPayMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/UserCreditApplyPayMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/UserFamilyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/UserFamilyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generator/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generator/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -215,48 +17,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CreateJava.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/file/CreateJava.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3825">
-              <caret line="241" column="52" selection-start-line="241" selection-start-column="52" selection-end-line="241" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TestRedisPhone.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/test/TestRedisPhone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestRex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/TestRex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestReadLine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/TestReadLine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="365">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>(path = &quot;).*&quot;</find>
       <find>(path\d= &quot;).*?&quot;</find>
+      <find>Thank</find>
+      <find>ClXg</find>
+      <find>socket</find>
+      <find>socket =</find>
     </findStrings>
     <replaceStrings>
       <replace>$1/wangluyao/java/&quot;</replace>
@@ -269,6 +55,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/file/CreateJava.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/TestCreateJavaFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/file/CreateJavaEm.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/TestRedisPhone.java" />
       </list>
     </option>
@@ -279,6 +67,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NamedScopeManager">
+    <scope name="Unnamed" pattern="*||src:*..*||lib:*..*||test:*..*" />
+  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
@@ -286,10 +77,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -333,26 +126,52 @@
             </path>
             <path>
               <item name="123" type="b2602c69:ProjectViewProjectNode" />
-              <item name="123" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="TestRex" type="1a9f42e2:ClassTreeNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: redis.clients:jedis:2.9.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: redis.clients:jedis:2.9.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="jedis-2.9.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: redis.clients:jedis:2.9.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="jedis-2.9.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: redis.clients:jedis:2.9.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="jedis-2.9.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="jedis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="redis&#9;PSI&#9;JAVA://test.TestRedisPhone&#10;cre&#9;PSI&#9;JAVA://file.CreateJava" />
+    <property name="SearchEverywhereHistoryKey" value="phone&#9;FILE&#9;file:///Users/wangluyao/jf/123/src/main/java/test/TestRedisPhone.java&#10;CreateC&#9;PSI&#9;JAVA://file.CreateCSV2&#10;redis&#9;PSI&#9;JAVA://test.TestRedisPhone&#10;cre&#9;PSI&#9;JAVA://file.CreateJava" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -462,14 +281,18 @@
       <workItem from="1522722966457" duration="3890000" />
       <workItem from="1522805680389" duration="622000" />
       <workItem from="1522841095376" duration="607000" />
+      <workItem from="1523415706579" duration="1811000" />
+      <workItem from="1523609670488" duration="1418000" />
+      <workItem from="1523846429823" duration="5344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6367000" />
+    <option name="totallyTimeSpent" value="14940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -492,9 +315,10 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2639485" />
       <window_info anchor="right" id="Bean Validation" order="5" />
       <window_info id="Web" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -502,8 +326,41 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32917705" />
+      <window_info anchor="bottom" id="Spring" order="11" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32917705" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990025" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -517,75 +374,215 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreateJava.java">
+    <entry file="file://$PROJECT_DIR$/src/main/html/4/5_files/gtm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="241" column="52" selection-start-line="241" selection-start-column="52" selection-end-line="241" selection-end-column="52" />
+        <state relative-caret-position="2091">
+          <caret line="118" column="2323" selection-start-line="118" selection-start-column="2323" selection-end-line="118" selection-end-column="2323" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestRedisPhone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestRex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreateJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="241" column="52" selection-start-line="241" selection-start-column="52" selection-end-line="241" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestRedisPhone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestRex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreateJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="241" column="52" selection-start-line="241" selection-start-column="52" selection-end-line="241" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestRex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestReadLine.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreateCSV.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreateCSV2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/java/charles.jar!/org/FyLT/FyLT/FyLT/ClXg.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreateJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5899">
+          <caret line="363" column="39" selection-start-line="363" selection-start-column="39" selection-end-line="363" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreatJavaCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestCreateJavaFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" column="53" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreateJavaEm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreatExcal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/html/4/5_files/gtm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="118" column="2323" selection-start-line="118" selection-start-column="2323" selection-end-line="118" selection-end-column="2323" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreateCSV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/file/CreateCSV2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/java/charles.jar!/org/FyLT/FyLT/FyLT/ClXg.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Jedis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="107" column="23" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Client.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/util/SafeEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Jedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="117" column="16" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/util/SafeEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="46" column="7" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="7" />
+          <folding>
+            <element signature="e#1286#1287#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/BinaryClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="109" column="15" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="15" />
+          <folding>
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="e#2816#2817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="126" column="26" selection-start-line="126" selection-start-column="15" selection-end-line="126" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/net/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="1122" column="78" lean-forward="true" selection-start-line="1122" selection-start-column="78" selection-end-line="1122" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Protocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="92" column="21" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="21" />
+          <folding>
+            <element signature="e#10034#10035#0" expanded="true" />
+            <element signature="e#10085#10086#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/util/RedisOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/TestRedisPhone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="365">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>Unnamed</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="Unnamed" />
+          </order>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
