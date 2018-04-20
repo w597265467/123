@@ -15,6 +15,7 @@ public class TestRedisPhone {
 	public static void main(String[] arg) {
 		String a = "cfin_cmcredit_time_";
 		String b = "cfin_cm_credit_white_";
+		String c = "cfin_mall_white_";
 		Jedis jedis = new Jedis("192.168.2.5", 6379);
 
 //		String s1 = jedis.get("jft_trade_677ad877-0de4-4633-b86d-1c4eef0e2d84");
@@ -34,14 +35,12 @@ public class TestRedisPhone {
 //			jedis.set(b + s, "\""+format+"\"");
 //		}
 		TestRedisPhone phone = new TestRedisPhone();
-		List<String> phone1 = phone.findPhone("@王路遥 帮忙加一下3个测试号码：\n" +
-				"13875893681；\n" +
-				"13787139810；\n" +
-				"13875892981");
+		List<String> phone1 = phone.findPhone("13718880820");
 		for (String s : phone1) {
 			System.out.println("======="+s);
 			jedis.set(a + s, "\""+format+"\"");
 			jedis.set(b + s, "\""+format+"\"");
+			jedis.set(c + s, "\""+format+"\"");
 			Set<String> keys = jedis.keys("*" + s);
 			for (String key : keys) {
 				System.out.println(key);

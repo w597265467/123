@@ -60,7 +60,7 @@
             <!--<property name="countByExample" value="long"/>-->
         </javaClientGenerator>
         <!-- 表名对应生成的实体 -->
-        <table tableName="%"/>
+        <table tableName="action_detail"/>
 
         <!-- enableCountByExample="false" enableUpdateByExample="false"
         enableDeleteByExample="false" enableSelectByExample="false"

@@ -1,5 +1,5 @@
 <configuration debug="true" scan="true" scanPeriod="3 minutes">
-	<property name="LOG_PATH" value="/test/logs" />
+	<property name="LOG_PATH" value="/Users/wangluyao" />
 	<property name="NODE_NAME" value="test" />
 	<property name="NODE_ID" value="8888" />
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
