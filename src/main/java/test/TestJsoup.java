@@ -1,6 +1,7 @@
 package test;
 
 import com.oracle.tools.packager.Log;
+import com.sun.xml.internal.ws.api.pipe.ServerPipeAssemblerContext;
 import file.DateUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -32,7 +33,7 @@ public class TestJsoup {
 
 	public static ConcurrentHashMap<String, phoneVo> map = new ConcurrentHashMap<>();
 
-
+	public static Map<String, String> nameAndHrefMap = new ConcurrentHashMap<>();
 
 	public static ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
 
@@ -61,14 +62,12 @@ public class TestJsoup {
 		try {
 			doc = connect.get();
 		} catch (IOException e) {
-			log.error("error:{},href:{}", e,href);
+			log.error("error:{},href:{}", e, href);
 		}
 		return doc;
 	}
 
 	public static void a() {
-		Map<String, String> nameAndHrefMap = new HashMap<>();
-
 		try {
 			Document doc = doc("http://detail.zol.com.cn/cell_phone_index/subcate57_0_list_1_0_1_2_0_1.html");
 			Element brandAll = doc.getElementById("J_BrandAll");
@@ -94,63 +93,76 @@ public class TestJsoup {
 		for (Map.Entry<String, String> entry : entries) {
 			// 开启一个线程
 			cachedThreadPool.execute(new JsoupThred(entry.getKey(), entry.getValue()));
+
 		}
 		//以下是等线程池的全部线程执行结束后，会自动执行。
-		cachedThreadPool.shutdown();
+//		cachedThreadPool.shutdown();
 		while (true) {
 			if (cachedThreadPool.isTerminated()) {
-				createExcel(map,null);
+				createExcel(map, null);
 				break;
 			}
 		}
 	}
 
-	public static void createExcel(Map<String,phoneVo> voMap,String excelName){
-		if (StringUtils.isEmpty(excelName)){
+	public static void createExcel(Map<String, phoneVo> voMap, String excelName) {
+		if (StringUtils.isEmpty(excelName)) {
 			excelName = "最新爬下来的手机信息XXXX";
 		}
-		String path = "/Users/wangluyao/jf/phoneInfo/"+excelName+".xls";
+		String path = "/Users/wangluyao/jf/phoneInfo/" + excelName + ".xls";
 		File file = new File(path);
 		int add = 0;
 		Sheet sheet = null;
 
-		if (file.exists()){
+		if (file.exists()) {
 
 			try {
-				FileInputStream fs=new FileInputStream("d://test.xls");  //获取d://test.xls
-				POIFSFileSystem ps=new POIFSFileSystem(fs);  //使用POI提供的方法得到excel的信息
-				HSSFWorkbook wb=new HSSFWorkbook(ps);
-				sheet=wb.getSheetAt(0);  //获取到工作表，因为一个excel可能有多个工作表
-				add = sheet.getLastRowNum()+1;
+				FileInputStream fs = new FileInputStream(path);  //获取d://test.xls
+				POIFSFileSystem ps = new POIFSFileSystem(fs);  //使用POI提供的方法得到excel的信息
+				HSSFWorkbook wb = new HSSFWorkbook(ps);
+				sheet = wb.getSheetAt(0);  //获取到工作表，因为一个excel可能有多个工作表
+				add = sheet.getLastRowNum() + 1;
 
 			} catch (IOException e) {
-				log.error("error:{}",e);
+				log.error("error:{}", e);
 			}
 		}
 		Workbook wb = null;
 		if (sheet == null) {
 			wb = new HSSFWorkbook();
-			sheet =  wb.createSheet();
+			sheet = wb.createSheet();
 		}
-		int i=0;
-		int j=0;
-		if (add != 0) {
+		int i = 0;
+		int j = 0;
+		List<String> list = new ArrayList<>();
+		if (add == 0) {
 			Row row = sheet.createRow(i++);
-			Cell cell = row.createCell(0);
-			cell.setCellValue("名字");
-			Cell cell1 = row.createCell(1);
-			cell1.setCellValue("手机名称");
-			Cell cell2= row.createCell(2);
-			cell2.setCellValue("手机别名");
+			row.createCell(0).setCellValue("名字");
+			row.createCell(1).setCellValue("手机名称");
+			row.createCell(2).setCellValue("手机别名");
+			row.createCell(3).setCellValue("手机价格");
+			Set<Map.Entry<String, phoneVo>> entries = voMap.entrySet();
+			Map.Entry<String, phoneVo> next = entries.iterator().next();
+			phoneVo value = next.getValue();
+			Map<String, String> detail = value.detail;
+			Set<String> strings = detail.keySet();
+			int i4 = 1;
+			for (String string : strings) {
+				list.add(string);
+				row.createCell(3 + i4++).setCellValue(string);
+			}
 		}
 		for (Map.Entry<String, phoneVo> entry : voMap.entrySet()) {
 			Row row1 = sheet.createRow(add + i++);
-			Cell cell3 = row1.createCell(0);
-			cell3.setCellValue(entry.getKey());
-			Cell cell4 = row1.createCell(1);
-			cell4.setCellValue(entry.getValue().phoneName);
-			Cell cell5 = row1.createCell(2);
-			cell5.setCellValue(entry.getValue().phoneAlias);
+			row1.createCell(0).setCellValue(entry.getKey());
+			row1.createCell(1).setCellValue(entry.getValue().phoneName);
+			row1.createCell(2).setCellValue(entry.getValue().phoneAlias);
+			row1.createCell(3).setCellValue(entry.getValue().price);
+			for (Map.Entry<String, String> stringStringEntry : entry.getValue().detail.entrySet()) {
+				int i1 = list.indexOf(stringStringEntry.getKey());
+				if (i1!=-1)
+				row1.createCell(3 + i1).setCellValue(stringStringEntry.getValue());
+			}
 		}
 		try {
 			OutputStream os = new FileOutputStream(path);
@@ -158,7 +170,7 @@ public class TestJsoup {
 			os.close();
 			wb.close();
 		} catch (IOException e) {
-			log.debug("error:{}",e);
+			log.debug("error:{}", e);
 		}
 	}
 
@@ -170,6 +182,35 @@ public class TestJsoup {
 	}
 
 }
+@Slf4j
+class JsoupThred2 extends Thread {
+	public String phoneName;
+	public String href;
+
+	public JsoupThred2(String phoneName, String href) {
+		this.phoneName = phoneName;
+		this.href = href;
+	}
+
+	@Override
+	public void run() {
+		Document doc = TestJsoup.doc(href);
+		try {
+			Elements page = doc.getElementsByClass("small-page-next");
+			for (Element element : page) {
+				Attributes attributes = element.attributes();
+				String href = attributes.get("href");
+				if (StringUtils.isEmpty(href)){
+					return;
+				}
+				TestJsoup.nameAndHrefMap.put(this.phoneName,href);
+			}
+		} catch (Exception e) {
+			log.debug("error:{},href:{}",e,href);
+		}
+	}
+}
+
 
 @Slf4j
 class JsoupThred extends Thread {
@@ -187,18 +228,7 @@ class JsoupThred extends Thread {
 	public void run() {
 		try {
 			Document doc = TestJsoup.doc(href);
-
 			Element picMode = doc.getElementById("J_PicMode");
-			try {
-				Elements page = doc.getElementsByClass("small-page-next");
-				for (Element element : page) {
-					Attributes attributes = element.attributes();
-					String href = attributes.get("href");
-					TestJsoup.cachedThreadPool.execute(new JsoupThred(this.phoneName,href));
-				}
-			} catch (Exception e) {
-				log.debug("error:{},href:{}",e,href);
-			}
 			Elements allElements = picMode.getAllElements();
 			Map<String, String> map = new HashMap<>();
 			for (Element element : allElements) {
@@ -221,7 +251,7 @@ class JsoupThred extends Thread {
 					log.debug(h3.toString());
 				}
 			}
-			Map<String,phoneVo> voMap = new HashMap<>();
+			Map<String, phoneVo> voMap = new HashMap<>();
 			for (Map.Entry<String, String> entry : map.entrySet()) {
 				phoneVo phoneVo = new phoneVo();
 				phoneVo.name = entry.getKey();
@@ -231,24 +261,41 @@ class JsoupThred extends Thread {
 				for (Element element : name) {
 					String text = element.text();
 					phoneVo.phoneName = text;
-					if (!StringUtils.isEmpty(text)) {
-						log.debug("全名:{}", text);
-					}
 				}
 				Elements alias = doc1.getElementsByClass("product-model__alias");
 				for (Element element : alias) {
 					String aliasName = element.text();
 					phoneVo.phoneAlias = aliasName;
-					if (!StringUtils.isEmpty(aliasName)) {
-						log.debug("别名:{}", aliasName);
-					}
-
 				}
+				Elements price = doc1.getElementsByClass("price-type");
+				for (Element element : price) {
+					String aliasName = element.text();
+					phoneVo.price = aliasName;
+				}
+
+				Elements elementsByClass = doc1.getElementsByClass("_j_MP_more section-more");
+				Element first = elementsByClass.first();
+				String href = first.attributes().get("href");
+				Document doc2 = TestJsoup.doc(TestJsoup.url+href);
+				Elements list = doc2.getElementsByClass("category-param-list");
+				int i = 0;
+				phoneVo.detail = new HashMap<>();
+				for (Element element : list) {
+					Elements lis = element.getElementsByTag("li");
+					for (Element li : lis) {
+						Elements span = li.getElementsByTag("span");
+						String n = span.get(0).text().replace("纠错", " ").replace(" ", "");
+						String v = span.get(1).text().replace("纠错", " ").replace(" ", "");
+						phoneVo.detail.put(n, v);
+					}
+				}
+				log.debug(phoneVo.toString());
 				voMap.put(phoneVo.name, phoneVo);
 			}
-			TestJsoup.createExcel(voMap,phoneName);
+			//category-param-list
+			TestJsoup.createExcel(voMap, phoneName);
 		} catch (Exception e) {
-			log.debug("error:{}",e);
+			log.debug("error:{}", e);
 		}
 	}
 }
@@ -258,6 +305,20 @@ class phoneVo {
 	public String name;
 	public String phoneName;
 	public String phoneAlias;
+	public String price;
+
+	public Map<String, String> detail;
+
+	@Override
+	public String toString() {
+		return "phoneVo{" +
+				"name='" + name + '\'' +
+				", phoneName='" + phoneName + '\'' +
+				", phoneAlias='" + phoneAlias + '\'' +
+				", price='" + price + '\'' +
+				", detail=" + detail +
+				'}';
+	}
 }
 
 
