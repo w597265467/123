@@ -28,3 +28,4 @@ hs_err_pid*
 **/merchant/build
 /projects/merchant-web/src/main/webapp/index.html
 /bin/
+/src/main/java/file/JdbcUtils.java
