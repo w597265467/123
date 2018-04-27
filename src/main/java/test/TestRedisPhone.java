@@ -35,7 +35,7 @@ public class TestRedisPhone {
 //			jedis.set(b + s, "\""+format+"\"");
 //		}
 		TestRedisPhone phone = new TestRedisPhone();
-		List<String> phone1 = phone.findPhone("13718880820");
+		List<String> phone1 = phone.findPhone("13622342322");
 		for (String s : phone1) {
 			System.out.println("======="+s);
 			jedis.set(a + s, "\""+format+"\"");
