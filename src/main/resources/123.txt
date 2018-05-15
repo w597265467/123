@@ -1,0 +1,17 @@
+bdba228 - 王路遥, 2 hours ago : 套餐修改
+8640425 - 王路遥, 3 hours ago : 提示文案修改
+30ce66a - 王路遥, 3 hours ago : 向上营销日志修改
+6d1dabe - 王路遥, 4 hours ago : 代码修改
+5c23050 - 王路遥, 4 hours ago : 身份证识别,code读取不到发送邮件
+c0d16d9 - 王路遥, 4 hours ago : 用户授信流程走到哪记录,以用户最远到哪为准
+5655746 - 王路遥, 4 hours ago : 身份证识别接口code从redis火气
+5b4697e - 王路遥, 4 hours ago : 协议信息修改
+e18ab44 - 王路遥, 9 hours ago : 返回套餐信息添加返费和累计返费
+0ab0b6c - 王路遥, 9 hours ago : 套餐信息修改
+0dc9937 - 王路遥, 2 days ago : 添加新的action到FinCreditActionEnum
+0437b3b - 王路遥, 2 days ago : 订单详情套餐返费修改
+1ee6deb - 王路遥, 2 days ago : 用户可选套餐修改2
+483e015 - 王路遥, 2 days ago : 用户可选套餐修改
+d122ef6 - 王路遥, 2 days ago : 向上营销redis
+cfd3a0a - 王路遥, 2 days ago : 向上营销去掉注释
+37d0548 - 王路遥, 3 days ago : 四要素验证码错误提示文案修改

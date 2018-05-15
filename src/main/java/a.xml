@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns2:getBankZjkServiceResponse xmlns:ns2="http://service.finance.hbmcc.alx.com/">
+            <return>
+                <yesOrNo>Y</yesOrNo>
+                <score>850</score>
+                <isFxUser>0</isFxUser>
+                <isFluxUser>1</isFluxUser>
+                <userType>Q</userType>
+                <errorMsg>成功</errorMsg>
+                <errorCode>200</errorCode>
+            </return>
+        </ns2:getBankZjkServiceResponse>
+    </S:Body>
+</S:Envelope>

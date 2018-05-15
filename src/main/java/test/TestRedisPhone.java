@@ -30,20 +30,20 @@ public class TestRedisPhone {
 //		String[] split = phones.split("\n");
 //		for (String s : split) {
 //		String s = "13723899841";
-//			System.out.println("\""+s+"\",");
-//			jedis.set(a + s, "\""+format+"\"");
-//			jedis.set(b + s, "\""+format+"\"");
+//			System.out.println(+s+"\",");
+//			jedis.set(a + s, +format+);
+//			jedis.set(b + s, +format+);
 //		}
 		TestRedisPhone phone = new TestRedisPhone();
-		List<String> phone1 = phone.findPhone("13622342322");
+		List<String> phone1 = phone.findPhone("13661159235");
 		for (String s : phone1) {
 			System.out.println("======="+s);
-			jedis.set(a + s, "\""+format+"\"");
-			jedis.set(b + s, "\""+format+"\"");
-			jedis.set(c + s, "\""+format+"\"");
+			jedis.set(a + s, format);
+			jedis.set(b + s, format);
+			jedis.set(c + s, format);
 			Set<String> keys = jedis.keys("*" + s);
 			for (String key : keys) {
-				System.out.println(key);
+				System.out.println(key +"," +jedis.get(key));
 			}
 		}
 	}
@@ -54,8 +54,8 @@ public class TestRedisPhone {
 			Jedis jedis = new Jedis("192.168.2.5", 6379);
 			SimpleDateFormat spf = new SimpleDateFormat("yyyyMMddHHmmss");
 			String format = spf.format(new Date());
-			jedis.set(a + phone, "\""+format+"\"");
-			jedis.set(b + phone, "\""+format+"\"");
+			jedis.set(a + phone, format);
+			jedis.set(b + phone, format);
 			System.out.println("\""+phone+"\",");
 			Set<String> keys = jedis.keys("*" + phone);
 			for (String key : keys) {
