@@ -60,7 +60,7 @@
             <!--<property name="countByExample" value="long"/>-->
         </javaClientGenerator>
         <!-- 表名对应生成的实体 -->
-        <table tableName="user_ext_info"/>
+        <table tableName="op_package"/>
 
         <!-- enableCountByExample="false" enableUpdateByExample="false"
         enableDeleteByExample="false" enableSelectByExample="false"

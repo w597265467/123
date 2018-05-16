@@ -1,6 +1,9 @@
-package test;
+package test.pdf;
 
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Font;
+import com.itextpdf.text.FontProvider;
 import com.itextpdf.tool.xml.Pipeline;
 import com.itextpdf.tool.xml.XMLWorker;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
@@ -13,7 +16,10 @@ import com.itextpdf.tool.xml.pipeline.css.CssResolverPipeline;
 import com.itextpdf.tool.xml.pipeline.end.PdfWriterPipeline;
 import com.itextpdf.tool.xml.pipeline.html.HtmlPipeline;
 import com.itextpdf.tool.xml.pipeline.html.HtmlPipelineContext;
+import com.lowagie.text.FontFactory;
 import com.lowagie.text.pdf.BaseFont;
+import com.oracle.tools.packager.Log;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;
 import org.xhtmlrenderer.pdf.ITextFontResolver;
@@ -42,6 +48,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.nio.charset.Charset;
 
+
+@Slf4j
 public class TestHtml2Pdf {
 
 
@@ -199,8 +207,12 @@ public class TestHtml2Pdf {
 
 	@Test
 	public void testCHP() throws Exception {
-		boolean b = convertHtmlToPdf("/Users/wangluyao/jf/123/src/main/html/4/2.html", "test.pdf");
+		Html2Pdf.html2Pdf("/Users/wangluyao/jf/123/1.html", "4.pdf");
+
 	}
+
+
+
 
 	public boolean convertHtmlToPdf(String inputFile, String outputFile)
 			throws Exception {
@@ -208,12 +220,14 @@ public class TestHtml2Pdf {
 		OutputStream os = new FileOutputStream(outputFile);
 		ITextRenderer renderer = new ITextRenderer();
 		String url = new File(inputFile).toURI().toURL().toString();
-
+		System.out.println(url);
 		renderer.setDocument(url);
+
 
 		// 解决中文支持问题
 		ITextFontResolver fontResolver = renderer.getFontResolver();
 		fontResolver.addFont("/Users/wangluyao/jf/123/font/simsun.ttc", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+		fontResolver.addFont("/Users/wangluyao/jf/123/font/msyhl.ttc", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
 		//解决图片的相对路径问题
 //		renderer.getSharedContext().setBaseURL("file:/D:/");
 		renderer.layout();
