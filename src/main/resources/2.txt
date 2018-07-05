@@ -1,0 +1,15 @@
+//分期订单&合约请求参数
+curl -d "skuId=369&memberId=54&number=1&type=2&sig=123456&contractPeriod=12&monthlyFee=89&packageDetails=128元牛奔档详情&packageName=128元牛奔档位&pckToMobile=18510993269&name=小张&idCardNo=612728198706036127&isContractPeriod=true&receiverName=王井东&receiverProvince=北京市&receiverCity=朝阳区&receiverArea=望京&receiverAddress=soho塔1B座501" -H 'content-type: application/x-www-form-urlencoded' "http://127.0.0.1:8080/api/cart/add.do"
+
+
+
+//分期订单&裸机的请求参数
+curl -d "skuId=369&memberId=54&number=1&type=2&sig=123456&isContractPeriod=false&name=小张&idCardNo=612728198706036127&receiverName=王井东&receiverProvince=北京市&receiverCity=朝阳区&receiverArea=望京&receiverAddress=soho塔1B座501" -H 'content-type: application/x-www-form-urlencoded' "http://127.0.0.1:8080/api/cart/add.do"
+
+
+//全款订单&裸机的请求参数
+curl -d "skuId=369&memberId=54&number=1&type=1&sig=123456&isContractPeriod=false&name=小张&idCardNo=612728198706036127&&receiverName=王井东&receiverProvince=北京市&receiverCity=朝阳区&receiverArea=望京&receiverAddress=soho塔1B座501" -H 'content-type: application/x-www-form-urlencoded' "http://127.0.0.1:8080/api/cart/add.do"
+
+
+//全款订单&合约的请求参数
+curl -d "skuId=369&memberId=54&number=1&type=1&sig=123456&contractPeriod=12&monthlyFee=89&packageDetails=128元牛奔档详情&packageName=128元牛奔档位&pckToMobile=18510993269&name=小张&idCardNo=612728198706036127&isContractPeriod=true&receiverName=王井东&receiverProvince=北京市&receiverCity=朝阳区&receiverArea=望京&receiverAddress=soho塔1B座501" -H 'content-type: application/x-www-form-urlencoded' "http://127.0.0.1:8080/api/cart/add.do"

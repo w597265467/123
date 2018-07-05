@@ -62,7 +62,7 @@ public class TestJsoup {
 		try {
 			doc = connect.get();
 		} catch (IOException e) {
-			log.error("error:{},href:{}", e, href);
+			//log.error("error:{},href:{}", e, href);
 		}
 		return doc;
 	}
@@ -78,15 +78,15 @@ public class TestJsoup {
 				Attributes attributes = element.attributes();
 				String href = attributes.get("href");
 				if (!StringUtils.isEmpty(text)) {
-					log.debug("text:{}", text);
+					//log.debug("text:{}", text);
 				}
 				if (!StringUtils.isEmpty(href)) {
-					log.debug("href:{}", href);
+					//log.debug("href:{}", href);
 				}
 				nameAndHrefMap.put(text, "http://detail.zol.com.cn" + href);
 			}
 		} catch (Exception e) {
-			log.error("error", e);
+			//log.error("error", e);
 		}
 		Set<Map.Entry<String, String>> entries = nameAndHrefMap.entrySet();
 
@@ -124,7 +124,7 @@ public class TestJsoup {
 				add = sheet.getLastRowNum() + 1;
 
 			} catch (IOException e) {
-				log.error("error:{}", e);
+				//log.error("error:{}", e);
 			}
 		}
 		Workbook wb = null;
@@ -170,7 +170,7 @@ public class TestJsoup {
 			os.close();
 			wb.close();
 		} catch (IOException e) {
-			log.debug("error:{}", e);
+			//log.debug("error:{}", e);
 		}
 	}
 
@@ -206,7 +206,7 @@ class JsoupThred2 extends Thread {
 				TestJsoup.nameAndHrefMap.put(this.phoneName,href);
 			}
 		} catch (Exception e) {
-			log.debug("error:{},href:{}",e,href);
+			//log.debug("error:{},href:{}",e,href);
 		}
 	}
 }
@@ -239,16 +239,16 @@ class JsoupThred extends Thread {
 						String text = a.text();
 						String href = a.attributes().get("href");
 						if (!StringUtils.isEmpty(text)) {
-							log.debug("text:{}", text);
+							//log.debug("text:{}", text);
 						}
 						if (!StringUtils.isEmpty(href)) {
-							log.debug("href:{}", href);
+							//log.debug("href:{}", href);
 						}
 						map.put(text, TestJsoup.url + href);
 					}
 				}
 				if (StringUtils.isEmpty(h3.toString())) {
-					log.debug(h3.toString());
+					//log.debug(h3.toString());
 				}
 			}
 			Map<String, phoneVo> voMap = new HashMap<>();
@@ -289,13 +289,13 @@ class JsoupThred extends Thread {
 						phoneVo.detail.put(n, v);
 					}
 				}
-				log.debug(phoneVo.toString());
+				//log.debug(phoneVo.toString());
 				voMap.put(phoneVo.name, phoneVo);
 			}
 			//category-param-list
 			TestJsoup.createExcel(voMap, phoneName);
 		} catch (Exception e) {
-			log.debug("error:{}", e);
+			//log.debug("error:{}", e);
 		}
 	}
 }

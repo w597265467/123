@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp"/>
     <meta name=Generator content="Microsoft Word 15 (filtered)"/>
     <style>

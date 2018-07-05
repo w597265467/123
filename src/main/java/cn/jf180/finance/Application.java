@@ -15,7 +15,7 @@ public class Application {
 	public static void main(String[] args) {
 		ApplicationContext ctx  = SpringApplication.run(Application.class, args);
 		String property = ctx.getEnvironment().getProperty("server.port");
-		log.debug(property);
+		//log.debug(property);
 	}
 
 }

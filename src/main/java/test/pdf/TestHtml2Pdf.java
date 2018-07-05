@@ -54,7 +54,7 @@ public class TestHtml2Pdf {
 
 
 	@Test
-	public void test1(){
+	public void test1() {
 //		Document document = new Document();
 //		PdfWriter writer = PdfWriter.getInstance(document,
 //				new FileOutputStream(outfile));
@@ -93,6 +93,7 @@ public class TestHtml2Pdf {
 			return super.getFont(fntname, encoding, size, style);
 		}
 	}
+
 	@Test
 	public void htmlToPDFTest() throws IOException {
 		String url = "src/main/html/已解密_5、手机分期业务贷款协议 - 积分时代 v3.html";
@@ -101,7 +102,7 @@ public class TestHtml2Pdf {
 		BufferedReader reader = new BufferedReader(new FileReader(url));
 		String line = null;
 		String a = "";
-		while ((line = reader.readLine()) != null ){
+		while ((line = reader.readLine()) != null) {
 			a += line + "\n";
 		}
 
@@ -110,7 +111,7 @@ public class TestHtml2Pdf {
 
 
 		String pdf = "/Users/wangluyao/jf/3.pdf";
-		htmlToPDF(a,pdf);
+		htmlToPDF(a, pdf);
 	}
 
 	public static void htmlToPDF(String htmlString, String pdfPath) {
@@ -128,7 +129,7 @@ public class TestHtml2Pdf {
 			document.addTitle("pdf标题,可在html中指定title");
 			XMLWorkerHelper worker = XMLWorkerHelper.getInstance();
 			InputStream inputStream = null;
-			worker.parseXHtml(pdfWriter, document, new ByteArrayInputStream(htmlString.getBytes("UTF-8")), inputStream, Charset.forName("UTF-8"),new  MyFontsProvider());
+			worker.parseXHtml(pdfWriter, document, new ByteArrayInputStream(htmlString.getBytes("UTF-8")), inputStream, Charset.forName("UTF-8"), new MyFontsProvider());
 			document.close();
 
 		} catch (Exception e) {
@@ -180,7 +181,6 @@ public class TestHtml2Pdf {
 			renderer.getSharedContext().setUserAgentCallback(callback);
 
 
-
 			org.w3c.dom.Document doc = XMLResource.load(new InputSource(url)).getDocument();
 
 			renderer.setDocument(doc, url);
@@ -210,8 +210,6 @@ public class TestHtml2Pdf {
 		Html2Pdf.html2Pdf("/Users/wangluyao/jf/123/1.html", "4.pdf");
 
 	}
-
-
 
 
 	public boolean convertHtmlToPdf(String inputFile, String outputFile)
@@ -270,7 +268,7 @@ public class TestHtml2Pdf {
 			renderer.getSharedContext().setUserAgentCallback(callback);
 			callback.setSharedContext(renderer.getSharedContext());
 			//添加中文字体
-			String yaHeiFontName ="/Users/wangluyao/jf/123/font/simsun.ttc";
+			String yaHeiFontName = "/Users/wangluyao/jf/123/font/simsun.ttc";
 
 			yaHeiFontName += ",1";
 			com.lowagie.text.Font yaHeiFont = new com.lowagie.text.Font(BaseFont.createFont(yaHeiFontName, BaseFont.IDENTITY_H, BaseFont.EMBEDDED));//中文简体

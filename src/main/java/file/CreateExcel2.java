@@ -21,18 +21,19 @@ import java.util.*;
 
 public class CreateExcel2 {
 	public static void main(String[] arg) throws Exception {
-		OrderMassage massage = new OrderMassage();
-		CreateExcel2 creatExcal = new CreateExcel2();
-		List<OrderMassage> list = creatExcal.getOrder();
-		creatExcal.createExcel(list);
+//		OrderMassage massage = new OrderMassage();
+//		CreateExcel2 creatExcal = new CreateExcel2();
+//		List<OrderMassage> list = creatExcal.getOrder();
+//		creatExcal.createExcel(list);
+		getOrder();
 	}
 
-	public List<OrderMassage> getOrder() throws Exception {
+	public static List<OrderMassage> getOrder() throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://***.***.***.***:3306/finance?characterEncoding=utf-8",
-				"***",
-				"********");
+				"jdbc:mysql://120.0.0.1:3308",
+				"jft",
+				"3edcvBHU8");
 		String sql = "SELECT\n" +
 				"\ttmall_order_id,\n" +
 				"\torder_id,\n" +

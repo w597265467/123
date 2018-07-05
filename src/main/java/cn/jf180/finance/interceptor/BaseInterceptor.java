@@ -20,8 +20,8 @@ public abstract class BaseInterceptor implements HandlerInterceptor {
 	public abstract List<String> addPathPatterns();
 
 	public abstract List<String> excludePathPatterns();
-	
-	
+
+
 	public String cookieVal(HttpServletRequest request,String cookieKey) {
 		try {
 			Cookie cookie = getCookie(request, cookieKey);
@@ -32,7 +32,7 @@ public abstract class BaseInterceptor implements HandlerInterceptor {
 		}
 		return null;
 	}
-	
+
 
 	private Cookie getCookie(HttpServletRequest request, String key) {
 		if (key == null) {

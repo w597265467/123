@@ -21,18 +21,18 @@ public class TestFreemaker {
 
 
 	public void test() throws IOException, TemplateException {
-		Map root = new HashMap();
+		Map<String,Object> root = new HashMap<>();
 		User user = new User("111");
 		root.put("user",user);
 		root.put("date",new Date());
-		String dir = "/Users/wangluyao/jf/123/src/main/ftl/";
+		String dir = "ftl/";
 		Configuration configuration = new Configuration(Configuration.VERSION_2_3_23);
 		configuration.setDirectoryForTemplateLoading(new File(dir));
 //		configuration.setDirectoryForTemplateLoading(dir);
 
 
-		Template template = configuration.getTemplate("1.ftl");
-		File file = new File("file/test.html");
+		Template template = configuration.getTemplate("2.ftl");
+		File file = new File("file/test2.html");
 		template.process(root, new PrintWriter(file));
 
 

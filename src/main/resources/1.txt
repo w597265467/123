@@ -1,70 +1,118 @@
-bc15d0f - 王路遥, 13 minutes ago : 额度不足短信模板修改
-8aff661 - 王路遥, 13 minutes ago : 注释掉向上营销
-5935cc8 - 王路遥, 2 hours ago : 订单活动礼品没有时传空字符串
-3ba130d - 王路遥, 3 hours ago : 订单活动礼品没有时不传数据
-7e77e4b - 王路遥, 3 hours ago : 已授信成功且额度足够用户且没有成功订单的用户四合一页面下单添加赠品信息
-709b7eb - 王路遥, 3 hours ago : 授信申请单位地址传宝乾城市编码
-ade1c4e - 王路遥, 4 hours ago : 订单修改时间
-35a6063 - 王路遥, 2 days ago : 裸机订单详情信息标识
-a4d8f73 - 王路遥, 5 hours ago : E75错误文案返回
-ea7fcf4 - 王路遥, 23 hours ago : 代码优化
-643dd0d - 王路遥, 25 hours ago : 错字修改
-c710a9b - 王路遥, 25 hours ago : 验证码超时提示
-fef71cb - 王路遥, 28 hours ago : 修改向上营销数据结构
-5f3b721 - 王路遥, 29 hours ago : 添加邮件发送
-a5da910 - 王路遥, 2 days ago : 向上营销日志修改
-9b2170d - 王路遥, 2 days ago : 移动向上营销
-6caa5f1 - 王路遥, 2 days ago : 提示文案修改
-f771377 - 王路遥, 2 days ago : 授信申请默认学历博士改本科
-d8e0c95 - 王路遥, 2 days ago : 四要素返回错误信息修改
-4a3638e - 王路遥, 2 days ago : 实名添加宝乾身份证校验
-b8c0e2f - 王路遥, 3 days ago : 授信申请人脸识别返回M不发送错误邮件
-5a31e29 - 王路遥, 3 days ago : 宝乾授信申请添加新字段,个人资料提交接口接受新字段
-5846910 - 王路遥, 3 days ago : 添加张家口移动向上营销接口
-b11c9ca - 王路遥, 3 days ago : 添加宝乾用户身份证校验接口,未调通,宝乾还未上测试环境
-7d58eeb - 王路遥, 3 days ago : 四要素和开户返回用户错误信息修改
-e145bd2 - 王路遥, 3 days ago : 授信申请添加字段,暂时用固定的值
-b3e09e7 - 王路遥, 3 days ago : 额度不足2000全款链接,额度超过2000换买手机链接和全款链接
-88df787 - 王路遥, 3 days ago : 人脸识别,视频上传,文件名修改添加时间戳,防止文件名重复
-1673404 - 王路遥, 3 days ago : 宝乾四要素接口错误码修改,需要联系客服的错误发送邮件
-7785cbf - liufugang, 3 days ago : 白名单功能
-3dac7f3 - 王路遥, 3 days ago : 四合一套餐信息添加实际月销
-9d9b461 - 王路遥, 3 days ago : 人脸识别bug修复
-30db6c2 - 王路遥, 4 days ago : plaseOrder授信申请失败日志打印
-b781e2d - 王路遥, 4 days ago : 人脸识别失败授信失败发送短信
-3884ef7 - 王路遥, 4 days ago : 开户接口延后到四要素验证
-4c03140 - 王路遥, 4 days ago : 测试环境默认选合约
-ab78bde - 王路遥, 4 days ago : 修复bug
-b8d3a34 - 王路遥, 4 days ago : bugxiuf
-ac18581 - 王路遥, 4 days ago : 人脸识别返回M,异步存缓存bug修复
-cb66654 - 王路遥, 4 days ago : redisClient String字符串去掉开头结尾的"
-c8753e4 - liufugang, 7 days ago : redis client代码修改
-721d2b8 - 王路遥, 7 days ago : 修复bug
-8d84c20 - 王路遥, 7 days ago : 授信申请,人脸识别日志增加
-f7a915d - liufugang, 7 days ago : 代码优化
-4a7ce33 - liufugang, 7 days ago : 无效代码删除
-373f0dc - liufugang, 7 days ago : 无效代码删除
-b663b61 - 王路遥, 7 days ago : 记录用户走到哪修改
-eb072ee - 王路遥, 7 days ago : 记录用户走到了哪一步0:初始化,1:实名,2:绑卡,3:实人,4:个人资料
-218e6ca - liufugang, 7 days ago : 支持自建商城接口解密
-bf33832 - 王路遥, 8 days ago : 添加失败原因,授信申请被拒绝
-f1f50d0 - 王路遥, 7 days ago : 购买无合约裸机
-ad20815 - 王路遥, 8 days ago : 授信申请失败记录
-964a505 - 王路遥, 8 days ago : 人脸识别M修改
-7b4c13a - 王路遥, 8 days ago : 宝乾非空修改,日志文字错误
-688983f - 王路遥, 8 days ago : 补充提交
-dfa1d21 - liufugang, 8 days ago : 表结构修改
-13b7eda - 王路遥, 8 days ago : 人脸识别返回M让用户通过,授信申请前判断用户是否通过人脸识别,返回M轮询查人脸识别结果,通过后进行授信申请
-f962b89 - 王路遥, 13 days ago : 添加用户actionEnum
-a49234e - 王路遥, 13 days ago : 宝乾四要素和开户接口新的错误码
-18ad5f0 - 王路遥, 13 days ago : 获取宝乾支持的银行卡列表接口,数据格式待定
-9ac8320 - 王路遥, 13 days ago : 四要素验证码错误提示修改
-8c6bc57 - liufugang, 2 weeks ago : ApiRespObj替换
-34b1676 - 王路遥, 2 weeks ago : 错误码E091,您身份证号码识别有误，请重新上传
-3e76a00 - 王路遥, 2 weeks ago : bug修复
-6a78979 - 王路遥, 2 weeks ago : E146,返回code
-91f1773 - 王路遥, 2 weeks ago : 代码修改
-50716cb - 王路遥, 2 weeks ago : 宝乾四要素,开户错误信息修改;宝乾开户提前到身份证上传;宝乾用户行为造成的失败不发送错误邮件
-9a5e2ca - 王路遥, 2 weeks ago : 去掉短链后的感叹号
-c665054 - 王路遥, 2 weeks ago : 人脸识别随机数日志参数名错误修复
-2eb0fe5 - 王路遥, 2 weeks ago : ----------------510线上,信用购机V1.1.2版本-------------
+phone=15231377032&opPackageId=68
+phone=13730307376&opPackageId=98
+phone=13823794686&opPackageId=88
+phone=18831315577&opPackageId=98
+phone=13716327099&opPackageId=1382
+phone=15031376800&opPackageId=68
+phone=15133370345&opPackageId=1382
+phone=13975532176&opPackageId=98
+phone=15931358058&opPackageId=1382
+phone=13833323027&opPackageId=1382
+phone=15030312879&opPackageId=48
+phone=15910541635&opPackageId=68
+phone=15802681378&opPackageId=68
+phone=18813674545&opPackageId=68
+phone=15932339620&opPackageId=98
+phone=13833314347&opPackageId=98
+phone=13833337812&opPackageId=98
+phone=15074993731&opPackageId=1382
+phone=15726670199&opPackageId=98
+phone=15132378825&opPackageId=48
+phone=13785304999&opPackageId=158
+phone=13911887640&opPackageId=98
+phone=13784087423&opPackageId=48
+phone=15011462103&opPackageId=1382
+phone=15103338882&opPackageId=98
+phone=13810582811&opPackageId=98
+phone=18715977965&opPackageId=58
+phone=13823794686&opPackageId=68
+phone=15133315757&opPackageId=68
+phone=13910897107&opPackageId=1382
+phone=15830376888&opPackageId=58
+phone=13910723765&opPackageId=88
+phone=13910477758&opPackageId=98
+phone=13808480098&opPackageId=98
+phone=18874898789&opPackageId=138
+phone=13663236868&opPackageId=98
+phone=18301655891&opPackageId=98
+phone=13601213158&opPackageId=98
+phone=13823794686&opPackageId=58
+phone=15930315925&opPackageId=68
+phone=13722309754&opPackageId=88
+phone=15028380315&opPackageId=68
+phone=15081380448&opPackageId=98
+phone=18230134717&opPackageId=1382
+phone=13785330884&opPackageId=98
+phone=13633238192&opPackageId=1382
+phone=13910723765&opPackageId=98
+phone=15011462103&opPackageId=98
+phone=15110263493&opPackageId=98
+phone=13731327722&opPackageId=48
+phone=15932358988&opPackageId=68
+phone=13450489996&opPackageId=98
+phone=13811502317&opPackageId=98
+phone=13723899841&opPackageId=68
+phone=13730307376&opPackageId=58
+phone=15124514897&opPackageId=68
+phone=13552100216&opPackageId=98
+phone=18231316663&opPackageId=68
+phone=15028360910&opPackageId=98
+phone=15231381117&opPackageId=68
+phone=15133350066&opPackageId=68
+phone=15132376984&opPackageId=68
+phone=15110263493&opPackageId=68
+phone=13932364225&opPackageId=98
+phone=18713302594&opPackageId=68
+phone=13823794686&opPackageId=238
+phone=15030342245&opPackageId=48
+phone=13722314817&opPackageId=98
+phone=15030382228&opPackageId=98
+phone=13693642762&opPackageId=1382
+phone=13910723765&opPackageId=68
+phone=13663336864&opPackageId=98
+phone=13693642762&opPackageId=68
+phone=13582630873&opPackageId=68
+phone=15031384456&opPackageId=48
+phone=15830338000&opPackageId=68
+phone=13831336434&opPackageId=138
+phone=18715977965&opPackageId=98
+phone=15074993731&opPackageId=98
+phone=18301655891&opPackageId=68
+phone=13823794686&opPackageId=1382
+phone=13910723765&opPackageId=1382
+phone=18732388185&opPackageId=48
+phone=13463132368&opPackageId=68
+phone=13450489996&opPackageId=1382
+phone=13701164402&opPackageId=1382
+phone=15033405922&opPackageId=1382
+phone=13833323027&opPackageId=98
+phone=15930315925&opPackageId=98
+phone=13831341277&opPackageId=68
+phone=18214939840&opPackageId=98
+phone=15932393258&opPackageId=98
+phone=13693642762&opPackageId=98
+phone=13630878988&opPackageId=98
+phone=15011462103&opPackageId=68
+phone=13653133250&opPackageId=68
+phone=13723899841&opPackageId=98
+phone=18874898789&opPackageId=88
+phone=15028415988&opPackageId=138
+phone=18301655891&opPackageId=58
+phone=13785354880&opPackageId=68
+phone=18731342046&opPackageId=68
+phone=13722303337&opPackageId=68
+phone=15803336603&opPackageId=1382
+phone=18730325012&opPackageId=48
+phone=13731327722&opPackageId=98
+phone=13823794686&opPackageId=138
+phone=13910897107&opPackageId=98
+phone=13823794686&opPackageId=98
+phone=18831315577&opPackageId=68
+phone=15103338882&opPackageId=68
+phone=18715957130&opPackageId=98
+phone=15726670199&opPackageId=38
+phone=15132324455&opPackageId=68
+phone=15011462103&opPackageId=58
+phone=13400467886&opPackageId=48
+phone=13663236868&opPackageId=68
+phone=15803338881&opPackageId=98

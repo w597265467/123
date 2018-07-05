@@ -60,7 +60,7 @@
             <!--<property name="countByExample" value="long"/>-->
         </javaClientGenerator>
         <!-- 表名对应生成的实体 -->
-        <table tableName="op_package"/>
+        <table tableName="credit_order_gift_history"/>
 
         <!-- enableCountByExample="false" enableUpdateByExample="false"
         enableDeleteByExample="false" enableSelectByExample="false"

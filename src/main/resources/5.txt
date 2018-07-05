@@ -1,0 +1,6 @@
+goodsType="0",效果展示"全部"
+goodsType="1",效果展示"iphone"
+goodsType="2",效果展示"vivo"
+goodsType="3",效果展示"oppo"
+goodsType="4",效果展示"华为"
+goodsType="5",效果展示"小米"

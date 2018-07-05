@@ -16,7 +16,7 @@ public class CreatJavaCode {
 		for (String s : split) {
 			s = s.replace("\n","").replace(" ","");
 			System.out.println("if (StringUtils.isEmpty("+s+")){\n" +
-					"\t\t\t\t\t\tlog.debug(\""+s+"为空\");\n" +
+					"\t\t\t\t\t\t//log.debug(\""+s+"为空\");\n" +
 					"\t\t\t\t\t}");
 		}
 	}

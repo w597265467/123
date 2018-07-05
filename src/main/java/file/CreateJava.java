@@ -311,10 +311,10 @@ class JavaClass {
 						"\t\t\t"+bizStr+
 						"String urlParams = paramsWithSign(BqxdMethodEnum.SMS_VERIFY.method);\n" +
 						"\t\t\tString url = reqUrl + \"/apis/jifen/verifyMessage?\" + urlParams;\n" +
-						"\t\t\tlog.debug(\"----->BqxdApi**url:{}\", url);\n" +
+						"\t\t\t//log.debug(\"----->BqxdApi**url:{}\", url);\n" +
 						"\t\t\t//\n" +
 						"\t\t\tString resp = httpPost(url, bizParams);\n" +
-						"\t\t\tlog.debug(\"----->BqxdApi**url:{},resp:{}\", url, resp);\n" +
+						"\t\t\t//log.debug(\"----->BqxdApi**url:{},resp:{}\", url, resp);\n" +
 						"\t\t\tJSONObject json = JSONObject.parseObject(resp);\n" +
 						"\t\t\tString code = json.getString(\"errorCode\");\n" +
 						"\t\t\tif (apiSuccessCode.equals(code)) {\n" +
@@ -322,7 +322,7 @@ class JavaClass {
 						"\t\t\t\treturn respObj;\n" +
 						"\t\t\t}\n" +
 						"\t\t} catch (Exception e) {\n" +
-						"\t\t\tlog.error(\"----->BqxdApi**fail,error:\", e);\n" +
+						"\t\t\t//log.error(\"----->BqxdApi**fail,error:\", e);\n" +
 						"\t\t}\n" +
 						"\t\treturn respObj;\n" +
 						"\t}\n" +

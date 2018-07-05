@@ -59,26 +59,26 @@ public class TranscodeUtils {
 		File fi = new File(sourceVideoPath);
 		filename = fi.getName();
 		filerealname = filename.substring(0, filename.lastIndexOf(".")).toLowerCase();
-		log.debug("----接收到文件(" + sourceVideoPath + ")需要转换-------------------------- ");
+		//log.debug("----接收到文件(" + sourceVideoPath + ")需要转换-------------------------- ");
 		if (!checkfile(sourceVideoPath)) {
-			log.debug(sourceVideoPath + "文件不存在");
+			//log.debug(sourceVideoPath + "文件不存在");
 			return false;
 		}
 		dt = new Date();
 		long begintime = dt.getTime();
 
-		log.debug("----开始转文件(" + sourceVideoPath + ")-------------------------- ");
+		//log.debug("----开始转文件(" + sourceVideoPath + ")-------------------------- ");
 		if (process(targetExtension, isDelSourseFile)) {
 			Date dt2 = new Date();
-			log.debug("转换成功 ");
+			//log.debug("转换成功 ");
 			long endtime = dt2.getTime();
 			long timecha = (endtime - begintime);
 			String totaltime = sumTime(timecha);
-			log.debug("转换视频格式共用了:" + totaltime + " ");
+			//log.debug("转换视频格式共用了:" + totaltime + " ");
 			if (processImg(sourceVideoPath)) {
-				log.debug("截图成功了！ ");
+				//log.debug("截图成功了！ ");
 			} else {
-				log.debug("截图失败了！ ");
+				//log.debug("截图失败了！ ");
 			}
 			if (isDelSourseFile) {
 				FileUtils.deleteQuietly(new File(sourceVideoPath));
@@ -104,7 +104,7 @@ public class TranscodeUtils {
 	 */
 	public boolean processImg(String sourceVideoPath) {
 		if (!checkfile(sourceVideoPath)) {
-			log.debug(sourceVideoPath + " is not file");
+			//log.debug(sourceVideoPath + " is not file");
 			return false;
 		}
 		File fi = new File(sourceVideoPath);
@@ -163,7 +163,7 @@ public class TranscodeUtils {
 				// avi文件没有得到
 				return false;
 			} else {
-				log.debug("开始转换:");
+				//log.debug("开始转换:");
 				status = processVideoFormat(avifilepath, targetExtension, isDelSourseFile);
 			}
 		}
@@ -267,7 +267,7 @@ public class TranscodeUtils {
 	 */
 	private boolean processVideoFormat(String oldfilepath, String targetExtension, boolean isDelSourceFile) {
 		if (!checkfile(sourceVideoPath)) {
-			log.debug(oldfilepath + " is not file");
+			//log.debug(oldfilepath + " is not file");
 			return false;
 		}
 		//ffmpeg -i FILE_NAME.flv -ar 22050 NEW_FILE_NAME.mp4
@@ -304,7 +304,7 @@ public class TranscodeUtils {
 	 */
 	private boolean processFLV(String oldfilepath) {
 		if (!checkfile(sourceVideoPath)) {
-			log.debug(oldfilepath + " is not file");
+			//log.debug(oldfilepath + " is not file");
 			return false;
 		}
 		List<String> commend = new java.util.ArrayList<>();
@@ -345,7 +345,7 @@ public class TranscodeUtils {
 		InputStream err = null;
 		int exitValue = -1; // returned to caller when p is finished
 		try {
-			log.debug("comeing");
+			//log.debug("comeing");
 			in = p.getInputStream();
 			err = p.getErrorStream();
 			boolean finished = false; // Set to true when p is finished
