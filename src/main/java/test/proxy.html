@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge chrome=1" >
+    <meta name="format-detection" content="telephone=no,email=no,jf=no"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>京东优品</title>
+    <script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.min.js"></script>
+    <style>
+        .text{
+            margin: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        input{
+            border: 1px solid #0E2D5F;
+            padding: 5px 2px;
+        }
+        #btn,#btn1,#btn2,#btn3,#btn4,#btn0{
+            margin: 0 auto;
+            padding: 5px 2px;
+            width: 80px;
+            background:#00CC00;
+            text-align: center;
+            border-radius: 5px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div  class="text">
+    <span>sig:</span>
+    <input value="123" id="sig"/>
+</div>
+<div  class="text">
+    <span>channel_id:</span>
+    <input value="10004" id="channel_id"/>
+</div>
+<div  class="text">
+    <span>merchant_id:</span>
+    <input value="100004" id="merchant_id" />
+</div>
+<div  class="text">
+    <span>callback_url:</span>
+    <input value="http://test.jf180.cn/static/portal/mall/hsbank/proxy.html" id="callback_url" />
+</div>
+<div  class="text">
+    <span>notify_url:</span>
+    <input value="http://test.jf180.cn/payproxy/notify/hsbank" id="notify_url"/>
+</div>
+<div  class="text">
+    <span>ip_address:</span>
+    <input value="456" id="ip_address"/>
+</div>
+<div  class="text">
+    <span>request_id:</span>
+    <input value="201807041146360" id="request_id"/>
+</div>
+<div  class="text">
+    <span>amount:</span>
+    <input value="789" id="amount" />
+</div>
+<div  class="text">
+    <span>order_date:</span>
+    <input value="20180704114636" id="order_date" />
+</div>
+<div  class="text">
+    <span>order_id:</span>
+    <input value="201807041146360" id="order_id"/>
+</div>
+<div  class="text">
+    <span>period:</span>
+    <input value="60" id="period"/>
+</div>
+
+
+<div  class="text">
+    <span>sub_order_id:</span>
+    <input value="201807041146360" id="sub_order_id"/>
+</div>
+<div  class="text">
+    <span>sub_refund_order_id:</span>
+    <input value="201807061346360" id="sub_refund_order_id"/>
+</div>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<div id="btn">跳转首页</div>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<div id="btn0">测试支付</div>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<div id="btn1">测试支付查询</div>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<div id="btn2">测试退款</div>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<div id="btn3">测试退款查询</div>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<div id="btn4">测试同步跳转</div>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+</body>
+<script>
+    $(function() {
+        getUrlParam =function () {
+            var Url = window.location.href;//如果想获取框架顶部的url可以用 top.window.location.href
+            if(Url.indexOf('#')>-1){
+                Url=Url.substr(0,Url.indexOf('#'));
+            }
+            var u, g, StrBack = '';
+            if (arguments[arguments.length - 1] == "#")
+                u = Url.split("#");
+            else
+                u = Url.split("?");
+            if (u.length == 1) g = '';
+            else g = u[1];
+
+            if (g != '') {
+                gg = g.split("&");
+                var MaxI = gg.length;
+                str = arguments[0] + "=";
+                for (xm = 0; xm < MaxI; xm++) {
+                    if (gg[xm].indexOf(str) == 0) {
+                        StrBack = gg[xm].replace(str, "");
+                        break;
+                    }
+                }
+            }
+            return StrBack;
+        }
+
+        //跳转首页
+        $("#btn").on('click',function(){
+            location.href='http://shop.jf180.vip/'
+        })
+
+        //支付
+        $("#btn0").on('click',function(){
+            var sig=$("#sig").val();
+            var channel_id=$("#channel_id").val();
+            var merchant_id=$("#merchant_id").val();
+            var callback_url=$("#callback_url").val();
+            var notify_url=$("#notify_url").val();
+            var ip_address=$("#ip_address").val();
+            var request_id=$("#request_id").val();
+            var amount=$("#amount").val();
+            var order_id=$("#order_id").val();
+            var order_date=$("#order_date").val();
+            var period=$("#period").val();
+            location.href='http://test.jf180.cn/outlet/pay/hs?sig='+sig+'&channel_id='+channel_id
+            // location.href='http://192.168.1.163:19861/payproxy/hs/pay?sig='+sig+'&channel_id='+channel_id
+                +'&merchant_id='+merchant_id+'&callback_url='+callback_url+'&notify_url='+notify_url
+                +'&ip_address='+ip_address+'&request_id='+request_id+'&amount='+amount+'&order_id='+order_id
+                +'&order_date='+order_date+'&period='+period
+
+        })
+        //支付查询
+        $("#btn1").on('click',function(){
+            var sig=$("#sig").val();
+            var channel_id=$("#channel_id").val();
+            var order_id=$("#order_id").val();
+            location.href='http://test.jf180.cn/outlet/pay?sig='+sig+'&channel_id='+channel_id
+            // location.href='http://192.168.1.163:19861/payproxy?sig='+sig+'&channel_id='+channel_id
+                +'&order_id='+order_id
+        })
+        //退款
+        $("#btn2").on('click',function(){
+            var sig=$("#sig").val();
+            var channel_id=$("#channel_id").val();
+            var merchant_id=$("#merchant_id").val();
+            var order_id=$("#order_id").val();
+            var sub_order_id=$("#sub_order_id").val();
+            var sub_refund_order_id=$("#sub_refund_order_id").val();
+            var order_date=$("#order_date").val();
+            var amount=$("#amount").val();
+            var cancel_reason=$("#cancel_reason").val();
+            $.ajax({
+                url: 'http://test.jf180.cn/outlet/pay/refund/batch',
+                // url: 'http://192.168.1.163:19861/payproxy/refund/batch',
+                data: {
+                    sig: sig,
+                    channel_id:channel_id,
+                    merchant_id:merchant_id,
+                    order_id:order_id,
+                    sub_order_id:sub_order_id,
+                    sub_refund_order_id:sub_refund_order_id,
+                    order_date:order_date,
+                    amount:amount,
+                    cancel_reason:cancel_reason
+                },
+                type: 'POST',
+                success: function (res) {
+                    // alert(res)
+                    console.log(res)
+                },
+                error: function () {
+                    console.log('出现错误，请重试！')
+                }
+            })
+        })
+        //退款查询
+        $("#btn3").on('click',function(){
+            var sig=$("#sig").val();
+            var channel_id=$("#channel_id").val();
+            var merchant_id=$("#merchant_id").val();
+            var order_id=$("#order_id").val();
+            var sub_order_id=$("#sub_order_id").val();
+            var sub_refund_order_id=$("#sub_refund_order_id").val();
+            location.href='http://test.jf180.cn/outlet/pay/refund/batch?sig='+sig+'&channel_id='+channel_id
+            // location.href='http://192.168.1.163:19861/payproxy/refund/batch?sig='+sig+'&channel_id='+channel_id
+                +'&merchant_id='+merchant_id+'&order_id='+order_id+'&sub_order_id='+sub_order_id
+                +'&sub_refund_order_id='+sub_refund_order_id
+
+        })
+        $("#btn4").on('click',function(){
+            location.href='http://test.jf180.cn/outlet/pay/callback/hsbank'
+        })
+
+    });
+
+</script>
+</html>
