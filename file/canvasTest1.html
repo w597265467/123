@@ -1,0 +1,86 @@
+<head>
+    <script type="text/javascript">
+        //获取配置参数
+        function get_config_option() {
+            var scripts = get_by_tagname("script"),
+                script_len = scripts.length,
+                script = scripts[script_len - 1]; //当前加载的script
+            return {
+                l: script_len, //长度，用于生成id用
+                z: get_attribute(script, "zIndex", -1), //z-index
+                o: get_attribute(script, "opacity", 0.5), //opacity
+                c: get_attribute(script, "color", "0,0,0"), //color
+                n: get_attribute(script, "count", 229) //count
+            };
+        }
+        function a() {
+            let sun;
+            let earth;
+            let moon;
+            let ctx;
+            function init(){
+                sun = new Image();
+                earth = new Image();
+                moon = new Image();
+                sun.src = "sun.png";
+                earth.src = "earth.png";
+                moon.src = "moon.png";
+                var ctx = document.createElement("canvas"), //画布
+                    config = get_config_option(), //配置
+                    canvas_id = "c_n" + config.l, //canvas id
+                    context = ctx.getContext("2d"), canvas_width, canvas_height,
+
+                    frame_func = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (func) {
+                        window.setTimeout(func, 1000 / 450);
+                    }, random = Math.random,
+                    current_point = {
+                        x: null, //当前鼠标x
+                        y: null, //当前鼠标y
+                        max: 20000
+                    };
+                ctx = canvas.getContext("2d");
+            }
+            init();
+            function draw(){
+                ctx.clearRect(0, 0, 300, 300); //清空所有的内容
+                /*绘制 太阳*/
+                ctx.drawImage(sun, 0, 0, 300, 300);
+
+                ctx.save();
+                ctx.translate(150, 150);
+
+                //绘制earth轨道
+                ctx.beginPath();
+                ctx.strokeStyle = "rgba(255,255,0,0.5)";
+                ctx.arc(0, 0, 100, 0, 2 * Math.PI)
+                ctx.stroke()
+
+                let time = new Date();
+                //绘制地球
+                ctx.rotate(2 * Math.PI / 60 * time.getSeconds() + 2 * Math.PI / 60000 * time.getMilliseconds())
+                ctx.translate(100, 0);
+                ctx.drawImage(earth, -12, -12)
+
+                //绘制月球轨道
+                ctx.beginPath();
+                ctx.strokeStyle = "rgba(255,255,255,.3)";
+                ctx.arc(0, 0, 40, 0, 2 * Math.PI);
+                ctx.stroke();
+
+                //绘制月球
+                ctx.rotate(2 * Math.PI / 6 * time.getSeconds() + 2 * Math.PI / 6000 * time.getMilliseconds());
+                ctx.translate(40, 0);
+                ctx.drawImage(moon, -3.5, -3.5);
+                ctx.restore();
+
+                requestAnimationFrame(draw);
+            }
+        }
+    </script>
+</head>
+<body onload="a()">
+<div id="MathJax_Message" style="display: none;"></div>
+
+<canvas id="c_n16" width="722" height="803"
+        style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+</body>

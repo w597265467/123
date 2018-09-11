@@ -61,8 +61,8 @@
         </javaClientGenerator>
         <!-- 表名对应生成的实体 -->
         <!--<table tableName="bjcy_order"/>-->
-        <table tableName="bjcy_gift_charge"/>
-        <table tableName="bjcy_order_gift_record"/>
+        <table tableName="bjcy_share_award_rule"/>
+        <!--<table tableName="bjcy_pay_price"/>-->
 
         <!-- enableCountByExample="false" enableUpdateByExample="false"
         enableDeleteByExample="false" enableSelectByExample="false"
