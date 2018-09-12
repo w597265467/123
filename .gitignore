@@ -29,3 +29,4 @@ hs_err_pid*
 /projects/merchant-web/src/main/webapp/index.html
 /bin/
 /src/main/java/file/JdbcUtils.java
+!/file/snake.html

@@ -22,7 +22,7 @@
                 z: get_attribute(script, "zIndex", -1), //z-index
                 o: get_attribute(script, "opacity", 0.5), //opacity
                 c: get_attribute(script, "color", "0,0,0"), //color
-                n: get_attribute(script, "count", 229) //count
+                n: get_attribute(script, "count", 500) //count
             };
         }
 
@@ -35,13 +35,17 @@
         //绘制过程
         function draw_canvas() {
             context.clearRect(0, 0, canvas_width, canvas_height);
-            context.strokeStyle = "rgba(" + config.c + ", 0.4)";
-            context.lineWidth = 0.25;
-            //随机的线条和当前位置联合数组
+            config.c = ~~(random() * 255) + "," + ~~(random() * 255) + "," + ~~(random() * 255);
+            console.log(config.c);
+            context.fillStyle = "#"+(~~(random() * 255).toString(16))+(~~(random() * 255).toString(16))+(~~(random() * 255).toString(16));
+            context.fillRect(0, 0, canvas_width, canvas_height);
+            context.lineWidth = 0.75;
             var all_array = [current_point].concat(random_lines);
             var e, i, d, x_dist, y_dist, dist; //临时节点
             //遍历处理每一个点
+            //随机的线条和当前位置联合数组
             random_lines.forEach(function (r) {
+                context.strokeStyle = "rgba(" + config.c + ", 0.4)";
                 r.x += r.xa,
                     r.y += r.ya, //移动
                     r.xa *= r.x > canvas_width || r.x < 0 ? -1 : 1,
@@ -80,7 +84,7 @@
             current_point = {
                 x: null, //当前鼠标x
                 y: null, //当前鼠标y
-                max: 20000
+                max: 200000
             };
 
         the_canvas.id = canvas_id;
@@ -106,7 +110,7 @@
                 y: y,
                 xa: xa,
                 ya: ya,
-                max: 6000 //沾附距离
+                max: 10000 //沾附距离
             });
         }
         //0.1秒后绘制

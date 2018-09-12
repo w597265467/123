@@ -3,33 +3,121 @@
 <body>
 <canvas id="can" width="400" height="400" style="background: Black"></canvas>
 <script>
-    var sn = [ 42, 41 ], dz = 43, fx = 1, n, ctx = document.getElementById("can").getContext("2d");
+    var sn = [42, 41], dz = 43, fx = 1, n, ctx = document.getElementById("can").getContext("2d");
+
     function draw(t, c) {
         ctx.fillStyle = c;
         ctx.fillRect(t % 20 * 20 + 1, ~~(t / 20) * 20 + 1, 18, 18);
     }
-    document.onkeydown = function(e) {
-        fx = sn[1] - sn[0] == (n = [ -1, -20, 1, 20 ][(e || event).keyCode - 37] || fx) ? fx : n;
-        console.log("fx:"+fx)
+
+    document.onkeydown = function (e) {
+        fx = sn[1] - sn[0] == (n = [-1, -20, 1, 20][(e || event).keyCode - 37] || fx) ? fx : n;
     };
-    !function() {
+
+
+    function a() {
+
+    }
+
+
+    function getDistance(a, b) {
+        // var arr = Array.of();
+        var aY = ~~(a / 20);
+        var bY = ~~(b / 20);
+        var aX = a % 20;
+        var bX = a % 20;
+        var y = Math.abs(aY - bY);
+        var x = Math.abs(aX - bX);
+        return ~~Math.SQRT2(x * x + y * y);
+    }
+
+
+    function getAround(a) {
+        var up = a - 20;
+        var left = a - 1;
+        var right = a + 1;
+        var down = a + 20;
+        return [up, left, right, down];
+
+    }
+
+    function isOk(a) {
+
+    }
+
+
+    function auto() {
+        var distance = dz - n;
+        var change = 0;
+        if (distance < 0) {
+            if (distance < -20) {
+                change = -20;
+            } else {
+                if (~~(n / 20) - ~~(dz / 20) !== 0) {
+                    change = -20;
+                } else
+                    change = -1
+            }
+        } else {
+            if (distance > 20) {
+                change = 20
+            } else {
+                if (~~(n / 20) - ~~(dz / 20) !== 0) {
+                    change = 20;
+
+                } else
+                    change = 1
+            }
+        }
+        // var next = n + change;
+        // var a = [1,-1,-20,20];
+        // var i = 0;
+        // while(sn.indexOf(next,1)>0 || next<0||next>399||fx==1&&next%20==0||fx==-1&&next%20==19){
+        //     change = a[i++%4];
+        //     next = n + change;
+        // }
+
+
+        if (distance > -20 || distance < 20) {
+            console.log("~~(n/20)=" + (~~(n / 20)));
+            console.log("~~(dz/20)=" + (~~(dz / 20)));
+            console.log("~~(n/20) - ~~(dz/20)=" + (~~(n / 20) - ~~(dz / 20)));
+        }
+        if (change != fx) {
+            console.log(distance);
+        }
+        return change;
+    }
+
+
+    !function () {
         n = sn[0] + fx;
-        console.log("sn:"+sn);
-        if (n > 400){
+        if (n > 400) {
             n = 0;
         }
-        if (n < 0){
+        if (n < 0) {
             n = 399;
         }
         sn.unshift(n);
-        console.log(n);
         draw(n, "red");
         if (n == dz) {
-            while (sn.indexOf(dz = ~~(Math.random() * 400)) >= 0);
+            var count = 0;
+            while (sn.indexOf(dz = ~~(Math.random() * 400)) >= 0)
+                if (count++ > 10000) {
+                    ctx.fillStyle = "black";
+                    ctx.fillRect(0, 0, 400, 400);
+                    sn = [sn[0], sn[1]];
+                    count = 0;
+                }
+            ;
             draw(dz, "Yellow");
-        } else
-            draw(sn.pop(), "Black");
-        setTimeout(arguments.callee, 1);
+        } else {
+            var p = sn.pop();
+            if (sn.indexOf(p) < 0)
+                draw(p, "Black");
+        }
+        fx = auto();
+        setTimeout(arguments.callee, 100);
     }();
 </script>
 </body>
