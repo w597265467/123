@@ -15,8 +15,42 @@
     };
 
 
-    function a() {
+    
+    var openList = [n];
+    var closeList = [];
 
+    function getCur() {
+        if (openList.length === 0){
+            return n;
+        }
+        return undefined;
+    }
+    function a() {
+        while(openList.length !==0){
+            var cur = openList.pop();
+            closeList.add(cur);
+            var around = getAroundNode(cur);
+            out : for (var b in around){
+
+                if (openList.length !== 0) {
+                    for (o in openList){
+                        if (o.b = b) {
+                            continue out;
+                        }
+                    }
+                }
+
+
+                var d = getDistance(b,dz);
+                var node = {
+                    F : d,
+                    b : b,
+                    parent : n
+                }
+                openList.add(node)
+            }
+
+        }
     }
 
 
@@ -28,11 +62,11 @@
         var bX = a % 20;
         var y = Math.abs(aY - bY);
         var x = Math.abs(aX - bX);
-        return ~~Math.SQRT2(x * x + y * y);
+        return x + y;
     }
 
 
-    function getAround(a) {
+    function getAroundNode(a) {
         var up = a - 20;
         var left = a - 1;
         var right = a + 1;
