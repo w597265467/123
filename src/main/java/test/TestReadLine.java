@@ -1,5 +1,7 @@
 package test;
 
+import sun.rmi.runtime.Log;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -10,20 +12,26 @@ public class TestReadLine {
 
 	public static void main(String[] arg) {
 		try {
-			InputStream is = new FileInputStream("/Users/wangluyao/jf/123/src/main/resources/5.txt");
+			InputStream is = new FileInputStream("D:\\project\\123\\src\\main\\resources\\iot-cloud.html");
 			Reader reader = new InputStreamReader(is);
 			BufferedReader strReader = new BufferedReader(reader);
-			Set<String> set = new HashSet<>();
+			File file = new File("D:\\project\\123\\src\\main\\resources\\iot-cloud"
+					+System.currentTimeMillis()+".txt");
+			file.createNewFile();
+			BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
 			while (true) {
 				String data;
 				if ((data = strReader.readLine()) == null) break;
-				set.add(data);
+				if (data.contains("<h3>")){
+					bufferedWriter.write(data.replace("<h3>","").replace("<h3/>",""));
+					bufferedWriter.write("\n");
+				}
 			}
-			for (String s : set) {
-				System.out.println(s);
-			}
+			bufferedWriter.flush();
+			bufferedWriter.close();
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.out.println(e);
 		}
 	}
 

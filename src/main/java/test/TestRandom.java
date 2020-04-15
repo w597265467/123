@@ -1,10 +1,6 @@
 package test;
 
-import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.lang.reflect.Array;
 import java.nio.charset.Charset;
 import java.util.*;
@@ -12,7 +8,11 @@ import java.util.*;
 public class TestRandom {
     public static void main(String[] arg) throws Exception {
         long time = 0;
-        String filePath = "C:\\Users\\Administrator\\Desktop\\time.txt";
+        String filePath = "C:\\Users\\wly\\Desktop\\time.txt";
+        File file = new File(filePath);
+        if (!file.exists()) {
+            boolean newFile = file.createNewFile();
+        }
         OutputStream os = new FileOutputStream(filePath);
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, Charset.defaultCharset()));
         double reTime = 1000000;
