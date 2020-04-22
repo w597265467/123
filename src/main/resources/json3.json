@@ -1,0 +1,101 @@
+ {
+        "ebid": 11,
+        "name": "配电箱_07550001930E978B",
+        "serialNo": "07550001930E978B",
+        "devType": 0,
+        "outSum": 1,
+        "outLoopSum": 3,
+        "provinceName": {
+            "code": 440000,
+            "value": "广东省"
+        },
+        "cityName": {
+            "code": 440300,
+            "value": "深圳市"
+        },
+        "districtName": {
+            "code": 440306,
+            "value": "宝安区"
+        },
+        "street": {
+            "code": 440306003000,
+            "value": "西乡街道"
+        },
+        "areaAddress": [
+            "440000",
+            "440300",
+            "440306",
+            "440306003000"
+        ],
+        "fullAddress": "请修改详细地址1",
+        "password": "123456",
+        "ip": "192.168.3.200",
+        "port": 1883,
+        "version": "100|200|100",
+        "feeType": 1,
+        "electricityFee": 0,
+        "phaseType": 3,
+        "lng": 114.062719,
+        "lat": 22.55413,
+        "branchNum": 0,
+        "areaId": 1,
+        "roadName": null,
+        "timeBasedFees": null,
+        "builderId": 170,
+        "builderName": "123123",
+        "linkman": "123123123",
+        "phone": "13312312312",
+        "describe": "123123",
+        "builderPicUrls": [],
+        "outLoopRels": [
+            {
+                "outLineId": 14496,
+                "outLineNo": 1,
+                "outLineName": "第1路",
+                "describe": "112312",
+                "lineOutLoopList": [
+                    {
+                        "id": 56302,
+                        "name": "123",
+                        "no": 1,
+                        "outLineId": null,
+                        "electricCurrent": null,
+                        "activePower": null,
+                        "lightingDuration": null,
+                        "status": null,
+                        "createTime": null,
+                        "updateTime": null
+                    }
+                ],
+                "boxLineOut": {
+                    "id": 14496,
+                    "ebId": null,
+                    "name": "第1路",
+                    "no": 1,
+                    "switchStatus": null,
+                    "validType": null,
+                    "lightingDuration": null,
+                    "describe": "112312",
+                    "createTime": null,
+                    "updateTime": null,
+                    "status": null,
+                    "electricBoxLineOutLoop": [
+                        {
+                            "id": 56302,
+                            "name": "123",
+                            "no": 1,
+                            "outLineId": null,
+                            "electricCurrent": null,
+                            "activePower": null,
+                            "lightingDuration": null,
+                            "status": null,
+                            "createTime": null,
+                            "updateTime": null
+                        }
+                    ]
+                }
+            }
+        ],
+        "areaNameInfo": "广东省深圳市宝安区西乡街道",
+        "username": "1234567"
+    }
