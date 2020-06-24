@@ -1,0 +1,1203 @@
+{
+  "code": 20000,
+  "data": [
+    {
+      "landmarkId": null,
+      "nodeId": 645,
+      "nodeSn": "cd002",
+      "nodeName": "明宇尚雅",
+      "lat": 30.652235,
+      "lng": 104.070319,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 647,
+      "nodeSn": "cd144",
+      "nodeName": "四川省建设厅",
+      "lat": 30.627149,
+      "lng": 104.072488,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 648,
+      "nodeSn": "cd092",
+      "nodeName": "机非隔离带",
+      "lat": 30.631117,
+      "lng": 104.073006,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 649,
+      "nodeSn": "cd090",
+      "nodeName": "机非隔离带",
+      "lat": 30.635732,
+      "lng": 104.072193,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 650,
+      "nodeSn": "cd067",
+      "nodeName": "世界资讯商场",
+      "lat": 30.640005,
+      "lng": 104.073849,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 651,
+      "nodeSn": "cd042",
+      "nodeName": "泰和索菲特大酒店",
+      "lat": 30.653271,
+      "lng": 104.075189,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 652,
+      "nodeSn": "cd043",
+      "nodeName": "财富国际",
+      "lat": 30.65851,
+      "lng": 104.076078,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 655,
+      "nodeSn": "cd001",
+      "nodeName": "招商银行",
+      "lat": 30.651929,
+      "lng": 104.073875,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 656,
+      "nodeSn": "cd004",
+      "nodeName": "世代锦江国际酒店",
+      "lat": 30.654174,
+      "lng": 104.067964,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 657,
+      "nodeSn": "cd005",
+      "nodeName": "平安大厦",
+      "lat": 30.651568,
+      "lng": 104.073507,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 658,
+      "nodeSn": "cd003",
+      "nodeName": "川投大厦",
+      "lat": 30.652116,
+      "lng": 104.071257,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 659,
+      "nodeSn": "cd006",
+      "nodeName": "汇日央扩",
+      "lat": 30.652073,
+      "lng": 104.07198,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 661,
+      "nodeSn": "cd163",
+      "nodeName": "城市之心",
+      "lat": 30.662012,
+      "lng": 104.07179,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 665,
+      "nodeSn": "cd019",
+      "nodeName": "川信红照壁大厦",
+      "lat": 30.658055,
+      "lng": 104.071897,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 666,
+      "nodeSn": "cd014",
+      "nodeName": "四川省人大",
+      "lat": 30.656312,
+      "lng": 104.07235,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 667,
+      "nodeSn": "cd007",
+      "nodeName": "cd007",
+      "lat": 0,
+      "lng": 0,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 668,
+      "nodeSn": "cd132",
+      "nodeName": "百扬大厦裙楼",
+      "lat": 30.662113,
+      "lng": 104.073244,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 669,
+      "nodeSn": "CD-RenHengZhiDiBGL",
+      "nodeName": "仁恒置地广场",
+      "lat": 30.657764,
+      "lng": 104.073087,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 673,
+      "nodeSn": "cd-WeiNaSiJiuDian",
+      "nodeName": "晟德瑞大酒店",
+      "lat": 30.664821,
+      "lng": 104.075939,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 674,
+      "nodeSn": "CD-FuLiZhongXinA-42",
+      "nodeName": "富力中心",
+      "lat": 30.670975,
+      "lng": 104.076177,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 675,
+      "nodeSn": "cd027",
+      "nodeName": "cd027",
+      "lat": 0,
+      "lng": 0,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 677,
+      "nodeSn": "cd150",
+      "nodeName": "机非隔离带",
+      "lat": 30.620078,
+      "lng": 104.073011,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 678,
+      "nodeSn": "cd026",
+      "nodeName": "保利中心南塔",
+      "lat": 30.630294,
+      "lng": 104.077269,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 679,
+      "nodeSn": "cd168",
+      "nodeName": "大陆国际",
+      "lat": 30.635236,
+      "lng": 104.073994,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 680,
+      "nodeSn": "cd034",
+      "nodeName": "首座万丽酒店",
+      "lat": 30.618409,
+      "lng": 104.072842,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 682,
+      "nodeSn": "cd166",
+      "nodeName": "红高粱",
+      "lat": 30.615583,
+      "lng": 104.073016,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 683,
+      "nodeSn": "cd078",
+      "nodeName": "新希望大厦",
+      "lat": 30.621795,
+      "lng": 104.074412,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 684,
+      "nodeSn": "CD-FuLiZhongXinB",
+      "nodeName": "富力中心",
+      "lat": 30.671453,
+      "lng": 104.076177,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 685,
+      "nodeSn": "cd161",
+      "nodeName": "四川广电国际大厦",
+      "lat": 30.666363,
+      "lng": 104.076878,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 686,
+      "nodeSn": "cd021",
+      "nodeName": "四川航空广场",
+      "lat": 30.664763,
+      "lng": 104.07682,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 687,
+      "nodeSn": "CD-FuLiZhongXinA-22",
+      "nodeName": "富力中心",
+      "lat": 30.670956,
+      "lng": 104.076191,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 688,
+      "nodeSn": "cd046",
+      "nodeName": "名人大厦",
+      "lat": 30.660203,
+      "lng": 104.071852,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 693,
+      "nodeSn": "cd050",
+      "nodeName": "大剧院",
+      "lat": 30.664796,
+      "lng": 104.074412,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 694,
+      "nodeSn": "CD051",
+      "nodeName": "图书馆",
+      "lat": 30.665251,
+      "lng": 104.070185,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 695,
+      "nodeSn": "cd072",
+      "nodeName": "百杨大厦",
+      "lat": 30.661927,
+      "lng": 104.07328,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 697,
+      "nodeSn": "cd023",
+      "nodeName": "首座",
+      "lat": 30.619745,
+      "lng": 104.07305,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 698,
+      "nodeSn": "cd-HangTianKeJiDaSha",
+      "nodeName": "航天科技大厦",
+      "lat": 30.65924,
+      "lng": 104.073222,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 700,
+      "nodeSn": "cd066",
+      "nodeName": "企业管理成都培训中心",
+      "lat": 30.640681,
+      "lng": 104.073755,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 702,
+      "nodeSn": "cd-RenHeChunTianBaiHuo",
+      "nodeName": "仁合春天",
+      "lat": 30.664031,
+      "lng": 104.075584,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 706,
+      "nodeSn": "cd-BoWuGuan",
+      "nodeName": "博物馆",
+      "lat": 30.663431,
+      "lng": 104.070258,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 707,
+      "nodeSn": "cd156",
+      "nodeName": "美术馆",
+      "lat": 30.66467,
+      "lng": 104.068331,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 708,
+      "nodeSn": "cd064",
+      "nodeName": "计划生育局",
+      "lat": 30.66864,
+      "lng": 104.068555,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 711,
+      "nodeSn": "cd155",
+      "nodeName": "人保大厦裙楼",
+      "lat": 30.662711,
+      "lng": 104.075,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 714,
+      "nodeSn": "CD-ZhaoQiYanJiuSuo",
+      "nodeName": "农业部沼气科学研究所",
+      "lat": 30.632961,
+      "lng": 104.074284,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 715,
+      "nodeSn": "cd025",
+      "nodeName": "红高粱",
+      "lat": 30.615176,
+      "lng": 104.072937,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 716,
+      "nodeSn": "cd074",
+      "nodeName": "城市理想A",
+      "lat": 30.660886,
+      "lng": 104.073873,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 717,
+      "nodeSn": "CD-RenHengZhiDiGYL",
+      "nodeName": "仁恒置地广场",
+      "lat": 30.658044,
+      "lng": 104.07443,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 718,
+      "nodeSn": "cd-LingDiZhongXinQunLou",
+      "nodeName": "领地中心",
+      "lat": 30.662031,
+      "lng": 104.070546,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 719,
+      "nodeSn": "CD-LingDiZhongXinDT",
+      "nodeName": "领地中心",
+      "lat": 30.66193,
+      "lng": 104.071,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 720,
+      "nodeSn": "CD-LingDiZhongXinXT",
+      "nodeName": "领地中心",
+      "lat": 30.661841,
+      "lng": 104.070524,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 721,
+      "nodeSn": "CD-XiYuFanDian",
+      "nodeName": "西御饭店",
+      "lat": 30.662959,
+      "lng": 104.068718,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 722,
+      "nodeSn": "cd-TianFuZhongXin",
+      "nodeName": "天府中心",
+      "lat": 30.668071,
+      "lng": 104.068488,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 723,
+      "nodeSn": "cd-MingYuLiYa",
+      "nodeName": "明宇丽雅饭店",
+      "lat": 30.663573,
+      "lng": 104.075324,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 724,
+      "nodeSn": "CD-NongYeYinHang",
+      "nodeName": "农业银行",
+      "lat": 30.66903,
+      "lng": 104.075778,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 725,
+      "nodeSn": "cd020",
+      "nodeName": "电力大厦",
+      "lat": 30.66122,
+      "lng": 104.072804,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 726,
+      "nodeSn": "cd088",
+      "nodeName": "华西第四医院（门诊部）",
+      "lat": 30.645706,
+      "lng": 104.072579,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 727,
+      "nodeSn": "cd164",
+      "nodeName": "世代锦江凯旋门",
+      "lat": 30.653803,
+      "lng": 104.069332,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 728,
+      "nodeSn": "cd133",
+      "nodeName": "同瑞国际",
+      "lat": 30.659822,
+      "lng": 104.075953,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 729,
+      "nodeSn": "cd069",
+      "nodeName": "城市理想B",
+      "lat": 30.661185,
+      "lng": 104.074169,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 730,
+      "nodeSn": "cd158",
+      "nodeName": "建设银行",
+      "lat": 30.662222,
+      "lng": 104.073828,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 731,
+      "nodeSn": "cd-RenNanQiaoDi02",
+      "nodeName": "人南桥底",
+      "lat": 30.626115,
+      "lng": 104.073562,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 732,
+      "nodeSn": "cd-ManHaDunYiQi",
+      "nodeName": "曼哈顿",
+      "lat": 30.620432,
+      "lng": 104.074439,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 733,
+      "nodeSn": "cd157",
+      "nodeName": "中加大厦",
+      "lat": 30.640843,
+      "lng": 104.073365,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 734,
+      "nodeSn": "cd-RenNanQiaoDi03",
+      "nodeName": "人南桥底",
+      "lat": 30.624499,
+      "lng": 104.07349,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 735,
+      "nodeSn": "cd-RenNanQiaoDi01",
+      "nodeName": "人南桥底",
+      "lat": 30.626865,
+      "lng": 104.073472,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 736,
+      "nodeSn": "cd079",
+      "nodeName": "向阳大厦",
+      "lat": 30.626746,
+      "lng": 104.076013,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 737,
+      "nodeSn": "cd-ChenGuangDaSha",
+      "nodeName": "晨光大厦",
+      "lat": 30.630649,
+      "lng": 104.072811,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 738,
+      "nodeSn": "cd-RenBaoDaShaZhuLou",
+      "nodeName": "人保大厦主楼",
+      "lat": 30.662723,
+      "lng": 104.075,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 739,
+      "nodeSn": "cd070",
+      "nodeName": "机非隔离带",
+      "lat": 30.646187,
+      "lng": 104.072822,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 740,
+      "nodeSn": "cd130",
+      "nodeName": "机非隔离带",
+      "lat": 30.645007,
+      "lng": 104.072867,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 741,
+      "nodeSn": "cd-ShengTiYuGuan02",
+      "nodeName": "四川体育馆",
+      "lat": 30.638917,
+      "lng": 104.072278,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 742,
+      "nodeSn": "cd-ShengTiYuGuan01",
+      "nodeName": "四川体育馆",
+      "lat": 30.636804,
+      "lng": 104.072157,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 743,
+      "nodeSn": "cd018",
+      "nodeName": "机非隔离带",
+      "lat": 30.650972,
+      "lng": 104.072705,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 744,
+      "nodeSn": "cd091",
+      "nodeName": "机非隔离带",
+      "lat": 30.650778,
+      "lng": 104.072876,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 745,
+      "nodeSn": "cd071",
+      "nodeName": "机非隔离带",
+      "lat": 30.64023,
+      "lng": 104.073029,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 746,
+      "nodeSn": "cd159",
+      "nodeName": "机非隔离带",
+      "lat": 30.662047,
+      "lng": 104.072319,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 747,
+      "nodeSn": "cd076",
+      "nodeName": "机非隔离带",
+      "lat": 30.661084,
+      "lng": 104.072534,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 748,
+      "nodeSn": "cd124",
+      "nodeName": "机非隔离带",
+      "lat": 30.644781,
+      "lng": 104.073038,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 749,
+      "nodeSn": "cd093",
+      "nodeName": "米乐星KTV",
+      "lat": 30.615351,
+      "lng": 104.074195,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 750,
+      "nodeSn": "cd160",
+      "nodeName": "机非隔离带",
+      "lat": 30.640533,
+      "lng": 104.073181,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 751,
+      "nodeSn": "cd131",
+      "nodeName": "机非隔离带",
+      "lat": 30.660486,
+      "lng": 104.072561,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 752,
+      "nodeSn": "cd017",
+      "nodeName": "机非隔离带",
+      "lat": 30.659974,
+      "lng": 104.072445,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 753,
+      "nodeSn": "cd086",
+      "nodeName": "人民南路四段50号",
+      "lat": 30.617304,
+      "lng": 104.073244,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 754,
+      "nodeSn": "cd-HeDao08",
+      "nodeName": "锦江河道",
+      "lat": 30.652657,
+      "lng": 104.068771,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 755,
+      "nodeSn": "cd200",
+      "nodeName": "机非隔离带",
+      "lat": 30.648285,
+      "lng": 104.072894,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 756,
+      "nodeSn": "cd-WangDaRuiHua",
+      "nodeName": "万达瑞华酒店",
+      "lat": 30.653314,
+      "lng": 104.076173,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 757,
+      "nodeSn": "cd-HeDao01",
+      "nodeName": "锦江河道",
+      "lat": 30.65277,
+      "lng": 104.074461,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 758,
+      "nodeSn": "cd-HeDao04",
+      "nodeName": "锦江河道",
+      "lat": 30.651504,
+      "lng": 104.07814,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 759,
+      "nodeSn": "cd-HeDao06",
+      "nodeName": "锦江河道",
+      "lat": 30.653248,
+      "lng": 104.069498,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 760,
+      "nodeSn": "cd-HeDao03",
+      "nodeName": "锦江河道",
+      "lat": 30.652242,
+      "lng": 104.073738,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 761,
+      "nodeSn": "cd-HeDao07",
+      "nodeName": "锦江河道",
+      "lat": 30.652549,
+      "lng": 104.071825,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 762,
+      "nodeSn": "cd-HeDao05",
+      "nodeName": "锦江河道",
+      "lat": 30.653271,
+      "lng": 104.070486,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 763,
+      "nodeSn": "cd-HeDao02",
+      "nodeName": "锦江河道",
+      "lat": 30.652316,
+      "lng": 104.077201,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 764,
+      "nodeSn": "cd-MinShanFanDian",
+      "nodeName": "岷山饭店",
+      "lat": 30.654642,
+      "lng": 104.073442,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 765,
+      "nodeSn": "cd041",
+      "nodeName": "大成宾馆",
+      "lat": 30.656413,
+      "lng": 104.072072,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 766,
+      "nodeSn": "cd087",
+      "nodeName": "保利中心北塔",
+      "lat": 30.630757,
+      "lng": 104.077676,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 767,
+      "nodeSn": "cd-HuaYuanChengDaJiuDian",
+      "nodeName": "成都花园大酒店",
+      "lat": 30.658894,
+      "lng": 104.076244,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 768,
+      "nodeSn": "cd169",
+      "nodeName": "嘉云台",
+      "lat": 30.616815,
+      "lng": 104.074527,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 769,
+      "nodeSn": "cd139",
+      "nodeName": "嘉云台",
+      "lat": 30.616361,
+      "lng": 104.074509,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 770,
+      "nodeSn": "cd152",
+      "nodeName": "天府广场乔木",
+      "lat": 30.663472,
+      "lng": 104.070994,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 771,
+      "nodeSn": "cd127",
+      "nodeName": "天府广场乔木",
+      "lat": 30.663515,
+      "lng": 104.072274,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 772,
+      "nodeSn": "cd015",
+      "nodeName": "天府广场乔木",
+      "lat": 30.663088,
+      "lng": 104.073621,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 773,
+      "nodeSn": "cd151",
+      "nodeName": "天府广场乔木",
+      "lat": 30.664664,
+      "lng": 104.073684,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 774,
+      "nodeSn": "cd126",
+      "nodeName": "天府广场乔木",
+      "lat": 30.664738,
+      "lng": 104.071174,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 775,
+      "nodeSn": "HuaXiDiSiYiYuan",
+      "nodeName": "华西第四医院（住院部）",
+      "lat": 30.646348,
+      "lng": 104.071963,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 776,
+      "nodeSn": "HuaXiKouQiangYiHaoLou",
+      "nodeName": "华西口腔医院",
+      "lat": 30.649259,
+      "lng": 104.072116,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 777,
+      "nodeSn": "HuaXiKouQiangErHaoLou",
+      "nodeName": "华西口腔医院",
+      "lat": 30.649123,
+      "lng": 104.072112,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 778,
+      "nodeSn": "HuaXiKouQiangSanHaoLou",
+      "nodeName": "华西口腔医院",
+      "lat": 30.648816,
+      "lng": 104.071973,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 779,
+      "nodeSn": "HuaXiKouQiangSiHaoLou",
+      "nodeName": "华西口腔医院",
+      "lat": 30.648862,
+      "lng": 104.072004,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 780,
+      "nodeSn": "HuaXiDiErYiYuan",
+      "nodeName": "华西第二医院",
+      "lat": 30.645348,
+      "lng": 104.072278,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 781,
+      "nodeSn": "cd-HuaYuRongGuoFu02",
+      "nodeName": "华宇荣国府2",
+      "lat": 30.634356,
+      "lng": 104.072619,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 782,
+      "nodeSn": "cd-HuaYuRongGuoFu01",
+      "nodeName": "华宇荣国府1",
+      "lat": 30.634581,
+      "lng": 104.072795,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 783,
+      "nodeSn": "HuaXiKouQiangBoWuGuan",
+      "nodeName": "华西口腔医院博物馆",
+      "lat": 30.649826,
+      "lng": 104.07218,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 784,
+      "nodeSn": "cd-KeXueJiaYuan",
+      "nodeName": "科学家园宾馆",
+      "lat": 30.634166,
+      "lng": 104.073652,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 785,
+      "nodeSn": "HeShiGuKe",
+      "nodeName": "何氏骨科医院",
+      "lat": 30.629712,
+      "lng": 104.072906,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 786,
+      "nodeSn": "cd-ShiDaiJinJiangB",
+      "nodeName": "世代锦江国际酒店",
+      "lat": 30.653861,
+      "lng": 104.068434,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 787,
+      "nodeSn": "",
+      "nodeName": "",
+      "lat": 0,
+      "lng": 0,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 788,
+      "nodeSn": "cd-GuoWangSiChuanDianLiGongSi",
+      "nodeName": "国网四川电力公司",
+      "lat": 30.617459,
+      "lng": 104.074322,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 789,
+      "nodeSn": "cd173",
+      "nodeName": "首座",
+      "lat": 30.618202,
+      "lng": 104.072452,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 790,
+      "nodeSn": "cd035",
+      "nodeName": "时代数码大厦",
+      "lat": 30.638906,
+      "lng": 104.074074,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 791,
+      "nodeSn": "aikejiudian",
+      "nodeName": "爱客酒店",
+      "lat": 30.63404,
+      "lng": 104.07357,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 792,
+      "nodeSn": "Guohangbei",
+      "nodeName": "国航世纪中心",
+      "lat": 30.62365,
+      "lng": 104.074396,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 793,
+      "nodeSn": "guohangnan",
+      "nodeName": "国航世纪中心",
+      "lat": 30.622772,
+      "lng": 104.074634,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 794,
+      "nodeSn": "cd081",
+      "nodeName": "首座",
+      "lat": 30.618719,
+      "lng": 104.072901,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 795,
+      "nodeSn": "cd-XiNanWuLiYanJiuSuo",
+      "nodeName": "西南技术物理研究所",
+      "lat": 30.635924,
+      "lng": 104.074654,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 796,
+      "nodeSn": "ChengDuZhongYiYaoDaXueRenNanXiaoQu",
+      "nodeName": "成都中医药大学人民南路校区",
+      "lat": 30.632292,
+      "lng": 104.073741,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 797,
+      "nodeSn": "cd147",
+      "nodeName": "中西医结合医院",
+      "lat": 30.619278,
+      "lng": 104.074626,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 798,
+      "nodeSn": "cd201",
+      "nodeName": "cd201",
+      "lat": 0,
+      "lng": 0,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 799,
+      "nodeSn": "HuaXiKouQiang5HaoLou",
+      "nodeName": "华西口腔医院",
+      "lat": 30.648431,
+      "lng": 104.071555,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 800,
+      "nodeSn": "cd172",
+      "nodeName": "商鼎国际",
+      "lat": 30.624627,
+      "lng": 104.074241,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 801,
+      "nodeSn": "cd038",
+      "nodeName": "商鼎国际",
+      "lat": 30.624677,
+      "lng": 104.074996,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 802,
+      "nodeSn": "cd-jidi",
+      "nodeName": "cd-jidi",
+      "lat": 0,
+      "lng": 0,
+      "nodeType": 1
+    },
+    {
+      "landmarkId": null,
+      "nodeId": 803,
+      "nodeSn": "touying-test",
+      "nodeName": "touying-test",
+      "lat": 0,
+      "lng": 0,
+      "nodeType": 1
+    }
+  ],
+  "message": null
+}

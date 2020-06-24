@@ -15,7 +15,7 @@ import java.util.*;
 import static utils.FileReadLine.readString;
 
 public class TestCreatHtmlTable {
-    private static int i;
+    private static int i = 1;
     static Map<String, String> resBodyMap;
     static Map<String, String> titleMap;
     static JsonParser parser = new JsonParser();
@@ -76,7 +76,7 @@ public class TestCreatHtmlTable {
                         "    h2 {font-size: 15px; text-decoration: bold;}\n" +
                         "    h3 {font-size: 13px; text-decoration: bold;}\n" +
                         "    th,\n" +
-                        "    td {font-size: 14px; text-align: center; border-style: solid; border-width: 0px; font-weight: normal;}\n" +
+                        "    td {padding:6px font-size: 14px; text-align: center; border-style: solid; border-width: 0px; font-weight: normal;}\n" +
                         "    code {font-size: 14px;}\n" +
                         "    .TableObject {border-style: solid; border-width: 0px; border-color: #000000; font-family: Microsoft Sans Serif}\n" +
                         "    .TableData {border-style: solid; border-width: 0px; border-color: #000000; font-family: Microsoft Sans Serif}\n" +
@@ -111,15 +111,19 @@ public class TestCreatHtmlTable {
         bufferedWriter.flush();
         bufferedWriter.close();
     }
-
     private static StringBuilder creatHtmlTable(RequestToMethodItem request) throws IOException {
         Class<?>[] methodParamTypes = request.methodParamTypes;
         StringBuilder table = new StringBuilder(0);
 //        table.append("<h2>2.").append(i++).append("</h2>");
+        request.requestUrl = projectName + request.requestUrl;
+        String s = resBodyMap.get(request.requestUrl.toUpperCase());
+        if (StringUtils.isEmpty(s)) {
+            return table;
+        }
+        String s1 = titleMap.get(request.requestUrl);
+        table.append("<h3>").append(s1).append("<h3/>");
         table.append("<table border=\"0\" cellspacing=\"0\" class=\"TableObject\" width=850px>");
         table.append("<tr class='Structure'>");
-        request.requestUrl = projectName + request.requestUrl;
-        String s = resBodyMap.get(request.requestUrl);
         JsonObject data = null;
         JsonObject jsonObj = null;
         if (!StringUtils.isEmpty(s)) {
@@ -128,9 +132,9 @@ public class TestCreatHtmlTable {
             jsonObj = parser.parse(s).getAsJsonObject();
             if (!jsonObj.isJsonNull() && jsonObj.isJsonObject()) {
                 JsonElement data1 = jsonObj.get("data");
-                if (data1 == null){
+                if (data1 == null) {
                     data = jsonObj;
-                }else if (data1.isJsonObject()) {
+                } else if (data1.isJsonObject()) {
                     data = data1.getAsJsonObject();
                 }
             }
@@ -152,7 +156,7 @@ public class TestCreatHtmlTable {
         table.append("</tr>\n");
         table.append("<tr class='Structure'>");
         htmlTable(table, 0, 0, "D9D9D9", "接口描述", "center");
-        String s1 = titleMap.get(request.requestUrl);
+
         htmlTable(table, 0, 5, "FFFFFF", s1 == null ? "" : s1);
         table.append("</tr>\n");
         table.append("<tr class='Structure'>");
@@ -261,24 +265,69 @@ public class TestCreatHtmlTable {
                 }
                 request.requestUrl = request.requestUrl.substring(0, request.requestUrl.length() - 1);
                 htmlTable(table, 0, 5, "FFFFFF", request.requestUrl.replace("&", "&\n"));
-            }else {
+            } else {
                 htmlTable(table, 0, 5, "FFFFFF", request.requestUrl);
             }
         }
         table.append("</tr>\n");
         table.append("<tr class='Structure'>");
         htmlTable(table, 0, 0, "D9D9D9", "返回参数", "center");
-        htmlTable(table, 0, 5, "FFFFFF", data == null ? "{\n" +
+        htmlTable(table, 0, 5, "FFFFFF", s == null ? "{\n" +
                 "    \"code\": 20000,\n" +
                 "    \"data\": null,\n" +
                 "    \"message\": null\n" +
-                "}" : data.toString()
-                .replace("{","{<br/>")
-                .replace(",",",<br/>")
-                .replace("}","<br/>}<br/>"));
+                "}" : s.replace("\t","&nbsp;&nbsp;&nbsp;&nbsp;")
+                .replace("\n","<br/>")
+        );
         table.append("</tr>\n");
         table.append("</table> <br/>");
         return table;
+    }
+
+    private static String getLevelStr(int level) {
+        StringBuffer levelStr = new StringBuffer();
+        for (int levelI = 0; levelI < level; levelI++) {
+            levelStr.append("\t");
+        }
+        return levelStr.toString();
+    }
+
+    static String jsonObjectFormatString(JsonObject data) {
+        int level = 0;
+        String jsonStr = data.toString();
+        StringBuffer jsonForMatStr = new StringBuffer();
+        for (int i = 0; i < jsonStr.length(); i++) {
+            char c = jsonStr.charAt(i);
+            if (level > 0 && '\n' == jsonForMatStr.charAt(jsonForMatStr.length() - 1)) {
+                jsonForMatStr.append(getLevelStr(level));
+            }
+            switch (c) {
+                case '{':
+                case '[':
+                    jsonForMatStr.append(c + "\n");
+                    level++;
+                    break;
+                case ',':
+                    char d = jsonStr.charAt(i - 1);
+                    if (d == '"' || d == ']') {
+                        jsonForMatStr.append(c + "\n");
+                    } else {
+                        jsonForMatStr.append(c);
+                    }
+                    break;
+                case '}':
+                case ']':
+                    jsonForMatStr.append("\n");
+                    level--;
+                    jsonForMatStr.append(getLevelStr(level));
+                    jsonForMatStr.append(c);
+                    break;
+                default:
+                    jsonForMatStr.append(c);
+                    break;
+            }
+        }
+        return jsonForMatStr.toString();
     }
 
     static Set<String> set = new HashSet<>();
@@ -339,7 +388,7 @@ public class TestCreatHtmlTable {
     }
 
     private static Map<String, String> getResponseParam() throws IOException {
-        String s = readString("D:\\project\\123\\src\\main\\resources\\"+returnFile);
+        String s = readString("D:\\project\\123\\src\\main\\resources\\" + returnFile);
         JSONArray jsonArray = JSONObject.parseArray(s);
         Map<String, String> map = new HashMap<>();
         for (int j = 0; j < jsonArray.size(); j++) {
@@ -351,14 +400,14 @@ public class TestCreatHtmlTable {
                 JSONObject query_path = json.getJSONObject("query_path");
                 String res_body = json.getString("res_body");
                 String path = query_path.getString("path");
-                map.put(projectName + path, res_body);
+                map.put((projectName + path).toUpperCase(), res_body);
             }
         }
         return map;
     }
 
     private static Map<String, String> getResponseParam2() throws IOException {
-        String s = readString("D:\\project\\123\\src\\main\\resources\\"+returnFile);
+        String s = readString("D:\\project\\123\\src\\main\\resources\\" + returnFile);
         JSONArray jsonArray = JSONObject.parseArray(s);
         Map<String, String> map = new HashMap<>();
         for (int j = 0; j < jsonArray.size(); j++) {
@@ -1035,9 +1084,9 @@ public class TestCreatHtmlTable {
                 }
                 StringBuilder tgt = new StringBuilder();
                 for (String s1 : ss) {
-                    if (s1 != null){
+                    if (s1 != null) {
                         tgt.append(getTanslationString(s1));
-                    }else {
+                    } else {
                         break;
                     }
                 }

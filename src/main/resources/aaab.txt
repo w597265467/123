@@ -1,0 +1,83 @@
+SELECT
+	t1.province_name,
+	t1.city_name,
+	t1.district_name,
+	road.road_name,
+	e_box.id,
+	e_box.serial_no,
+	e_box.`name`,
+	e_box.fee_type,
+	e_box.`status`,
+	e_box.switch_status,
+	eb_out.id AS out_line_id,
+	eb_out_loop.`no` AS out_line_loop_no,
+	eb_out.out_line_count AS out_sum,
+	count(eb_out_loop.out_line_id) * eb_out.out_line_count AS out_loop_sum,
+	builder.id AS builder_id,
+	builder.`name` AS builder_name,
+	builder.linkman,
+	builder.phone,
+	e_box.version,
+	e_box.door_status,
+	sub_report.operate_code,
+	sub_report.`status` AS report_status
+FROM
+	iot_electric_box e_box
+LEFT JOIN (
+	SELECT
+		line_out.id,
+		line_out.eb_id,
+		COUNT(line_out.eb_id) AS out_line_count
+	FROM
+		iot_electric_box_line_out line_out
+	WHERE
+		line_out.`status` != 9
+	GROUP BY
+		line_out.eb_id
+) AS eb_out ON eb_out.eb_id = e_box.id
+LEFT JOIN iot_electric_box_line_out_loop eb_out_loop ON eb_out.id = eb_out_loop.out_line_id
+AND eb_out_loop.`status` != 9
+LEFT JOIN iot_electric_box_subscribe_report sub_report ON sub_report.operate_code = 'C2'
+AND sub_report.eb_id = e_box.id
+AND (
+	UNIX_TIMESTAMP(NOW()) - UNIX_TIMESTAMP(sub_report.create_time)
+) < 120
+LEFT JOIN iot_builder builder ON builder.id = e_box.builder_id
+LEFT JOIN (
+	SELECT
+		rel.id,
+		rel.province_name,
+		rel.city_name,
+		rel.district_name,
+		CONCAT(
+			rel.province_name,
+			rel.city_name,
+			rel.district_name
+		) AS area_name
+	FROM
+		iot_area_rel rel
+	WHERE
+		rel. STATUS = 1
+) t1 ON t1.id = e_box.area_rel_id
+LEFT JOIN area_city_road road ON road.id = e_box.road_id
+LEFT JOIN iot_business_user_rel ibur ON ibur.business_id = e_box.id
+AND ibur.business_type = 3
+WHERE
+	e_box.`status` != 9
+AND (
+	CASE (
+		SELECT
+			type
+		FROM
+			iot_user_info
+		WHERE
+			id = 1
+	)
+	WHEN 1 THEN
+		ibur.user_id = 1
+	WHEN 0 THEN
+		TRUE
+	END
+)
+GROUP BY
+	e_box.id

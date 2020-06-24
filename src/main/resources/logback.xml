@@ -41,7 +41,7 @@
 	<logger name="java.sql.ResultSet" level="DEBUG" />
 	<logger name="org.springframework.jdbc" level="DEBUG" />
 	<logger name="org.springframework.transaction" level="DEBUG" />
-	<logger name="org.apache.commons.beanutils.converters" level="INFO" />
+	<logger name="org.apache.commons.beanutils.converters" level="DEBUG" />
 	<logger name="cn.jf180.master.orm.dao.SequenceValueItemDao"
 		level="WARN" />
 	<logger name="io" level="WARN" />

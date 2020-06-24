@@ -1,0 +1,72 @@
+{
+  "code": 20000,
+  "data": [
+    {
+      "landmarkId": null,
+      "devSn": "ZC-DJ-LXQD-AA-1",
+      "devName": "led洗墙灯",
+      "devNum": null,
+      "devType": 17,
+      "devTypeName": "洗墙灯",
+      "manufactorId": 5,
+      "manufactorName": null,
+      "util": "条"
+    },
+    {
+      "landmarkId": null,
+      "devSn": "ZC-DJ-LXTD-BB-2",
+      "devName": "led灯具",
+      "devNum": null,
+      "devType": 19,
+      "devTypeName": "点光源",
+      "manufactorId": 5,
+      "manufactorName": null,
+      "util": "条"
+    },
+    {
+      "landmarkId": null,
+      "devSn": "ZC-DJ-LXQD-RZ001-4",
+      "devName": "洗墙灯-A",
+      "devNum": null,
+      "devType": 17,
+      "devTypeName": "洗墙灯",
+      "manufactorId": 6,
+      "manufactorName": null,
+      "util": "条"
+    },
+    {
+      "landmarkId": null,
+      "devSn": "ZC-DJ-LXTD-RZ001-2",
+      "devName": "线条灯-B",
+      "devNum": null,
+      "devType": 18,
+      "devTypeName": "线条灯",
+      "manufactorId": 6,
+      "manufactorName": null,
+      "util": "条"
+    },
+    {
+      "landmarkId": null,
+      "devSn": "ZC-DJ-LDG-RZ001-1",
+      "devName": "点光源-C",
+      "devNum": null,
+      "devType": 19,
+      "devTypeName": "点光源",
+      "manufactorId": 6,
+      "manufactorName": null,
+      "util": "个"
+    },
+    {
+      "landmarkId": null,
+      "devSn": "ZC-DJ-LTG-RZ001-1",
+      "devName": "投光灯-D",
+      "devNum": null,
+      "devType": 20,
+      "devTypeName": "投光灯",
+      "manufactorId": 6,
+      "manufactorName": null,
+      "util": "台"
+    }
+  ],
+  "message": null
+}
